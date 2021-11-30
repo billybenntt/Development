@@ -273,6 +273,16 @@ ul {
   margin-top: -1rem;
 }
 
+
+/*
+============================================================
+Standard Version
+============================================================
+*/
+
+
+
+
 /*
 =============== 
 Navbar
@@ -290,7 +300,6 @@ Navbar
 }
 
 .nav-header {
-  /*  */
   height: 6rem;
   display: flex;
   justify-content: space-between;
@@ -298,7 +307,6 @@ Navbar
 }
 
 .nav-header img {
-  /*  */
   width: 200px;
 }
 
@@ -309,12 +317,10 @@ Navbar
 
 
 .nav-btn {
-  /*  */
   padding: 0.15rem 0.75rem;
 }
 
 .nav-btn i {
-  /*  */
   font-size: 1.25rem;
 }
 
@@ -329,12 +335,10 @@ Navbar
 
 
 .show-links {
-  /* Showing Navbar */
   height: 310px;
 }
 
 .nav-link {
-
   display: block;
   text-align: center;
   text-transform: capitalize;
@@ -371,6 +375,11 @@ Main Section
 }
 
 
+.hero {
+  height: 40vh;
+  background: url(/assets/main.jpeg) center/cover no-repeat
+}
+
 /*
 =============== 
 Footer Section
@@ -400,8 +409,11 @@ Footer Section
 
 
 
-
-
+/*
+============================================================
+Mobile Version
+============================================================
+*/
 
 
 
