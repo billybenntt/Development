@@ -437,6 +437,16 @@ Mobile Version
 ============================================================
 */
 
+@media screen and (min-width: 768px) {
+
+  hero-text {
+    font-size: 4rem;
+  }
+
+}
+
+
+
 
 
 
