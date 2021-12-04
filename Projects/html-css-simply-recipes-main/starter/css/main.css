@@ -401,6 +401,16 @@ Main Section
   color: var(--white);
 }
 
+.recipes-container {
+  display: grid;
+  gap: 2rem 1rem;
+  border: 2px solid red;
+}
+
+.tags-container {
+
+  border: 2px solid blue;
+}
 
 /*
 =============== 
