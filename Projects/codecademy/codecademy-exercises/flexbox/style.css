@@ -1,59 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
-    margin: 0;
-    border: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    background: #eee;
 }
 
-h1 {
-    font-size: 18px;
+blockquote {
+    padding: 10px;
+    background: #F99797;
 }
 
-h2 {
-    font-size: 16px;
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
-h1,
-h2 {
+code {
+    background: #f4f4f4;
+}
+
+.center {
     text-align: center;
 }
 
-.top,
-.middle,
-.bottom {
-    width: 100px;
-    height: 100px;
-    background-color: dodgerblue;
-    border: 2px solid lightgrey;
-    margin: 10px 30px;
+button {
+    padding: 10px 20px;
+    background: #F76C6C;
+    color: #fff;
+    border: transparent;
+    border-radius: 4px;
+    font-size: 1.5rem;
 }
 
-.top.side {
-    flex-grow: 1;
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
 }
 
-.top.center {
-    flex-grow: 1;
-
+.modal-inner {
+    margin-top: 30px;
 }
 
-.middle.side {
-    flex-grow: 2;
+.texture-sample {
+    border: 1px solid #eee;
+    height: 160px;
 }
 
-.middle.center {
-    flex-grow: 1;
-}
 
-.bottom.side {}
-
-.bottom.center {}
-
-#top,
-#middle,
-#bottom {
-    display: flex;
-    background-color: wheat;
-    justify-content: center;
-    min-height: 200px;
-    align-items: center;
+.test {
+    color: red;
 }
