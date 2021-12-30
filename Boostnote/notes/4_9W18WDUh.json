@@ -1,0 +1,1 @@
+{"_id":"note:4_9W18WDUh","title":"3. Traversing","content":"\n\n## Select Parent Node\n```js\ndocument.getElementsByClassName(\"list-group-item\")[0].parentNode\n```","tags":[],"folderPathname":"/📘 FrontEnd/DOM","data":{},"createdAt":"2021-12-30T07:37:11.027Z","updatedAt":"2021-12-30T07:56:41.060Z","trashed":false,"_rev":"0HLijplwR"}
