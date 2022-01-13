@@ -1,100 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <title>Please Participate in Our Survey!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="content">
-    <h1 class="center" id="ra">DOM exercises</h1>
-    <blockquote class="center">First of all, <b>FORK</b> this pen before you go ahead!</blockquote>
-    <p>You're about to put into practice everything you've just learnt. The order of the instructions matches the order
-      of the slides.</p>
-    <p>You must <em>not</em> edit the HTML, nor the CSS of this pen. Therefore, using only JavaScript, walk through
-      every "box" and follow the instructions!</p>
-  </div>
 
-  <div class="content">
-    <h3>1. Manipulate the body</h3>
-    <p>Set a background image on the body itself. You might try <a target="_blank"
-        href="https://www.transparenttextures.com/">these textures</a>, or whatever you prefer!</p>
-  </div>
+    <header>
+        <ul>
+            <li>Question 1</li>
+            <li>Question 2</li>
+            <li>Question 3</li>
+            <li>Question 4</li>
+            <li>Question 5</li>
+        </ul>
+    </header>
 
-  <div class="content">
-    <h3>2. Find an element by its id and alter it</h3>
-    <p>On the <code>#replace-text</code> div inside this box:</p>
-    <ul>
-      <li>Set the <em>text</em> (foreground) color to <code>#777</code></li>
-      <li>Set the font size to <code>2rem</code></li>
-      <li>Set the HTML content to <code>I can do &lt;em&gt;whatever&lt;/em&gt; I want with JavaScript</code>.</li>
-    </ul>
-    <p id="replace-text">This text should be replaced!</p>
-  </div>
-
-  <div class="content">
-    <h3>3. Find elements by their class name and alter them</h3>
-    <p>Get the elements which share the class <code>blue</code>, and use a loop to set each one's text color to
-      <code>blue</code>.
-    </p>
-    <ul>
-      <li class="blue">Soon,</li>
-      <li class="blue">I will become</li>
-      <li class="blue">BLUE</li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <h3>4. Respond to a click event</h3>
-    <p>Right at the bottom of this div, you'll find a <code>#open-modal</code> button, and a modal (with
-      <code>#modal</code> as its id) which contains a <code>#close-modal</code> button.
-    </p>
-    <p class="test">Get the two button and the modal div elements. Then create two event listeners &mdash; one for each
-      button:</p>
-    <ul>
-      <li>When the <code>#open-modal</code> button is clicked, the modal should be shown, by manipulating its
-        <code>display</code> style property (initially set to <code>none</code> in the CSS).
-      </li>
-      <li>Conversely, when the <code>#close-modal</code> button is clicked, the modal should be hidden.</li>
-    </ul>
-
-    <p class="center">
-      <button id="open-modal">Open modal</button>
-    </p>
-    <div id="modal" class="modal">
-      <div class="modal-inner content center">
-        <h2>Congrats!</h2>
-        <p>You did it, I'm open :). Now close me!</p>
-        <button id="close-modal">Close modal</button>
-      </div>
+    <div class="welcome">
+        <h1>Welcome to our survey!</h1>
+        <p>We're looking forward to getting your answers so we can make sure our products and services are the best they
+            can be!</p>
     </div>
-  </div>
 
-  <div class="content">
-    <h3>5. Respond to a change event</h3>
-    <p>Set up an event listener for the <code>change</code> event, on the selector below. When it is changed, use the
-      value obtained from the event's target, to set a background image on the <code>#texture-background</code> div.</p>
+    <div class="question">
+        <h4>Question 1</h4>
+        <h2>I like participating in physical activity such as running, swimming, or biking.</h2>
 
-    <p class="center">
-      <label for="texture-selector">Choose a texture:</label>
-      <select id="texture-selector">
-        <option value="https://upload.wikimedia.org/wikipedia/commons/4/48/BLANK_ICON.png">&mdash;</option>
-        <option value="https://image.freepik.com/free-vector/memphis-seamless-patterns_9202-768.jpg">Memphis Seamless
-          </value>
-        <option value="https://image.freepik.com/free-vector/retro-styled-pattern-background_1048-6593.jpg">Retro-styled
-          </value>
-        <option value="https://image.freepik.com/free-vector/abstract-background-with-3d-pattern_1319-68.jpg">3D Cubes
-          </value>
-      </select>
-    </p>
+        <div class="answer">
+            <h3>Disagree</h3>
+        </div>
 
-    <div id="texture-background" class="texture-sample"></div>
-  </div>
-  <script src="script.js"></script>
+        <div class="answer">
+            <h3>Neutral</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Agree</h3>
+        </div>
+    </div>
+
+    <div class="question">
+        <h4>Question 2</h4>
+        <h2>I try to keep up to date with the latest fashion in active wear.</h2>
+
+        <div class="answer">
+            <h3>Disagree</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Neutral</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Agree</h3>
+        </div>
+    </div>
+
+    <div class="question">
+        <h4>Question 3</h4>
+        <h2>I purchase clothing online regularly.</h2>
+
+        <div class="answer">
+            <h3>Disagree</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Neutral</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Agree</h3>
+        </div>
+    </div>
+
+    <div class="question">
+        <h4>Question 4</h4>
+        <h2>I try to buy goods that are designed and/or manufactured in my home country.</h2>
+
+        <div class="answer">
+            <h3>Disagree</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Neutral</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Agree</h3>
+        </div>
+    </div>
+
+    <div class="question">
+        <h4>Question 5</h4>
+        <h2>I look to famous athletes when trying to choose what to wear when training.</h2>
+
+        <div class="answer">
+            <h3>Disagree</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Neutral</h3>
+        </div>
+
+        <div class="answer">
+            <h3>Agree</h3>
+        </div>
+    </div>
 
 </body>
 
