@@ -7,6 +7,7 @@ header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
     position: fixed;
+    z-index: 10;
     width: 100%;
 }
 
@@ -14,6 +15,7 @@ ul {
     margin: 30px auto;
     padding: 0 20px;
     text-align: center;
+    float: right;
 }
 
 li {
@@ -21,7 +23,11 @@ li {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    width: 110px;
+    margin-left: 80px;
     text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid wheat;
 }
 
 li:hover {
@@ -52,6 +58,7 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     padding: 30px;
+
 }
 
 h4 {
@@ -73,29 +80,34 @@ p {
 footer {
     background-color: #DBE9EE;
     text-align: center;
+    position: relative;
+    top: 100px;
+    clear: left;
 }
 
 .welcome {
     background-color: #DBE9EE;
     box-sizing: border-box;
     padding: 40px;
+    z-index: 9;
     text-align: center;
     width: 100%;
     position: relative;
-    top: 200px;
+    top: 50px;
 }
 
 .question {
     text-align: center;
-    position: sticky;
-    top: 400px;
-    border: 15px solid #DBE9EE;
-    background-color: white;
+    position: relative;
+    top: 100px;
+    float: left;
 }
 
 .answer {
     border: 1px solid #466995;
     margin: 20px;
+    width: 300px;
+    display: inline-block;
 }
 
 .answer:hover {
