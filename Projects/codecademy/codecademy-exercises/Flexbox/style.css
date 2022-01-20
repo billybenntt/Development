@@ -2,33 +2,50 @@ body {
     margin: 0;
     border: 0;
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
 }
 
 h1 {
-    font-size: 18px;
     text-align: center;
+    font-size: 18px;
 }
 
-.container {
-    display: inline-flex;
-
-    width: 49%;
-    border: 1px solid grey;
+h2 {
+    text-align: center;
+    font-size: 16px;
 }
 
-.box {
+.grow,
+.shrink {
+    width: 100px;
+    height: 100px;
     background-color: dodgerblue;
-    height: 75px;
-    width: 75px;
-    border: 1px solid turquoise;
+    border: 2px solid lightgrey;
+    margin: 10px 30px;
 }
 
-.san {
-    width: 70%;
+.grow.side {
+    flex-basis: 80px;
+    flex-grow: 1;
+
 }
 
+.grow.center {
+    flex-grow: 3;
+}
 
-#block {
+.shrink.side {}
+
+.shrink.center {
+    flex-basis: 800px;
+    flex-shrink: 3;
+
+}
+
+#grows,
+#shrinks {
+    display: flex;
+    background-color: whitesmoke;
     justify-content: center;
+    min-height: 200px;
+    align-items: center;
 }
