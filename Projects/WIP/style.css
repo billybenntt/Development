@@ -1,54 +1,26 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
-.container {
-    display: grid;
-    grid-template: 50px 200px 600px 5% / 1fr 400px;
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "left right"
-        "footer footer";
-    /* max-width: 900px; */
-    position: relative;
-    margin: auto;
-    gap: 1px;
-}
 
-.container * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-h1,
-h2 {
-    font-family: monospace;
+.boxone {
+    background-color: dodgerblue;
+    font-size: 30px;
+    color: whitesmoke;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
     text-align: center;
 }
 
-header {
-    grid-area: header;
-    background-color: dodgerblue;
-}
-
-nav {
-    grid-area: nav;
-    background-color: beige;
-}
-
-.left {
-    grid-area: left;
-    background-color: dodgerblue;
-}
-
-.right {
-    grid-area: right;
-    background-color: beige;
-}
-
-footer {
-    grid-area: footer;
-    background-color: dodgerblue;
+.boxtwo {
+    background-color: red;
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'consolas';
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
 }
