@@ -1,0 +1,22 @@
+.parentContainer {
+    background-color: gray;
+
+    height: 600px;
+    display: flex;
+}
+
+.childItem {
+    width: 100px;
+    /* height: 100px; */
+    background-color: royalblue;
+    border: 1px solid white;
+    flex-grow: 1;
+    color: white;
+    font-family: consolas;
+    font-size: 3rem;
+}
+
+
+.parentContainer :last-child {
+    background-color: aquamarine;
+}
