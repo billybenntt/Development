@@ -1,22 +1,63 @@
-.parentContainer {
-    background-color: gray;
-
-    height: 600px;
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.childItem {
-    width: 100px;
-    /* height: 100px; */
-    background-color: royalblue;
-    border: 1px solid white;
-    flex-grow: 1;
-    color: white;
-    font-family: consolas;
-    font-size: 3rem;
+/* Header Section */
+header ul>li {
+    display: inline-block;
+}
+
+header ul {
+    text-align: right;
+}
+
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px 0px 40px;
 }
 
 
-.parentContainer :last-child {
-    background-color: aquamarine;
+
+/* Jumbotron Section */
+
+.jumbotron {
+    border: 1px solid red;
+    background-color: #fff;
+    margin-left: 50px;
+    max-width: 1200px;
+}
+
+.jumbotron h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.jumbotron span {
+    color: #ffc200;
+}
+
+
+/* Banner Section */
+
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
 }
