@@ -44,20 +44,84 @@ header {
 .banner {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
-.main {
+
+/* Cards Section */
+
+#expertise {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
     background-color: #ffc200;
 }
 
 
 
+/* Column Container */
 
-footer {
-    background-color: #333;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Image Container */
+
+.col {
+    padding: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 3px solid wheat; */
+
+}
+
+img {
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.main {
+    background-color: #463707;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background-color: #000;
     color: #fff;
-    padding: 20px;
-    text-align: left;
+    padding: 60px 0px;
+}
+
+
+.footer h3 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+
+
+/* Sizing  */
+
+.container {
+    margin: 0 auto;
+}
+
+.spacer {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
