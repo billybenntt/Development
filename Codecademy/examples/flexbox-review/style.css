@@ -1,6 +1,8 @@
-* {
+html,
+body {
     margin: 0;
     padding: 0;
+    font-family: 'Libre Baskerville', sans-serif;
 }
 
 /* Header Section */
@@ -23,7 +25,6 @@ header {
 /* Jumbotron Section */
 
 .jumbotron {
-    border: 1px solid red;
     background-color: #fff;
     margin-left: 50px;
     max-width: 1200px;
@@ -46,6 +47,7 @@ header {
     color: #fff;
     padding: 50px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -56,6 +58,7 @@ header {
     text-align: center;
     padding: 20px;
     background-color: #ffc200;
+    font-size: 2rem;
 }
 
 
@@ -65,30 +68,27 @@ header {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
 /* Image Container */
 
 .col {
-    padding: 30px;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border: 3px solid wheat; */
-
 }
 
 img {
     border-radius: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 
 
 .main {
-    background-color: #463707;
+    background-color: #ffc200;
 }
 
 
@@ -107,7 +107,7 @@ img {
 }
 
 .footer p {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 0px;
     margin-left: 20px;
 }
