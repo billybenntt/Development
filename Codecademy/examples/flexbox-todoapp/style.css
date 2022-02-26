@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    font-family: 'Rock Salt';
+}
+
+
+/* Header Section */
+
+.header h1 {
+    background-color: steelblue;
+    color: khaki;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.header h2 {
+    font-family: 'Quicksand';
+    padding: 30px;
+    text-align: center;
+    color: lightslategrey;
+}
+
+
+/* Todo APP  Section */
+
+.secondary-background,
+.tagline {
+    background-color: snow;
+}
+
+.container {
+    display: flex;
+}
+
+.week {
+    display: inline-flex;
+    flex-grow: 3;
+    flex-direction: column;
+
+}
+
+.square {
+    display: flex;
+    height: 125px;
+    width: 125px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+}
+
+.day {
+    background-color: steelblue;
+    border: 1px solid white;
+
+}
+
+.task {
+    font-family: 'Quicksand';
+    background-color: khaki;
+    border: 1px solid white;
+}
+
+/* Reminder  Section */
+.reminders {
+    display: inline-flex;
+    flex-grow: 2;
+    background-color: khaki;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Footer  Section */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: lightslategrey;
+}
+
+
+footer span {
+    background-color: lightslategrey !important;
+    color: snow;
+    font-size: 1.5rem;
+    font-family: 'Quicksand';
+    padding: 30px;
+}
