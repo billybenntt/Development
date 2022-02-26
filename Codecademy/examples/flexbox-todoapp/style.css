@@ -59,14 +59,13 @@
 
 .day {
     background-color: steelblue;
-    border: 1px solid white;
+    color: white;
 
 }
 
 .task {
     font-family: 'Quicksand';
     background-color: khaki;
-    border: 1px solid white;
 }
 
 /* Reminder  Section */
@@ -86,7 +85,6 @@ footer {
     margin: 0 auto;
     background-color: lightslategrey;
 }
-
 
 footer span {
     background-color: lightslategrey !important;
