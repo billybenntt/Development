@@ -1,0 +1,79 @@
+/* General Styles */
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Header Section */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+/* Jumbotron Section */
+
+.jumbotron .container {
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(assets/img-mission-background.webp);
+}
+
+/* Product Group Section */
+
+.product-group .container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+.product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box img {
+    width: 300px;
+    height: 200px;
+}
+
+
+/* Location Group Section */
+
+.location-group .container {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-position: center;
+    background-image: url(assets/img-locations-background.webp);
+}
+
+
+
+
+/* Contact Section */
+
+
+.contact .container {
+    height: 200px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+
+footer h5 {
+    text-align: left;
+}
