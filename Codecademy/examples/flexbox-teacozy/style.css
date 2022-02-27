@@ -1,18 +1,30 @@
 /* General Styles */
 
 body {
+    margin: 0;
     background-color: black;
     color: seashell;
     font-family: Helvetica, sans-serif;
     text-align: center;
+    font-size: 22px;
 }
 
 /* Header Section */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+    border-bottom: 1px solid seashell;
+}
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+
 }
 
 header .logo img {
@@ -20,56 +32,93 @@ header .logo img {
     margin-left: 10px;
 }
 
+header .navigation a {
+    color: inherit;
+    margin-right: 20px;
+}
+
+
 
 /* Jumbotron Section */
 
 .jumbotron .container {
+    position: relative;
     height: 700px;
     width: 1200px;
     margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(assets/img-mission-background.webp);
 }
 
-/* Product Group Section */
-
-.product-group .container {
-    margin: 0 auto;
-    width: 1000px;
+.jumbotron .mission {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    background-color: black;
 }
 
 
+/* Product Group Section */
+/* Master Container */
+.product-group .container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.product-group .description {
+    padding-top: 40px;
+}
+
+/* Inner Container */
 .product {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.box img {
+/* Item */
+.box {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 30px;
     width: 300px;
+}
+
+.box img {
     height: 200px;
+}
+
+.box h4 {
+    margin-top: 10px;
 }
 
 
 /* Location Group Section */
-
 .location-group .container {
     width: 1200px;
     height: 500px;
     margin: 0 auto;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(assets/img-locations-background.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
 .location-group .card {
     width: 300px;
     background-color: black;
+    margin-right: 40px;
 }
 
 
 /* Contact Section */
-
-
 .contact .container {
     height: 200px;
 }
@@ -79,4 +128,5 @@ header .logo img {
 
 footer h5 {
     text-align: left;
+    margin-left: 20px;
 }
