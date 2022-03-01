@@ -1,0 +1,46 @@
+/* Root deafults */
+
+html {
+    font-family: 'Consolas';
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Container */
+.grid {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+
+/* Item */
+.box {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+}
+
+
+/* Grid Default */
+
+.default {
+    display: grid;
+}
+
+.default .box {
+    background-color: crimson;
+}
+
+
+/* Grid Inline */
+
+.inline {
+    display: inline-grid;
+}
+
+.inline .box {
+    background-color: greenyellow;
+    color: black;
+}

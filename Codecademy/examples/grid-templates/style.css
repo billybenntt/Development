@@ -1,0 +1,56 @@
+/* Root Definitions */
+html {
+    text-align: center;
+    font-family: 'Consolas';
+    font-size: 1.5rem;
+}
+
+
+/* Grid Container */
+
+.grid-container {
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    display: grid;
+}
+
+.grid-box {
+    color: white;
+    border: 2px solid black;
+}
+
+
+/* Columns Template */
+#column {
+    grid-template-columns: 70px 50% 1fr;
+
+}
+
+#column .grid-box {
+    background-color: dodgerblue;
+}
+
+
+/* Rows Template*/
+#row {
+    grid-template-rows: 70px 50% 2fr 1fr;
+}
+
+#row .grid-box {
+    background-color: crimson;
+}
+
+
+/*  Rows and Colums Template */
+#rowcol {
+    width: 800px;
+    height: 400px;
+    grid: repeat(4, 100px) / repeat(4, 200px);
+}
+
+
+#rowcol .grid-box {
+    background-color: goldenrod;
+    color: black;
+}
