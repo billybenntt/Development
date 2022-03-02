@@ -22,14 +22,19 @@ html {
 }
 
 
-.one {
-    grid-column-start: 1;
-    grid-column-end: 8;
-    background-color: yellowgreen;
+
+.a {
+    grid-area: 5 / 1 / span 2 / span 2;
+    background-color: cornflowerblue;
 }
 
-.two {
-    grid-row-start: 2;
-    grid-row-end: span 5;
-    background-color: crimson;
+.b {
+    grid-area: 2 / 2 / span 3/ span 6;
+    background-color: lightgreen;
+}
+
+
+.c {
+    background-color: hotpink;
+    grid-area: 6 / 8 / span 3 / span 1;
 }
