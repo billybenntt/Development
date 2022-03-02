@@ -19,28 +19,5 @@ html {
 }
 
 .grid-box {
-    color: white;
     border: 1px solid black;
-}
-
-/* Apply Min Max */
-
-
-.min-max {
-    grid-template-columns: 100px minmax(200px, 400px) 500px;
-}
-
-
-
-
-/* Apply GAP */
-
-.gap {
-    grid-template-columns: 100px minmax(200px, 400px) 500px;
-    column-gap: 20px;
-    row-gap: 5px;
-}
-
-.gap>.grid-box {
-    background-color: crimson;
 }
