@@ -1,0 +1,52 @@
+html {
+    /* Root Definitions */
+    text-align: center;
+    font-family: 'Consolas';
+    font-size: 1.5rem;
+}
+
+/* Grid Container */
+
+.grid-container {
+
+    height: 500px;
+    width: 500px;
+    background-color: dodgerblue;
+    display: grid;
+    grid-template: 10% 1fr 10% / repeat(4, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "main main main section"
+        "footer footer  footer footer";
+}
+
+/* Grid Item */
+
+.grid-box {
+    border: 1px solid black;
+}
+
+
+/* Grid Areas */
+
+
+.a {
+    background-color: greenyellow;
+    grid-area: header;
+}
+
+
+.b {
+    background-color: firebrick;
+    grid-area: main;
+}
+
+.c {
+    background-color: goldenrod;
+    grid-area: section;
+}
+
+.d {
+    background-color: cornflowerblue;
+    grid-area: footer;
+}
