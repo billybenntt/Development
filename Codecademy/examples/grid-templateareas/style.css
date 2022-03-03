@@ -3,6 +3,7 @@ html {
     text-align: center;
     font-family: 'Consolas';
     font-size: 1.5rem;
+    align-content: center;
 }
 
 /* Grid Container */
@@ -13,6 +14,8 @@ html {
     width: 500px;
     background-color: dodgerblue;
     display: grid;
+
+
     grid-template: 10% 1fr 10% / repeat(4, 1fr);
     grid-template-areas:
         "header header header header"
@@ -34,7 +37,6 @@ html {
     background-color: greenyellow;
     grid-area: header;
 }
-
 
 .b {
     background-color: firebrick;
