@@ -1,0 +1,41 @@
+/* Root Definitions */
+html {
+    text-align: center;
+    font-family: 'Consolas';
+    font-size: 1.5rem;
+    display: grid;
+}
+
+/* Grid Container General */
+.grid-container {
+    background-color: dodgerblue;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+
+
+/* Grid Item General */
+
+.grid-box {
+    color: white;
+    border: 1px solid black;
+}
+
+.last {
+    background-color: brown;
+}
+
+
+#auto-rows {
+    grid-auto-rows: 100px;
+    grid-auto-flow: row;
+}
+
+
+#auto-cols {
+    grid-auto-rows: 100px;
+    grid-auto-flow: column;
+}
