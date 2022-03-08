@@ -6,12 +6,18 @@ html {
 
 img {
     display: inline-block;
+
 }
 
 body {
     text-align: center;
 }
 
+p {
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 200px;
+}
 
 /* Banner Section */
 
@@ -20,19 +26,19 @@ body {
     /*  Set Dimension */
     width: 86%;
     margin: 0 auto;
-
-    /* border: 1px solid black; */
+    border: 0px solid black;
     background-image: url(assets/camel-background.png);
     background-position: center;
     background-repeat: no-repeat;
-
+    height: 46rem;
 }
 
 
 .banner h1 {
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    font-size: 3.75rem
+    font-size: 3.75rem;
+
 }
 
 
@@ -44,15 +50,17 @@ body {
     width: 86%;
     margin: 0 auto;
 
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-family: 'Merriweather', serif;
 
 }
 
 .blog .post {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 52%;
     margin: 0 auto;
+    margin-top: 12.5%;
+    margin-bottom: 7.5%;
 }
 
 
@@ -68,13 +76,17 @@ body {
 
 
 .blog .image-container img {
-    max-width: 100%;
+    width: 100%;
 
+}
+
+.images {
+    margin-bottom: 20%;
 }
 
 .images .image-container {
     display: inline-block;
-    width: 46%;
+    width: 49%;
 }
 
 
@@ -83,8 +95,6 @@ body {
 
 
 .footer {
-
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-size: 1.125rem;
-
 }
