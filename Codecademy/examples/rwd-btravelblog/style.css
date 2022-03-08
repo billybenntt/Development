@@ -1,0 +1,90 @@
+/* General Styles */
+
+html {
+    font-size: 16px;
+}
+
+img {
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+}
+
+
+/* Banner Section */
+
+.banner {
+
+    /*  Set Dimension */
+    width: 86%;
+    margin: 0 auto;
+
+    /* border: 1px solid black; */
+    background-image: url(assets/camel-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.banner h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 3.75rem
+}
+
+
+/* Blog Section */
+
+
+.blog {
+    /*  Set Dimension */
+    width: 86%;
+    margin: 0 auto;
+
+    /* border: 1px solid black; */
+    font-family: 'Merriweather', serif;
+
+}
+
+.blog .post {
+    /* border: 1px solid black; */
+    width: 52%;
+    margin: 0 auto;
+}
+
+
+.blog .post h2 {
+    font-size: 1.875rem;
+}
+
+
+.blog .post h3 {
+    font-size: 1.125rem;
+    color: #999;
+}
+
+
+.blog .image-container img {
+    max-width: 100%;
+
+}
+
+.images .image-container {
+    display: inline-block;
+    width: 46%;
+}
+
+
+
+/* Footer Section */
+
+
+.footer {
+
+    /* border: 1px solid black; */
+    font-size: 1.125rem;
+
+}

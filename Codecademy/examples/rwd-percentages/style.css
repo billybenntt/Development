@@ -34,7 +34,7 @@ h1 span {
 }
 
 .columns {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -45,7 +45,7 @@ h1 span {
 .col {
     padding: 10px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .col-bg {
