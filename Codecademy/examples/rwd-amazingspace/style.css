@@ -1,0 +1,21 @@
+/* Universal Styles */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Space Mono", sans-serif;
+}
+
+
+
+header {
+    border: 1px solid wheat;
+}
+
+
+
+
+
+.main {
+    border: 1px solid wheat;
+}

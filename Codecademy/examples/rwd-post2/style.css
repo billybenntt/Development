@@ -5,6 +5,20 @@ body {
 }
 
 
+/* Big ---> Small */
+
+@media screen and (max-width:500px) {
+
+    .container h1 span {
+        color: red;
+    }
+
+
+
+
+
+}
+
 /* Typography */
 
 h1 {
