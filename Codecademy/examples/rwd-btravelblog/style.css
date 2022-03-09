@@ -6,7 +6,6 @@ html {
 
 img {
     display: inline-block;
-
 }
 
 body {
@@ -14,7 +13,6 @@ body {
 }
 
 p {
-    border: 1px solid black;
     min-width: 200px;
     min-height: 200px;
 }
@@ -22,62 +20,53 @@ p {
 /* Banner Section */
 
 .banner {
-
     /*  Set Dimension */
     width: 86%;
     margin: 0 auto;
-    border: 0px solid black;
+
     background-image: url(assets/camel-background.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 46rem;
 }
 
-
 .banner h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 3.75rem;
-
 }
 
-
 /* Blog Section */
-
 
 .blog {
     /*  Set Dimension */
     width: 86%;
     margin: 0 auto;
-
-    border: 1px solid black;
-    font-family: 'Merriweather', serif;
-
+    font-family: "Merriweather", serif;
 }
 
 .blog .post {
-    border: 1px solid black;
     width: 52%;
     margin: 0 auto;
     margin-top: 12.5%;
     margin-bottom: 7.5%;
 }
 
-
 .blog .post h2 {
     font-size: 1.875rem;
 }
-
 
 .blog .post h3 {
     font-size: 1.125rem;
     color: #999;
 }
 
-
 .blog .image-container img {
-    width: 100%;
-
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .images {
@@ -89,12 +78,8 @@ p {
     width: 49%;
 }
 
-
-
 /* Footer Section */
 
-
 .footer {
-    border: 1px solid black;
     font-size: 1.125rem;
 }
