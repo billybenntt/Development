@@ -89,12 +89,7 @@ header {
 
 /* Footer Section */
 
-
-
-
-
 .footer {
-
     margin-top: 30px;
 }
 
@@ -102,38 +97,85 @@ header {
     display: block;
 }
 
+
 .footer li {
-    margin: 0 20px 0 0;
-    color: ghostwhite;
     display: inline;
+    margin: 0 20px 0 0;
+    color: GhostWhite;
     text-transform: uppercase;
+
 }
 
-
-.contact-btn {
-    text-align: center;
-    border: 1px solid ghostwhite;
-    cursor: pointer;
-    margin: 10px auto;
-    width: 20%;
-}
-
-
-.contact-btn a {
-    color: darkorange;
+/* Button */
+.footer a {
+    line-height: 60px;
+    border: 1px solid GhostWhite;
+    padding: 7px;
+    border-radius: 4px;
+    color: DarkOrange;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 40px;
 }
 
-.contact-btn:hover {
-    color: white;
-    background-color: darkorange;
+
+.footer a:hover {
+    border: 1px solid darkorange;
+    background-color: antiquewhite;
+    color: black;
+
+}
+
+
+.footer .contact-btn {
+    cursor: pointer;
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.footer contact-btn a:active {
     position: relative;
-    bottom: 5px;
+    bottom: 2px;
 }
 
-.contact-btn a:hover {
-    color: white;
-    bottom: 5px;
+/*  Media Queries */
+
+
+/*  Applies only when screen size is less than 500px */
+
+
+@media only screen and (max-width: 500px) {
+
+    .page-title {
+        width: 270px;
+        margin: auto;
+    }
+
+
+}
+
+
+/*  Applies only when screen size is within 320 ~ 480  */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    /* Enlarge Images */
+    .gallery-item .thumbnail {
+        width: 95%;
+    }
+
+}
+
+
+/*  Applies only when screen size is within 320 ~ 480  */
+
+@media only screen and (min-resolution: 96dpi) {
+
+
+    .page-title .logo {
+        background-image: url(assets/spaceship@2x.png);
+
+    }
+
+
 }
