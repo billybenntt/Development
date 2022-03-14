@@ -141,40 +141,61 @@ header {
 
 
 /*  Applies only when screen size is less than 500px */
-
-
 @media only screen and (max-width: 500px) {
-
     .page-title {
         width: 270px;
         margin: auto;
     }
-
-
 }
 
 
 /*  Applies only when screen size is within 320 ~ 480  */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-
+@media only screen and (min-width: 320px) and (max-width: 480px),
+(orientation:portrait) {
 
     /* Enlarge Images */
     .gallery-item .thumbnail {
         width: 95%;
     }
-
 }
 
 
-/*  Applies only when screen size is within 320 ~ 480  */
-
-@media only screen and (min-resolution: 96dpi) {
-
-
+/*  Applies only when screen resolution is larger than 120 dpi */
+@media only screen and (min-resolution: 120dpi) {
     .page-title .logo {
         background-image: url(assets/spaceship@2x.png);
+    }
+}
 
+
+/*  Applies only when screen resolution is larger than 120 dpi */
+@media only screen and (max-resolution: 120dpi) and (max-width: 480px) {
+
+    .page-description {
+        font-size: 20px;
+    }
+}
+
+
+/*  Applies only when screen resolution is larger than 120 dpi */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+
+
+    .page-title,
+    .page-description {
+        float: left;
+        width: 20em;
+    }
+
+    .page-title h5 {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+
+
+    .page-description {
+        text-align: left;
     }
 
 
