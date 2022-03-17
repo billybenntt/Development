@@ -1,0 +1,23 @@
+#container {
+    background-color: #f4e8c1;
+    position: absolute;
+    width: 100%;
+}
+
+.block {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+#teal {
+    background-color: #a8d0db;
+    padding: 0 100px 0 0;
+    margin: 100px;
+}
+
+#purple {
+    background-color: #414073;
+    padding: 0 100px 100px 0;
+    margin: 0 100px 50px 100px;
+}
