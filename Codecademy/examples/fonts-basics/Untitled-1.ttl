@@ -1,0 +1,34 @@
+; U1 PLUS LTE Tracker Configuration Script
+setbaud 115200
+
+; Declare Commands Array
+strdim msg 10
+
+; Change Unit ID First
+msg[0] = 'AT$MODID=1002107003'
+msg[1] = 'AT$HOSTS=1,1,ct2.st-fleetweb.com,6007'
+msg[2] = 'AT$HB=180,0'
+msg[3] = 'AT$RETRY=3,40,3'
+msg[4] = 'AT$FILTER=4,450,0,0,0'
+msg[5] = 'AT$GPRSEN=1,0'
+msg[6] = 'AT$PDSR=1,30'
+msg[7] = 'MODPT=1'
+msg[8] = 'SAVE'
+msg[9] = 'AT$REBOOT'
+
+; Check if Tracker is Alive
+ sendln 'ati'
+ waitln 'OK:ATI'
+
+; Notify and Wait 5 Seconds
+sendln '### Sending Commands ###'
+pause 5
+
+; Send Commands 0 to 9
+for i 0 9
+  sendln msg[i]
+  ; Pause 3 Seconds between commands
+  pause 3
+next
+
+
