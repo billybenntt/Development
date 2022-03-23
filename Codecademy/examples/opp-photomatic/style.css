@@ -1,0 +1,36 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+}
+
+
+
+/* Header  */
+
+header {
+    background-color: aquamarine;
+}
+
+header .content {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Main Content */
+
+
+
+/* Sign up Section */
+/* Features Section */
+/* Filters Section */
+/* Quotes Section */
+
+
+
+
+
+
+/* Footer */
