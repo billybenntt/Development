@@ -5,17 +5,14 @@
 }
 
 
-
 /* Header  */
 
 header {
-    background-color: aquamarine;
+    background-color: dodgerblue;
 }
 
 header .content {
-    background-color: darkcyan;
-    display: flex;
-    justify-content: flex-end;
+    background-color: dodgerblue;
 }
 
 
@@ -24,8 +21,28 @@ header .content {
 
 
 /* Sign up Section */
+#sign-up-section {
+    background-color: greenyellow;
+}
+
+
 /* Features Section */
+
+#features-section {
+    background-color: #f3f3f3;
+}
+
+
+
 /* Filters Section */
+
+#filters-section {
+
+    background-color: #4a4a4a;
+
+}
+
+
 /* Quotes Section */
 
 
