@@ -116,8 +116,8 @@ main {
     font-weight: bold;
 }
 
-.sign-up-cta .button {
-    padding-top: 1.625rem;
+.sign-up-cta .email>.button {
+    margin-top: 1.625rem;
     padding: 1.25rem 7.25rem;
 }
 
