@@ -4,26 +4,128 @@
     margin: 0;
 }
 
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+}
 
 /* Header  */
 
 header {
-    background-color: dodgerblue;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #c6c1c1;
+    background-color: #FFFFFF;
+    z-index: 1;
 }
 
 header .content {
-    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav a {
+    vertical-align: bottom;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+nav li {
+    padding-left: 3.5rem;
+}
+
+header .icon {
+    width: 1rem;
+    padding-left: 0.75rem;
 }
 
 
 /* Main Content */
 
 
+main {
+    position: relative;
+    top: 5.3125rem;
+}
 
 /* Sign up Section */
 #sign-up-section {
-    background-color: greenyellow;
+    height: 43.5rem;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
 }
+
+.sign-up-cta {
+    background-color: #9dc20b;
+    color: #FFFFFF;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+}
+
+.sign-up-cta .content {
+    width: 25.625rem;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+
+.sign-up-cta .cursive {
+    font-family: "Damion", cursive;
+}
+
+.sign-up-cta h2 {
+    font-size: 2.25rem;
+}
+
+.sign-up-cta .striking {
+    font-family: "Rubik", sans-serif;
+    padding-bottom: .75rem;
+}
+
+.sign-up-cta h1 {
+    font-size: 3.125rem;
+    text-transform: uppercase;
+}
+
+
+.sign-up-cta span strong {
+    font-weight: bold;
+}
+
+.sign-up-cta .button {
+    padding-top: 1.625rem;
+    padding: 1.25rem 7.25rem;
+}
+
+
+
+
+
+
 
 
 /* Features Section */
@@ -32,22 +134,16 @@ header .content {
     background-color: #f3f3f3;
 }
 
-
-
 /* Filters Section */
 
 #filters-section {
-
     background-color: #4a4a4a;
-
 }
-
 
 /* Quotes Section */
 
-
-
-
-
+#quotes-section {
+    background-color: #f3f3f3;
+}
 
 /* Footer */
