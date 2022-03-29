@@ -13,13 +13,11 @@ html {
     text-align: center;
 }
 
-
 .button {
     border-radius: 4px;
     background-color: #4A4A4A;
     color: white;
 }
-
 
 .image-container img {
     display: block;
@@ -67,6 +65,10 @@ header .icon {
 }
 
 
+header .mobile {
+    display: none;
+}
+
 /* Main Content */
 
 
@@ -81,7 +83,11 @@ main {
     height: 43.5rem;
     display: flex;
     justify-items: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    background-image: url(resources/images/banner-landingpage.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sign-up-cta {
@@ -90,6 +96,7 @@ main {
     color: #FFFFFF;
     padding: 0 5rem 2.5rem 5rem;
     border-radius: 4px;
+    margin-left: 100px;
 }
 
 .sign-up-cta .content {
@@ -131,26 +138,31 @@ main {
 
 /* Features Section */
 
-
 #features-section {
-    background-color: #f3f3f3;
+    background-color: #F3F3F3;
     display: flex;
     justify-content: space-between;
     padding: 4rem 5% 4rem 5%;
 }
 
 #features-section .feature {
-    flex: 1;
-    background-color: #FFFFFF;
+    background-color: white;
     margin: 0px 1.25rem;
-    padding: 2rem;
+    flex: 1;
+}
+
+
+#features-section .content {
+    background-color: rebeccapurple;
+    margin-top: 5rem;
 }
 
 
 #features-section .feature .image-container {
-    width: 90%;
+    max-width: 90%;
     height: 65%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 #features-section .image-container img {
@@ -174,18 +186,19 @@ main {
 
 
 
-
 /* Filters Section */
 
 #filters-section {
     padding: 4rem 0;
     background-color: #4A4A4A;
+
 }
 
 
 #filters-section .content {
     padding: 0 .625rem;
     margin-bottom: 5rem;
+
 }
 
 #filters-section .content h2 {
@@ -201,18 +214,81 @@ main {
     line-height: 1.4;
 }
 
-#filters-section .image-container {
-    background-color: rebeccapurple;
+#filters-section .images-container {
     max-width: 100%;
     padding: 0 1%;
+    display: flex;
 }
 
+
+#filters-section .image-container {
+    flex: 1;
+}
+
+#filters-section .image-container img {
+    max-width: 100%;
+}
 
 
 /* Quotes Section */
 
 #quotes-section {
-    background-color: #f3f3f3;
+    background-color: #F3F3F3;
 }
 
+#quotes-section .content {
+    padding: 5rem 0;
+}
+
+#quotes-section .quote {
+    font-family: "Palatino";
+    font-style: italic;
+    font-size: 1.875rem;
+    color: #4A4A4A;
+    line-height: 1.1;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
 /* Footer */
+
+footer {
+    background-color: #9B9B9B;
+    padding: 1.5rem 2rem;
+    color: #FFFFFF;
+    font-size: .75rem;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+}
+
+footer .copyright {
+    flex: 1;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+
+
+    /* Show the Destop Icons */
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+
+        padding: 0.5rem 0;
+    }
+
+
+
+}
