@@ -16,11 +16,16 @@ html {
 
 .button {
     border-radius: 4px;
-    background-color: #4a4a4a;
+    background-color: #4A4A4A;
     color: white;
 }
 
-/* Header  */
+
+.image-container img {
+    display: block;
+}
+
+/* Navigation Bar Header */
 
 header {
     position: fixed;
@@ -47,7 +52,7 @@ header nav ul {
 nav a {
     vertical-align: bottom;
     text-decoration: none;
-    color: #4a4a4a;
+    color: #4A4A4A;
     font-size: 1rem;
     line-height: 1.6rem;
 }
@@ -71,6 +76,7 @@ main {
 }
 
 /* Sign up Section */
+
 #sign-up-section {
     height: 43.5rem;
     display: flex;
@@ -80,18 +86,18 @@ main {
 
 .sign-up-cta {
     background-color: #9dc20b;
+    border: solid 1px #979797;
     color: #FFFFFF;
     padding: 0 5rem 2.5rem 5rem;
-    border: solid 1px #979797;
+    border-radius: 4px;
 }
 
 .sign-up-cta .content {
     width: 25.625rem;
     margin-top: 2rem;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.4;
 }
-
 
 .sign-up-cta .cursive {
     font-family: "Damion", cursive;
@@ -123,22 +129,85 @@ main {
 
 
 
-
-
-
-
-
 /* Features Section */
+
 
 #features-section {
     background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5% 4rem 5%;
 }
+
+#features-section .feature {
+    flex: 1;
+    background-color: #FFFFFF;
+    margin: 0px 1.25rem;
+    padding: 2rem;
+}
+
+
+#features-section .feature .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+#features-section .image-container img {
+    max-width: 100%;
+}
+
+#features-section h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+
+#features-section h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 1.2;
+    color: #4A4A4A;
+}
+
+
+
 
 /* Filters Section */
 
 #filters-section {
-    background-color: #4a4a4a;
+    padding: 4rem 0;
+    background-color: #4A4A4A;
 }
+
+
+#filters-section .content {
+    padding: 0 .625rem;
+    margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+
+#filters-section .content h3 {
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#filters-section .image-container {
+    background-color: rebeccapurple;
+    max-width: 100%;
+    padding: 0 1%;
+}
+
+
 
 /* Quotes Section */
 

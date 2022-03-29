@@ -128,10 +128,11 @@ header .mobile {
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
   background-color: #9dc20b;
+  border: solid 1px #979797;
+  color: white;
+  padding: 0 5rem 2.5rem 5rem;
+  border-radius: 4px;
 }
 
 #sign-up-cta .content {
@@ -140,7 +141,6 @@ header .mobile {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: white;
 }
 
 #sign-up-cta h1 {
