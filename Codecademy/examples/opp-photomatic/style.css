@@ -312,6 +312,16 @@ footer .copyright {
     }
 
 
+
+    #features-section {
+        flex-direction: column;
+    }
+
+}
+
+
+@media only screen and (max-width: 890px) {
+
     .main-content {
         top: 2rem;
     }
@@ -326,15 +336,6 @@ footer .copyright {
         display: none;
     }
 
-
-    #features-section {
-        flex-direction: column;
-    }
-
-}
-
-
-@media only screen and (max-width: 890px) {
 
     #features-section {
         padding: 0;
