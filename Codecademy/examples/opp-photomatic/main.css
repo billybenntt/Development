@@ -372,6 +372,11 @@ footer .copyright {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+
+  .images-container:nth-child(3) {
+    display: none;
+  }
+
 }
 
 

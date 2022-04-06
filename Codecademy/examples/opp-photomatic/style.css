@@ -317,6 +317,20 @@ footer .copyright {
         flex-direction: column;
     }
 
+
+
+    #filters-section .content h2 {
+        padding-bottom: .625rem;
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: normal;
+    }
+
+
+    .image-container:last-child {
+        display: none;
+    }
+
 }
 
 
@@ -339,6 +353,14 @@ footer .copyright {
 
     #features-section {
         padding: 0;
+
     }
+
+    #features-section h2 {
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: normal;
+    }
+
 
 }
