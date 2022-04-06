@@ -1,0 +1,171 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Lato' !important;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+.image-container img {
+    display: block;
+}
+
+
+/* Header */
+
+#header {
+    position: fixed;
+    height: 3.3125rem;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+#header .content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#header .logo img {
+    width: 50px;
+    padding-right: 1rem;
+}
+
+#header .logo a {
+    font-size: 1.2rem;
+}
+
+#header .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#header .desktop li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Main Section */
+
+/* Mission Section */
+#mission-section {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 33.5rem;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+}
+
+
+
+#mission-section .banner {
+    margin-left: 6.25rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    width: 70%;
+}
+
+/* Portfolio Section */
+
+#portfolio-section {
+    padding: 2rem 3% 2rem 3%;
+}
+
+
+#portfolio-section .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio-section .image-container {
+    background-color: white;
+    width: 31%;
+    margin: 1rem;
+}
+
+
+#portfolio-section .image-container img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* Team Section */
+
+#team-section {
+    color: white;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+    padding: 4rem 5% 4rem 5%;
+}
+
+#team-section .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-section .image-container {
+    flex: 1;
+
+}
+
+#team-section .image-container img {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1540px) {
+
+
+
+
+    #portfolio-section .image-container {
+        width: 40%;
+        margin: 0;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+
+    #portfolio-section .companies {
+        flex-direction: column;
+
+
+    }
+
+    #portfolio-section .image-container {
+        background-color: white;
+        width: 100%;
+    }
+
+}
