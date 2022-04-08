@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-    font-family: 'Lato' !important;
+    font-family: "Lato" !important;
     font-size: 16px;
 }
 
@@ -11,12 +11,9 @@ body {
     text-align: center;
 }
 
-
-
 .image-container img {
     display: block;
 }
-
 
 /* Header */
 
@@ -26,6 +23,7 @@ body {
     z-index: 1;
     background-color: white;
     width: 100%;
+    border-bottom: 1px solid #c6c1c1;
 }
 
 #header .content {
@@ -59,7 +57,6 @@ body {
     color: black;
 }
 
-
 /* Main Section */
 
 /* Mission Section */
@@ -70,8 +67,6 @@ body {
     height: 33.5rem;
     background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
 }
-
-
 
 #mission-section .banner {
     margin-left: 6.25rem;
@@ -87,7 +82,6 @@ body {
     padding: 2rem 3% 2rem 3%;
 }
 
-
 #portfolio-section .companies {
     display: flex;
     flex-wrap: wrap;
@@ -100,14 +94,12 @@ body {
     margin: 1rem;
 }
 
-
 #portfolio-section .image-container img {
     max-width: 90%;
     margin: 0 auto;
     display: block;
     border-radius: 5px;
 }
-
 
 /* Team Section */
 
@@ -125,7 +117,6 @@ body {
 
 #team-section .image-container {
     flex: 1;
-
 }
 
 #team-section .image-container img {
@@ -134,38 +125,22 @@ body {
     border-radius: 5px;
 }
 
-
-
-
 /* Media Queries */
 
 @media screen and (max-width: 1540px) {
-
-
-
-
     #portfolio-section .image-container {
         width: 40%;
         margin: 0;
-
     }
-
 }
 
-
-
-
 @media screen and (max-width: 760px) {
-
     #portfolio-section .companies {
         flex-direction: column;
-
-
     }
 
     #portfolio-section .image-container {
         background-color: white;
         width: 100%;
     }
-
 }
