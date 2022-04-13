@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "problems.decorations.enabled": false,
+    "problems.autoReveal": true,
+    "problems.sortOrder": "position",
+    "outline.problems.badges": true,
+    "outline.problems.enabled": false,
+    "eslint.codeActionsOnSave.mode": "problems",
+    "workbench.panel.defaultLocation": "right"
 }

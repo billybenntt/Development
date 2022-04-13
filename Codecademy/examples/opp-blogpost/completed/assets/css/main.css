@@ -81,6 +81,7 @@ body.light-theme {
     --transparent-light-color: rgba(0, 0, 0, .1);
 }
 
+
 /* Reusable classes */
 .container {
     max-width: 160rem;
@@ -772,6 +773,9 @@ body.light-theme {
         grid-template-columns: 25rem 1fr;
     }
 }
+
+
+
 
 @media screen and (min-width: 768px) {
 
