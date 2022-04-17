@@ -92,9 +92,7 @@ body.light-theme {
 
 /* Reusable classes */
 
-
 .container {
-
     max-width: 160rem;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -109,6 +107,17 @@ body.light-theme {
 
 .screen-sm-hidden {
     display: none;
+}
+
+.d-grid {
+    display: grid;
+}
+
+
+
+
+.section {
+    padding-block: 5rem;
 }
 
 
@@ -145,6 +154,9 @@ body.light-theme {
     right: 1.5rem;
     width: 23rem;
     background-color: var(--secondary-background-color);
+    box-shadow: 1px 1px 1rem var(--transparent-light-color);
+    opacity: 0;
+    transform: scale(0);
 }
 
 .list {
@@ -180,10 +192,12 @@ body.light-theme {
     display: none;
 }
 
+/* Hide Sun Icon when Light Theme is active */
 .light-theme .sun-icon {
     display: none;
 }
 
+/* Show moon Icon when Light Theme is active */
 .light-theme .moon-icon {
     display: block;
 }
@@ -197,7 +211,7 @@ body.light-theme {
     box-shadow: 0 1px .5rem var(--transparent-light-color);
     opacity: 1;
     transform: scale(1);
-    background-color: #12bcfe;
+    background-color: var(--transparent-dark-color);
 }
 
 
@@ -221,13 +235,189 @@ body.light-theme {
 /* Search */
 
 
-.search {
-    height: 2000rem;
+.search-form-container {
+
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background-color: var(--primary-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    transition: opacity .5s;
+    /*  Hide By Default */
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.form-container-inner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-input,
+.form-btn {
+    display: inline-block;
+    border: 2px solid var(--secondary-background-color);
+    padding: 1.5rem;
+}
+
+.form-input {
+    border-right: none;
+    width: 100%;
+}
+
+.form-btn {
+    background-color: var(--secondary-background-color);
+    margin-left: -.5rem;
+    border-left: none;
+    width: 8rem;
+}
+
+.form-note {
+    font-size: var(--font-size-xsm);
+    align-self: flex-end;
+}
+
+.form-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border: 2px solid var(--secondary-background-color);
+    width: 4rem;
+    height: 4rem;
 }
 
 /* Form JavaScript styles */
 
+.search-form-container.activated {
+    opacity: 1;
+    transform: scale(1);
+}
+
 /* Featured articles */
+
+.featured-articles {
+    padding-block: 2rem;
+}
+
+.section-header-offset {
+    margin-top: 7.4rem;
+}
+
+.featured-articles-container,
+.featured-content {
+    gap: var(--gap);
+}
+
+.headline-banner {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    font-size: var(--font-size-xsm);
+}
+
+.headline {
+    color: var(--light-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem;
+    height: 100%;
+    letter-spacing: 1px;
+}
+
+.headline span {
+    height: inherit;
+}
+
+
+.fancy-border {
+    overflow: hidden;
+    position: relative;
+}
+
+.fancy-border::before {
+    background: var(--gradient-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 5;
+    background-size: 50% 100%;
+    width: 200%;
+    height: 100%;
+}
+
+.fancy-border span {
+    position: relative;
+    z-index: 10;
+    background-color: var(--secondary-background-color);
+    display: inline-flex;
+    padding: 1.3rem 1.5rem;
+}
+
+.article {
+    position: relative;
+    min-height: var(--item-min-height-md);
+}
+
+.article-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s;
+}
+
+
+.article-category {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-background-color);
+    color: var(--light-color);
+    z-index: 10;
+    text-transform: uppercase;
+}
+
+.article-data-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--transparent-dark-color);
+    padding: 2rem 1.5rem;
+    z-index: 10;
+    width: 100%;
+    transition: background-color .5s;
+}
+
+
+.article:hover .article-data-container {
+    background-color: var(--hover-dark-color);
+    color: var(--hover-light-color);
+}
+
+.article-data {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
 
 /* Featured articles - Sidebar */
 
