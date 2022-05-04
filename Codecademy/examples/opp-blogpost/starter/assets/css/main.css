@@ -3,7 +3,6 @@
 /* Custom properties */
 
 :root {
-
     --light-color: #fff;
     --light-color-alt: #afb6cd;
     --primary-background-color: #131417;
@@ -24,7 +23,6 @@
     --margin-md: 3rem;
     --item-min-height-sm: 20rem;
     --item-min-height-md: 30rem;
-
 }
 
 /* Base styles */
@@ -115,6 +113,7 @@ body.light-theme {
 
 .section {
     padding-block: 5rem;
+
 }
 
 
@@ -496,6 +495,7 @@ body.light-theme {
     font-size: var(--font-size-md);
 }
 
+/*  Shadowy */
 .section-title::before {
     content: attr(data-name);
     font-size: var(--font-size-lg);
@@ -544,14 +544,6 @@ body.light-theme {
 .older-posts-grid-wrapper {
     gap: var(--gap);
 }
-
-.older-posts-article-image-wrapper,
-.older-posts .article {
-
-    min-height: var(--item-min-height-sm);
-    background-color: red;
-}
-
 
 /* Popular tags */
 
