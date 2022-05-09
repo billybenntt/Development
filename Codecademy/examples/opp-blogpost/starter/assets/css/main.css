@@ -554,7 +554,39 @@ body.light-theme {
     background-color: var(--secondary-background-color);
 }
 
+.older-post-article-image-wrapper {
+    position: relative;
+}
 
+
+.older-posts-grid-wrapper .article-data-container {
+    position: static;
+    background-color: transparent;
+}
+
+.older-posts-grid-wrapper .article-title {
+    margin-bottom: var(--margin-sm);
+}
+
+
+.see-more-container {
+    margin-top: var(--margin-md);
+}
+
+
+.see-more-btn {
+    text-transform: uppercase;
+}
+
+
+.see-more-btn i {
+    transition: transform .25s;
+}
+
+.see-more-btn i:hover {
+    color: #a767e5;
+    transform: translateX(.5rem);
+}
 
 /* Popular tags */
 
