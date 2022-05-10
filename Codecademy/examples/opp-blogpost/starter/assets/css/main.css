@@ -653,6 +653,22 @@ body.light-theme {
     order: 1;
 }
 
+
+.company-description {
+    margin-block: var(--margin-sm);
+    max-width: 75%;
+}
+
+.social-media {
+    margin-bottom: var(--margin-md);
+}
+
+.copyright-notice {
+    opacity: .4;
+    background-color: #12bcfe;
+}
+
+
 /* Scrollbar styles */
 
 /* Blog post */
