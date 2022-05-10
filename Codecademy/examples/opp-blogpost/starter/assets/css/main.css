@@ -642,6 +642,17 @@ body.light-theme {
     background-color: var(--secondary-background-color);
 }
 
+.footer-container {
+    gap: var(--gap);
+}
+
+
+.company-data {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
 /* Scrollbar styles */
 
 /* Blog post */
