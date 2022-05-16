@@ -698,4 +698,60 @@ body.light-theme {
 
 /* Blog post */
 
+.blog-post {
+    padding-bottom: 5rem;
+}
+
+.blog-post-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 2.5rem;
+}
+
+.blog-post-title {
+    /* Responsive Typograghy */
+    font-size: clamp(3rem, 5vw, 6rem);
+}
+
+.blog-post-data .article-data {
+    margin-bottom: 2.5rem;
+}
+
+.blog-post-data img {
+    width: 100%;
+    height: var(--item-min-height-sm);
+    object-fit: cover;
+    object-position: center 20%;
+
+}
+
+.blog-post-container .container {
+    max-width: 90rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+
+.quote {
+    background-color: var(--secondary-background-color);
+    padding: 2.5rem;
+}
+
+.quote p {
+    font-style: italic;
+}
+
+.quote span i {
+    font-size: 1.5rem;
+}
+
+.author {
+    background-color: red;
+    margin-top: 5rem;
+}
+
 /* Media queries */
