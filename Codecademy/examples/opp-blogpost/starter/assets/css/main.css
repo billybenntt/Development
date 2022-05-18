@@ -800,4 +800,35 @@ body.light-theme {
     .trending-news-data {
         margin: auto;
     }
+
+    .form-container-inner {
+        align-items: center;
+    }
+
+
+    .newsletter-description {
+        max-width: 40rem;
+    }
+
+    .popular-tags-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .company-data {
+        order: 0;
+    }
+
+    .author {
+        grid-template-columns: 25rem 1fr;
+    }
+
 }
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {}
