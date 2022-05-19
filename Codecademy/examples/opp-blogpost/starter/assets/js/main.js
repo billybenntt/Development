@@ -45,7 +45,6 @@ const seachFormContainer = selectElement("#search-form-container");
 // -- Close the search form popup on ESC keypress
 formOpenBtn.addEventListener("click", () => {
   seachFormContainer.classList.add("activated");
-  console.log("ra");
 });
 
 formCloseBtn.addEventListener("click", () => {
