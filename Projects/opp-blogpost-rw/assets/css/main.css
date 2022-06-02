@@ -13,33 +13,183 @@
     --transparent-light-color: rgba(255, 255, 255, .05);
     --transparent-dark-color: rgba(0, 0, 0, .75);
     --font-family: 'Poppins', sans-serif;
-    --font-size-xsm: 1.2rem;
-    --font-size-sm: 1.6rem;
-    --font-size-md: 2.4rem;
-    --font-size-lg: 3rem;
     --font-size-xl: 4rem;
+    --font-size-lg: 3rem;
+    --font-size-md: 2.4rem;
+    --font-size-sm: 1.6rem;
+    --font-size-xsm: 1.2rem;
     --gap: 2rem;
-    --margin-sm: 2rem;
     --margin-md: 3rem;
-    --item-min-height-sm: 20rem;
+    --margin-sm: 2rem;
     --item-min-height-md: 30rem;
+    --item-min-height-sm: 20rem;
 }
 
 /* Base styles */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Reset root font size to 10px */
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    background-color: var(--primary-background-color);
+    color: var(--light-color-alt);
+    letter-spacing: 1px;
+
+}
+
+a {
+    /* Inherit from Body */
+    color: inherit;
+    /* Remove Underline */
+    text-decoration: none;
+}
+
+
+ul {
+    /* Remove Bullets */
+    list-style: none;
+}
+
+i {
+    font-size: var(--font-size-md);
+}
+
 /* Theme color change */
 
 /* Reusable classes */
+.container {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.place-items-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-griod {
+    display: grid;
+}
+
 
 /* Header */
+.header {
+    background-color: var(--secondary-background-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+}
+
+
+.logo {
+    font-size: var(--font-size-md);
+    color: var(--light-color);
+}
+
+/* Menu Logic */
+.menu {
+    position: absolute;
+    background-color: var(--secondary-background-color);
+    top: 8.5rem;
+    right: 1.5rem;
+    padding: 1.5rem;
+    width: 23rem;
+    /* Make Menu Invisible by Default and Size 0 */
+    opacity: 0;
+    transform: scale(0);
+}
+
+.moon-icon {
+    /* Hide Moon Icon by Default */
+    display: none;
+}
+
+.close-menu-icon {
+    /* Hide Close Icon by Default */
+    display: none;
+}
+
+
+.menu.activated {
+    /* Restore Menu when Class Applied */
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu-toggle-icon.activated .close-menu-icon {
+    /* Show Close Menu When Class applied */
+    display: block;
+}
+
+.menu-toggle-icon.activated .open-menu-icon {
+    /* Hide 3 Bar When Class applied */
+    display: none;
+}
+
 
 /* Header JavaScript Styles */
 
 /* Search */
 
+
+
+.search-form-container {
+    background-color: var(--primary-background-color);
+    z-index: 999;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    /* Make Menu Invisible by Default and Size 0 */
+    opacity: 1;
+    transform: scale(1);
+}
+
+.form-container-inner {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+
+.form {
+    display: flex;
+}
+
 /* Form JavaScript styles */
 
 /* Featured articles */
+
+
+
 
 /* Featured articles - Sidebar */
 
