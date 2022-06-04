@@ -46,6 +46,7 @@ body {
     color: var(--light-color-alt);
     letter-spacing: 1px;
 
+
 }
 
 a {
@@ -59,6 +60,15 @@ a {
 ul {
     /* Remove Bullets */
     list-style: none;
+}
+
+input,
+button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 i {
@@ -154,7 +164,6 @@ i {
 /* Search */
 
 
-
 .search-form-container {
     background-color: var(--primary-background-color);
     z-index: 999;
@@ -165,11 +174,18 @@ i {
     top: 0;
     left: 0;
     display: flex;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
 
-    /* Make Menu Invisible by Default and Size 0 */
+/* Show form when Acttive Class is applied */
+.search-form-container.activated {
     opacity: 1;
     transform: scale(1);
 }
+
+
 
 .form-container-inner {
     margin: auto;
@@ -182,7 +198,38 @@ i {
 
 .form {
     display: flex;
+    justify-content: center;
 }
+
+
+.form-input,
+.form-btn {
+    display: inline-block;
+    border: 2px solid var(--secondary-background-color);
+    padding: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    border-right: none;
+}
+
+
+.form-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border: 2px solid var(--secondary-background-color);
+    width: 4rem;
+    height: 4rem;
+}
+
+.form-note {
+    font-size: var(--font-size-xsm);
+    align-self: flex-end;
+}
+
+
 
 /* Form JavaScript styles */
 
