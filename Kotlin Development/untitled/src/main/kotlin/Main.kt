@@ -1,15 +1,15 @@
-// Main Function
+// user Defined Function
 
+
+// Main Function
 fun main() {
 
-
-    val x = isEven(3)
-
-    println(x)
+    val collectionOfShits = arrayOf("one", "one", "one", "tw", "one", "one", "one", "one", "one")
 
 
-}
+    for (i in collectionOfShits) {
+        println(i)
+    }
 
-fun isEven(number: Int): Boolean {
-    return number % 2 == 0
+
 }

@@ -1,0 +1,1 @@
+{"_id":"note:yK_b-X_lvK","title":"Arrays","content":"\n\n\n### Mutable Array \n\n````kotlin\n    val shoppingList = mutableListOf(\"Car\", \"Mosca\", \"As3s\", \"As3s\", \"As3s\", \"As3s\"\n````    ","tags":[],"folderPathname":"/Mobile Development/Kotlin","data":{},"createdAt":"2022-06-05T06:08:27.597Z","updatedAt":"2022-06-05T06:09:02.472Z","trashed":false,"_rev":"MqAb7uuey"}
