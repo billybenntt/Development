@@ -204,6 +204,15 @@ small {
     opacity: 0.75;
 }
 
+.button-primary {
+    background-color: yellow;
+}
+
+.button-secondary {
+    background-color: #62A7B3;
+    color: #F2F3F5;
+}
+
 .card {
     background-color: #FFFFFF;
     border-radius: 2px;
@@ -299,6 +308,13 @@ input:focus {
 
 .section-header {
     margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.featured-section-header {
+    color: #FFFFFF;
+
 }
 
 .section-header p {
@@ -322,7 +338,9 @@ input:focus {
 .featured-movie-section li,
 .featured-movie-section p {
     color: #FFFFFF;
+
 }
+
 
 .movie-description-img,
 .movie-description {
@@ -338,6 +356,11 @@ input:focus {
     width: 80%;
 }
 
+.stars-label {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
 .movie-description-stars {
     margin: 15px 0px;
 }
@@ -349,9 +372,10 @@ input:focus {
 .movie-description-category {
     border-bottom: 1px solid #62A7B3;
     border-top: 1px solid #62A7B3;
-    letter-spacing: -1px;
+    letter-spacing: 5px;
     margin: 20px auto;
     padding: 10px;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
 }
