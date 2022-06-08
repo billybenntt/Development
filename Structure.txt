@@ -1,0 +1,21 @@
+1. Data Types
+- Check Data Types Function
+- Log Data
+
+2. Arithmetic Operation
+- Mathematical Assignments
+
+
+3. Strings
+- String Concatenation
+- String Interpolation
+
+4. Methods and Properties
+-  Basic Data Types Methods
+-  Basic Data Types Properties
+
+
+5. Variables
+- Variable Types
+- Variable Assignment
+
