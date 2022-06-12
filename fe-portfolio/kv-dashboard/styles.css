@@ -44,7 +44,7 @@
 }
 
 html {
-    font-size: 87.5%;
+    /* font-size: 90.5%; */
 }
 
 body {
@@ -359,4 +359,51 @@ main .insights .progress .number {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main .insights small {
+    margin-top: 1.6rem;
+    display: block;
+}
+
+main .recent-orders {
+    margin-top: 2rem;
+}
+
+
+main .recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+    background-color: #fff;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+
+main .recent-orders table:hover {
+
+    box-shadow: none;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+
+main .recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
 }
