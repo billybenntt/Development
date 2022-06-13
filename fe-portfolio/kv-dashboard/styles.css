@@ -66,7 +66,7 @@ a {
 
 img {
     display: block;
-    width: 100vh;
+    width: 100%;
 }
 
 h1 {
@@ -148,7 +148,6 @@ b {
 
 aside {
     height: 100vh;
-
 }
 
 aside .top {
@@ -180,7 +179,7 @@ aside .sidebar {
     height: 86vh;
     position: relative;
     top: 3rem;
-    background-color: white;
+    /* background-color: white; */
 }
 
 aside h3 {
@@ -241,7 +240,7 @@ aside .sidebar a:hover span {
 /*  Dashboard Styles */
 
 main {
-    margin-top: 1.4rem;
+    margin-top: 4.5rem;
 }
 
 main .date {
@@ -406,4 +405,183 @@ main .recent-orders a {
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
+}
+
+
+/*  Right */
+
+.right {
+    margin-top: 1.4rem;
+}
+
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.top button {
+    display: none;
+}
+
+
+
+.right .theme-toggler {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span {
+
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .theme-toggler span.active {
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+}
+
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: end;
+}
+
+.recent-updates {
+    margin-top: 1rem;
+}
+
+.recent-updates h2 {
+    margin-bottom: 1rem;
+}
+
+.right .recent-updates .updates {
+
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.right .recent-updates .updates:hover {
+    box-shadow: none;
+}
+
+.right .recent-updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Analytics */
+
+.sales-analytics {
+    margin-top: 2rem;
+}
+
+
+.sales-analytics h2 {
+    margin-bottom: 0.8rem;
+}
+
+.right .sales-analytics .item {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.1rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .sales-analytics .item:hover {
+    box-shadow: none;
+}
+
+.right .sales-analytics .item .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+
+
+.right .sales-analytics .item .icon {
+
+    padding: 0.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+}
+
+
+.right .sales-analytics .item.offline .icon {
+    background-color: var(--color-danger);
+}
+
+
+.right .sales-analytics .item.customer .icon {
+    background-color: var(--color-warning);
+}
+
+.right .sales-analytics .add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .sales-analytics .add-product div {
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.right .sales-analytics .add-product div h3 {
+
+    font-weight: 500;
+}
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width:1200px) {
+
+    body {
+        background-color: red;
+    }
+
+    .container {
+        width: 98%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+
 }
