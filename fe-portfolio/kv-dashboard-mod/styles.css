@@ -773,3 +773,13 @@ main .recent-orders a {
     }
 
 }
+
+
+
+.nav-links {
+    margin-top: 1.4rem;
+}
+
+.nav-links>li {
+    margin-top: 1.4rem;
+}

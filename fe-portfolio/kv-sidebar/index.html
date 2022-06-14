@@ -13,20 +13,31 @@
 
 <body>
     <div class="sidebar close">
+
+
         <div class="logo-details">
             <i class='bx bxl-c-plus-plus'></i>
             <span class="logo_name">CodingLab</span>
         </div>
+
+
         <ul class="nav-links">
+
             <li>
                 <a href="#">
                     <i class='bx bx-grid-alt'></i>
                     <span class="link_name">Dashboard</span>
                 </a>
+
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Category</a></li>
+                    <li>
+                        <a class="link_name" href="#">Category2 </a>
+                    </li>
                 </ul>
             </li>
+
+
+
             <li>
                 <div class="iocn-link">
                     <a href="#">
@@ -35,13 +46,19 @@
                     </a>
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
+
+                <!-- Hover -->
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Category</a></li>
                     <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP & MySQL</a></li>
+                    <li><a href="#">PHP & MySQ2L</a></li>
                 </ul>
             </li>
+
+
+
+
             <li>
                 <div class="iocn-link">
                     <a href="#">
@@ -57,6 +74,11 @@
                     <li><a href="#">Card Design</a></li>
                 </ul>
             </li>
+
+
+
+
+
             <li>
                 <a href="#">
                     <i class='bx bx-pie-chart-alt-2'></i>
@@ -66,6 +88,8 @@
                     <li><a class="link_name" href="#">Analytics</a></li>
                 </ul>
             </li>
+
+
             <li>
                 <a href="#">
                     <i class='bx bx-line-chart'></i>
@@ -75,6 +99,8 @@
                     <li><a class="link_name" href="#">Chart</a></li>
                 </ul>
             </li>
+
+
             <li>
                 <div class="iocn-link">
                     <a href="#">
@@ -90,6 +116,7 @@
                     <li><a href="#">Box Icons</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="#">
                     <i class='bx bx-compass'></i>
@@ -99,6 +126,8 @@
                     <li><a class="link_name" href="#">Explore</a></li>
                 </ul>
             </li>
+
+
             <li>
                 <a href="#">
                     <i class='bx bx-history'></i>
@@ -108,6 +137,9 @@
                     <li><a class="link_name" href="#">History</a></li>
                 </ul>
             </li>
+
+
+
             <li>
                 <a href="#">
                     <i class='bx bx-cog'></i>
@@ -117,6 +149,8 @@
                     <li><a class="link_name" href="#">Setting</a></li>
                 </ul>
             </li>
+
+
             <li>
                 <div class="profile-details">
                     <div class="profile-content">
@@ -129,7 +163,14 @@
                     <i class='bx bx-log-out'></i>
                 </div>
             </li>
+
+
+
+
         </ul>
+
+
+
     </div>
     <section class="home-section">
         <div class="home-content">
@@ -137,21 +178,7 @@
             <span class="text">Drop Down Sidebar</span>
         </div>
     </section>
-    <script>
-        let arrow = document.querySelectorAll(".arrow");
-        for (var i = 0; i < arrow.length; i++) {
-            arrow[i].addEventListener("click", (e) => {
-                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-                arrowParent.classList.toggle("showMenu");
-            });
-        }
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".bx-menu");
-        console.log(sidebarBtn);
-        sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
