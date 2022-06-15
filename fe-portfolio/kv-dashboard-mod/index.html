@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <!--  Material Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" />
     <!-- StyleSheet -->
     <title>Inventory Management</title>
@@ -32,33 +33,86 @@
             <!--  Nav Links -->
 
 
+
+
+
             <ul class="nav-links">
 
                 <li>
                     <a href="#">
-                        <i class='bx bx-grid-alt'></i>
+                        <span class="material-symbols-sharp">
+                            dashboard
+                        </span>
+
                         <span class="link_name">Dashboard</span>
                     </a>
 
                     <ul class="sub-menu blank">
                         <li>
-                            <a class="link_name" href="#">Category2 </a>
+                            <a class="link_name" href="#">Dashboard </a>
                         </li>
                     </ul>
                 </li>
 
+
+                <!-- Products -->
                 <li>
                     <div class="iocn-link">
                         <a href="#">
-                            <i class='bx bx-collection'></i>
-                            <span class="link_name">Category</span>
+                            <span class="material-symbols-sharp">
+                                category
+                            </span>
+                            <span class="link_name">Products</span>
                         </a>
-                        <i class='bx bxs-chevron-down arrow'></i>
+                        <span class="material-symbols-sharp arrow">
+                            expand_more
+                        </span>
                     </div>
 
-                    <!-- Hover -->
                     <ul class="sub-menu">
-                        <li><a class="link_name" href="#">Category</a></li>
+                        <li><a class="link_name" href="#">Add Product</a></li>
+                        <li><a class="link_name" href="#">Product List</a></li>
+                    </ul>
+                </li>
+
+                <!-- Warehouses -->
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <span class="material-symbols-sharp">
+                                warehouse
+                            </span>
+                            <span class="link_name">Warehouses</span>
+                        </a>
+                        <span class="material-symbols-sharp arrow">
+                            expand_more
+                        </span>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Add Warehouse</a></li>
+                        <li><a class="link_name" href="#">Warehouse List</a></li>
+                    </ul>
+                </li>
+
+
+                <!-- Stock -->
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <span class="material-symbols-sharp">
+                                view_module
+                            </span>
+
+                            <span class="link_name">Stock</span>
+                        </a>
+                        <span class="material-symbols-sharp arrow">
+                            expand_more
+                        </span>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Stock</a></li>
                         <li><a href="#">HTML & CSS</a></li>
                         <li><a href="#">JavaScript</a></li>
                         <li><a href="#">PHP & MySQ2L</a></li>
@@ -66,23 +120,54 @@
                 </li>
 
 
+                <!-- Reports -->
                 <li>
                     <div class="iocn-link">
                         <a href="#">
-                            <i class='bx bx-collection'></i>
-                            <span class="link_name">Category</span>
+                            <span class="material-symbols-sharp">
+                                receipt_long
+                            </span>
+                            <span class="link_name">Reports</span>
                         </a>
-                        <i class='bx bxs-chevron-down arrow'></i>
+
+
+                        <span class="material-symbols-sharp arrow">
+                            expand_more
+                        </span>
                     </div>
 
-                    <!-- Hover -->
                     <ul class="sub-menu">
-                        <li><a class="link_name" href="#">Category</a></li>
+                        <li><a class="link_name" href="#">Reports</a></li>
                         <li><a href="#">HTML & CSS</a></li>
                         <li><a href="#">JavaScript</a></li>
                         <li><a href="#">PHP & MySQ2L</a></li>
                     </ul>
                 </li>
+
+
+
+                <!-- Reports -->
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <span class="material-symbols-sharp">
+                                manage_accounts
+                            </span>
+                            <span class="link_name">User Management</span>
+                        </a>
+                        <span class="material-symbols-sharp arrow">
+                            expand_more
+                        </span>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Reports</a></li>
+                        <li><a href="#">HTML & CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP & MySQ2L</a></li>
+                    </ul>
+                </li>
+
 
 
             </ul>
