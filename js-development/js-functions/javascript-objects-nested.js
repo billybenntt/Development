@@ -27,6 +27,4 @@ let spaceship = {
   }
 };
 
-let test =  spaceship.passengers;
 
-console.log(Object.keys(spaceship))
