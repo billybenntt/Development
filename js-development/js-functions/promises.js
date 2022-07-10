@@ -1,47 +1,99 @@
-
-// Inventory Object
-const inventory = {
-    sunglasses: 1900, pants: 1088, bags: 1344,
-}
-
+const store = {
+    sunglasses: {
+        inventory: 817,
+        cost: 9.99
+    },
+    pants: {
+        inventory: 236,
+        cost: 7.99
+    },
+    bags: {
+        inventory: 17,
+        cost: 12.99
+    }
+};
 
 const checkInventory = (order) => {
-    // Pass Callback Inside
     return new Promise((resolve, reject) => {
-        // Emulate Async
         setTimeout(() => {
-            // Check if Every Item quantity is larger than the current Stock
-            let inStock = order.every(item => inventory[item[0]] >= item[1])
-            // Resolve or Reject Accordingly
+            const itemsArr = order.items;
+            let inStock = itemsArr.every(item => store[item[0]].inventory >= item[1]);
+
             if (inStock) {
-                resolve(`Thank you. Your order was successful.`);
+                let total = 0;
+                itemsArr.forEach(item => {
+                    total += item[1] * store[item[0]].cost
+                });
+                console.log(`All of the items are in stock. The total cost of the order is ${total}.`);
+                resolve([order, total]);
             } else {
-                reject(`We're sorry. Your order could not be completed because some items are sold out.`);
+                reject(`The order could not be completed because some items are sold out.`);
             }
-        }, 10000)
+        }, generateRandomDelay());
+    });
+};
+
+const processPayment = (responseArray) => {
+    const order = responseArray[0];
+    const total = responseArray[1];
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let hasEnoughMoney = order.giftcardBalance >= total;
+            // For simplicity we've omited a lot of functionality
+            // If we were making more realistic code, we would want to update the giftcardBalance and the inventory
+            if (hasEnoughMoney) {
+                console.log(`Payment processed with giftcard. Generating shipping label.`);
+                let trackingNum = generateTrackingNumber();
+                resolve([order, trackingNum]);
+            } else {
+                reject(`Cannot process order: giftcard balance was insufficient.`);
+            }
+
+        }, generateRandomDelay());
+    });
+};
+
+
+const shipOrder = (responseArray) => {
+    const order = responseArray[0];
+    const trackingNum = responseArray[1];
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`The order has been shipped. The tracking number is: ${trackingNum}.`);
+        }, generateRandomDelay());
+    });
+};
+
+
+// This function generates a random number to serve as a "tracking number" on the shipping label. In real life this wouldn't be a random number
+function generateTrackingNumber() {
+    return Math.floor(Math.random() * 1000000);
+}
+
+// This function generates a random number to serve as delay in a setTimeout() since real asynchrnous operations take variable amounts of time
+function generateRandomDelay() {
+    return Math.floor(Math.random() * 2000);
+}
+
+
+const order = {
+    items: [['sunglasses', 1], ['bags', 2]],
+    giftcardBalance: 79.82
+};
+
+checkInventory(order)
+    .then((resolvedValueArray) => {
+        // Write the correct return statement here:
+        return processPayment(resolvedValueArray)
     })
-}
-
-
-// Current Order Data
-const order = [['sunglasses', 1], ['bags', 2]];
-
-
-
-// Outcome Handling Functions
-const handleSuccess = (successValue) => {
-    console.log(successValue)
-}
-
-const handleFailure = (failValue) => {
-    console.log(failValue)
-}
-
-
-// Test Outcome 
-const orderProcess = checkInventory(order);
-
-// See Outcome
-const orderResult = orderProcess.then(handleSuccess, handleFailure)
-console.log(orderResult)
+    .then((resolvedValueArray) => {
+        // Write the correct return statement here:
+        return shipOrder(resolvedValueArray)
+    })
+    .then((successMessage) => {
+        console.log(successMessage);
+    })
+    .catch((errorMessage) => {
+        console.log(errorMessage);
+    });
 

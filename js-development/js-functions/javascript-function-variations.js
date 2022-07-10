@@ -39,4 +39,3 @@ const plantNeedsWaterD = (day) => day + 1
 const plantNeedsWaterD2 = day =>  day === "Wednesday";
 // Arrow Compact Function - Simplified 2 Parameters
 const plantNeedsWaterD3 = (day, night) =>  day + night === "Wednesday";
-
