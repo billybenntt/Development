@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
+    <script defer src="helper.js"></script>
+    <title>Film Finder</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="appTitle">🍿Film Finder🍿</h1>
+    </header>
+    <form id="genreForm">
+        <label>Choose a genre:</label>
+        <select name="genres" id="genres">
+            <option value="sesame">Sesame</option>
+            <option value="potato">Potato</option>
+            <option value="plain">Plain</option>
+
+        </select>
+    </form>
+    <button id="playBtn">Let's Play!</button>
+    <div id="movieInfo">
+        <div id="moviePoster"></div>
+        <div id="movieText"></div>
+    </div>
+    <div id="likeOrDislikeBtns" hidden>
+        <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+        <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+    </div>
+</body>
+
+</html>

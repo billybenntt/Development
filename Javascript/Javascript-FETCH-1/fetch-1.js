@@ -1,33 +1,37 @@
-// Target API
-const url = "https://reqres.in/api/users";
+// Step 1
 
-// Init Object
+const url = "https://api.rebrandly.com/v1/account";
+
 const initObject = {
-    method: 'POST',
+    method: "GET",
     headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        name: 'User 1'
-    })
+        "Content-Type": "application/json",
+        "apikey": "ac2b4dbc612b4a3d9057b3d402742d73"
+    }
 }
+
 
 // Step 2 - Convert Response to JSON and Return a Promise
 const convertToJson = (response) => {
     if (response.ok) {
         return response.json()
-    }    throw new Error("Not Found")
+    }
+    throw new Error("Not Found")
 }
 
-// Step 3 - Log Response
-const logResponse = (response) => {
-    console.log(response)
+// Step 3 - Handle Error
+const handleError = (networkError) => {
+    console.log(networkError.message)
 }
 
-// Step 4 - Handle Error
-const logError = (reason) => {
-    console.log(reason)
+
+// Step 4 - Log Response
+const logResponse = (jsonResponse) => {
+    console.log(jsonResponse)
 }
 
-fetch(url, initObject).then(convertToJson).then(logResponse).catch(logError)
+
+fetch(url, initObject).then(convertToJson, handleError).then(logResponse)
+
+
 
