@@ -23,3 +23,16 @@ const getGenres = async () => {
 
 
 getGenres()
+
+
+
+
+const targetBtn = document.getElementById("playBtn")
+const genresForm = document.getElementById("genres")
+
+targetBtn.addEventListener("click", () => {
+    console.log(genresForm.options);
+console.log(1);
+})
+
+
