@@ -1,15 +1,12 @@
+// Post Requests
+
 const inputForm = document.getElementById("dataForm");
-
-const baseUrl = "https://simple-books-api.glitch.me"
-const endPoint = "/books?type=fiction"
+const baseUrl = "http://localhost:3000"
+const endPoint = "/users"
 const url = `${baseUrl}${endPoint}`
-const initObject = {
-    method: "GET",
-    headers: {
-        "Content-Type": "application/json",
-    }
-}
 
+
+// Helper Function to Parse JSON
 const captureJsonInput = (inputForm) => {
     const iterator = new FormData(inputForm);
     let emptyObject = {};
@@ -18,25 +15,44 @@ const captureJsonInput = (inputForm) => {
 }
 
 
-const makeCall = async () => {
-
-    const response = await fetch(baseUrl, initObject)
-
-    console.log(response)
-
-
+const makeCall = async (formData) => {
+    try {
+        // Request Configuration
+        const config = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                "name": formData.name,
+                "email": formData.email,
+                "phone": formData.phone
+            })
+        }
+        // Send Request
+        const response = await fetch(url, config);
+        // Confirm Response
+        if (response.ok) {
+            const jsonResp = await response.json()
+            console.log(jsonResp);
+        }
+    } catch (e) {
+        console.log(e)
+    }
 }
 
 
+
+
 inputForm.addEventListener("submit", (e) => {
-
     let formData = captureJsonInput(e.target)
+    makeCall(formData).then(response => console.log(response));
 
-    makeCall();
-
-
-    console.log(formData)
-
-    e.preventDefault();
+    // e.preventDefault();
 
 })
+
+
+
+
+

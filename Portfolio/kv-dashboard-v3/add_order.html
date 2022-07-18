@@ -221,7 +221,8 @@
                         </ul>
                     </div>
                 </li>
-                <!--  Add Order   -->
+
+                <!--  Add User -->
                 <li class="nav-item">
                     <a href="add_order.html" class="nav-link d-flex justify-content-between">
                         <span>
@@ -232,13 +233,39 @@
                                         d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </span>
-                            <span class="sidebar-text">Add Order</span>
+                            <span class="sidebar-text">Add User</span>
                         </span>
                         <span>
                             <span class="badge badge-sm bg-secondary ms-1 text-gray-800">Badge</span>
                         </span>
                     </a>
                 </li>
+                <!--  List Order   -->
+                <li class="nav-item">
+                    <a href="list_orders.html" class="nav-link d-flex justify-content-between">
+                        <span>
+                            <span class="sidebar-icon">
+                                <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="sidebar-text">List Orders</span>
+                        </span>
+
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
+
                 <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
             </ul>
         </div>
@@ -496,7 +523,7 @@
             <div class="d-flex justify-content-between w-100 flex-wrap">
                 <div class="mb-3 mb-lg-0">
                     <h1 class="h4">Forms</h1>
-                    <p class="mb-0">This page adds a new order
+                    <p class="mb-0">This page adds a new user
                     </p>
                 </div>
                 <div>
@@ -515,15 +542,20 @@
                                 <div class="col-lg-4 col-sm-6">
                                     <!--  Input 1 -->
                                     <div class="mb-3">
-                                        <label for="bookId">Book Identifier</label>
-                                        <input type="number" class="form-control" id="bookId" name="bookId" required>
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
                                     </div>
                                     <!--  Input 2 -->
                                     <div class="mb-3">
-                                        <label for="firstName">Customer Name</label>
-                                        <input type="text" class="form-control" id="firstName" name="firstName"
-                                            required>
+                                        <label for="email">User Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
                                     </div>
+                                    <!--  Input 2 -->
+                                    <div class="mb-3">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="number" class="form-control" id="phone" name="phone" required>
+                                    </div>
+
                                 </div>
                             </div>
                             <button class="btn btn-primary" type="submit" id="submitBtn">Submit</button>
