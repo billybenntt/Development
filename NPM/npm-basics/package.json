@@ -1,0 +1,17 @@
+{
+  "name": "npm-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/sub/main.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bill Bennett",
+  "license": "MIT"
+}
