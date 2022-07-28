@@ -8,7 +8,7 @@ body {
   font-family: 'Consolas';
 }
 
-.container {
+.card--container {
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -70,4 +70,9 @@ body {
 .card--star {
   display: inline-flex;
   width: 20px;
+}
+
+.subcontainer {
+  display: inline-flex;
+  align-items: center;
 }
