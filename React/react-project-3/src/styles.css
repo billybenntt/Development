@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.nav--navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F55A5A;
+    color: white;
+    font-size: 16px;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.nav--navbar img {
+    width: 25px;
+    filter: invert(1);
+}
+
+
+.catalog {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*  Card */
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card--title {
+    padding: 0.5rem 0rem;
+}
+
+.card--location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 14px;
+}
+
+.card--country {
+    text-transform: uppercase;
+}
+
+.card--date {
+    font-size: 16px;
+    padding: 0.5rem 0;
+}
+
+.card--description {
+    font-size: 14px;
+}
+
+.card--image {
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card--marker {
+    width: 15px;
+    filter: invert(50%) sepia(96%) saturate(1593%) hue-rotate(325deg) brightness(99%) contrast(93%);
+}
