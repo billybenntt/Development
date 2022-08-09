@@ -3,27 +3,42 @@ import memePack from "../../src/memesData.js"
 
 export default function Meme() {
 
-    const [thingsArray, modifyState] = React.useState(["Thing 1", "Thing 2"])
-
-    const addItem = () => {
-        const newThing = `Thing ${thingsArray.length + 1}`;
-        const randomNumber = Math.floor(Math.random() * 100)
-        modifyState(oldState => [...oldState, memePack.data.memes[randomNumber].name])
-        console.log(thingsArray);
+    // Meme Initial State
+    let meme = {
+        topText: "Top Text",
+        bottomText: "Bottom TEsss",
+        randomImage: "https://i.imgflip.com/1bij.jpg"
     }
 
+    // State Initializer
+    const [memeImage, setMemeImage] = React.useState(meme)
+    const memesArray = memePack.data.memes
 
+    const memeGeneratorImg = () => {
 
-    const stackofPees = thingsArray.map(element => <p>{element}</p>)
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+
+        console.log(memesArray[randomNumber])
+        setMemeImage(prevState => {
+            return {
+                ...prevState,
+                randomImage: memesArray[randomNumber].url,
+                bottomText: memesArray[randomNumber].name
+            }
+        })
+
+    }
 
     return (
         <main>
-
-            {stackofPees}
             <div className='form'>
-                <input type="text" className='form--input' placeholder='Top Text' />
-                <input type="text" className='form--input' placeholder='Bottom Text' />
-                <button className='form--button' onClick={addItem}>Get a new meme</button>
+                <input type="text" className='form--input' placeholder={memeImage.topText}/> <input type="text"
+                                                                                                    className='form--input'
+                                                                                                    placeholder={memeImage.bottomText}/>
+                <button className='form--button' onClick={memeGeneratorImg}>Get a new meme</button>
+            </div>
+            <div className="image--container">
+                <img src={memeImage.randomImage} alt=""/>
             </div>
 
 
