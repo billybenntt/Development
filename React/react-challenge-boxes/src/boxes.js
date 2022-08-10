@@ -1,0 +1,32 @@
+export default [
+    {
+        id: 1, on: true
+    },
+    {
+        id: 2, on: false
+    },
+    {
+        id: 3, on: true
+    },
+    {
+        id: 4, on: true
+    },
+    {
+        id: 5, on: true
+    },
+    {
+        id: 12, on: true
+    },
+    {
+        id: 6, on: false
+    },
+    {
+        id: 18, on: true
+    },
+    {
+        id: 21, on: false
+    }
+
+]
+
+
