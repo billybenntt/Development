@@ -6,7 +6,7 @@ export default function Meme() {
     // Meme Initial State
     let meme = {
         topText: "Top Text",
-        bottomText: "Bottom TEsss",
+        bottomText: "Bottom Text",
         randomImage: "https://i.imgflip.com/1bij.jpg"
     }
 
@@ -32,11 +32,13 @@ export default function Meme() {
     return (
         <main>
             <div className='form'>
-                <input type="text" className='form--input' placeholder={memeImage.topText}/> <input type="text"
-                                                                                                    className='form--input'
-                                                                                                    placeholder={memeImage.bottomText}/>
+                <input type="text" className='form--input' placeholder={memeImage.topText}/>
+                <input type="text" className='form--input' placeholder={memeImage.bottomText}/>
                 <button className='form--button' onClick={memeGeneratorImg}>Get a new meme</button>
             </div>
+
+
+
             <div className="image--container">
                 <img src={memeImage.randomImage} alt=""/>
             </div>
