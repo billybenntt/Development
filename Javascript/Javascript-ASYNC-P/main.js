@@ -8,14 +8,20 @@ const url = `${baseUrl}${endpoint}${queryParams}${apiKey}`
 
 
 const getGenres = async () => {
-
     try {
+        // Send Request
         const request = await fetch(url)
+
+        // If Request Succeful Assign Data to variable
         if (request.ok) {
             const genres = await request.json()
             console.log(genres)
-        }else throw new Error(request.statusText)
+        }
+        // Else Throw an Error showing the fail Reason
+        else throw new Error(request.statusText)
     } catch (e) {
+
+        // Catch Error and Log it to console
         console.log(e.message)
     }
 
@@ -25,14 +31,12 @@ const getGenres = async () => {
 getGenres()
 
 
-
-
 const targetBtn = document.getElementById("playBtn")
 const genresForm = document.getElementById("genres")
 
 targetBtn.addEventListener("click", () => {
     console.log(genresForm.options);
-console.log(1);
+    console.log(1);
 })
 
 
