@@ -6,6 +6,7 @@ const thirdElement = document.createElement("li")
 
 // Add Text Content
 firstElement.innerText = "First element";
+// Add HTML Content
 secondElement.innerHTML = "<strong>Second Element</strong>"
 // *** This Has Shitty Formatting ***
 thirdElement.textContent = "Third Element"
@@ -14,19 +15,6 @@ thirdElement.textContent = "Third Element"
 firstElement.style.color = "red";
 secondElement.style.color = "black"
 thirdElement.style.color = "green"
-
-// Add Attributes
-firstElement.setAttribute("class", "juas")
-firstElement.setAttribute("style", "color: white")
-
-// Get Attribute List
-console.log(firstElement.getAttributeNames())
-
-
-// Add Classes
-firstElement.classList.add('list-items')
-secondElement.classList.add('list-items')
-thirdElement.classList.add('list-items')
 
 
 // Select Parent
