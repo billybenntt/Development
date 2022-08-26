@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+            #0f2027,
+            #203a43,
+            #2c5364);
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.boxes {
+    border-radius: 10px;
+    width: 30%;
+    height: 15rem;
+    padding: 2rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    width: 700px;
+}
+
+button {
+    display: block;
+    font-size: 1rem;
+    background: none;
+    border: solid 2px #fff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3e8e41
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#sports {
+    border: solid 5px #fff;
+
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}
+
+#sports li {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: solid 2px #fff;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+#sports li:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Toggle Class*/
+li.hasBlue{
+    background-color: dodgerblue;
+}
+
+
+
+
+.div1{
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.div1.hiddenContent{
+    visibility: hidden;
+}
