@@ -1,4 +1,17 @@
 /* ------------------ */
+/* Custom Properties  */
+/* ------------------ */
+:root {
+    --gap: 1rem;
+
+    /* Colors are declared without identifiers*/
+    --clr-dark: 230, 35%, 7%;
+    --clr-light: 231, 77%, 90%;
+    --clr-white: 0, 0%, 100%;
+}
+
+
+/* ------------------ */
 /* Reset              */
 /* ------------------ */
 
@@ -18,6 +31,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, picture {
 /* Set Up the Body*/
 body {
     line-height: 1.5;
+    /* Ensures the body occupies 100% of the viewport*/
     min-height: 100vh;
 }
 
@@ -52,9 +66,7 @@ ol, ul {
 /* Utility Classes    */
 /* ------------------ */
 
-:root {
-    --gap: 1rem
-}
+/* General */
 
 .flex {
     display: flex;
@@ -72,7 +84,7 @@ ol, ul {
     /* Prevent from things touching on the page*/
     padding-inline: 2em;
     /*Limit page width*/
-    max-width: 80rem;
+    max-width: 60rem;
     /*  Center */
     margin-inline: auto;
 
@@ -89,4 +101,45 @@ ol, ul {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap; /* added line */
     border: 0;
+}
+
+/* Colors */
+
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
+
+.bg-light {
+    background-color: hsl(var(--clr-light));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.bg-lightCustom {
+    background-color: hsla(var(--clr-light), 20%);
+}
+
+.text-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.text-light {
+    color: hsl(var(--clr-light));
+}
+
+.text-white {
+    color: hsl(var(--clr-white));
+}
+
+/* */
+
+#colors .box{
+flex-grow: 1;
+}
+
+.box > div{
+    padding: 3rem  1rem 1rem;
+    border: 1px solid white
 }
