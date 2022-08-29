@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "prettier": "2.6.2"
-  },
-  "dependencies": {
-    "vite": "^3.0.4"
-  }
-}
