@@ -4,28 +4,23 @@ import memesData from "../memesData.js";
 export default function Meme() {
 
     // Initialize Meme Data
-    const [allMemeData, setAllMemeImages] = React.useState(memesData);
-
+    const [allMemeData, setAllMemeData] = React.useState([]);
 
     // Initialize Text and Image State
     const [meme, setMeme] = React.useState({
-        topText: "", bottomText: "", randomImage: "http://i.imgflip.com/1bij.jpg",
+        topText: "", bottomText: "", randomImage: "https://i.imgflip.com/1bij.jpg",
     });
-
 
     // Update the Meme
     function getMemeImage() {
         const memesArray = allMemeData.data.memes;
         const randomNumber = Math.floor(Math.random() * memesArray.length);
         const url = memesArray[randomNumber].url;
-
-
-        // Update Meme Image
+        // Update Meme Image State
         setMeme((prevMeme) => ({
             ...prevMeme, randomImage: url,
         }));
     }
-
 
     // Updates the Text of Meme
     const changeText = (event) => {
@@ -34,10 +29,15 @@ export default function Meme() {
     };
 
 
-    // Use Effect
+    // Use Effect - Calling API Upon Rendering
     React.useEffect(() => {
+        const url = "https://api.imgflip.com/get_memes"
 
-    }, [])
+        // Standard Fetch->Then Notation
+        fetch(url).then(res => res.json()).then(data => setAllMemeData(data))
+
+        // If the meme dependency changes call the API Again
+    }, [meme])
 
 
     // The Text above the Meme is not tied to the JSON data and can be changed by the user
