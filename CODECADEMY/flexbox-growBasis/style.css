@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: consolas;
+    color: white;
+}
+
+.container {
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.child {
+    border: 1px solid #fff;
+    flex-grow: 1;
+}
