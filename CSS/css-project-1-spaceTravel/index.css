@@ -308,6 +308,7 @@ p {
 .large-button:hover{
     padding: 0 3em;
     transition: 1s ease-out;
+    background-color: hsl(var(--clr-light));
 }
 
 /*https://codepen.io/spankiejoe/pen/qdRpaW*/
