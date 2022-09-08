@@ -119,6 +119,19 @@ p {
     gap: var(--gap);
 }
 
+/* Select child elements that have an adjacent sibling*/
+.flow > * + * {
+    /*outline: 1px solid red;*/
+    margin-top: var(--flow-space, 2rem);
+}
+
+/* Same as the above, everything but the fist child */
+.flow2 > *:not(:first-child) {
+    /*outline: 1px solid blue;*/
+    margin-top: var(--flow-space, 1rem);
+}
+
+
 .container {
     /* Inline Variations focus on left and side*/
     /* Prevent from things touching on the page*/
@@ -252,7 +265,36 @@ p {
     border: 1px solid white
 }
 
+/* Numbered Titles */
 
-.numbered-title{
-color: var(hsl(--clr-light));
+.numbered-title {
+    color: hsl(var(--clr-white));
+    font-family: var(--ff-sans-cond);
+    font-size: var(--fs-500);
+    letter-spacing: 4.75px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
+
+.numbered-title span {
+    color: hsl(var(--clr-light));
+    /* Relative to font size from parent*/
+    margin-right: .1em;
+    font-weight: 600;
+}
+
+/* ------------------ */
+/* Components         */
+/* ------------------ */
+
+
+.large-button {
+    display: grid;
+
+    /* Padding relative to font size*/
+    /*fs-600/2rem/32px/ -> 2em/64px*/
+    padding: 0 2em;
+
+    aspect-ratio: 1;
+}
+
