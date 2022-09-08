@@ -289,12 +289,25 @@ p {
 
 
 .large-button {
+    /* To Modify the size of inline element*/
     display: grid;
-
+    /* Similar to Flex Align Justify center*/
+    place-items: center;
     /* Padding relative to font size*/
+    /* If font size grows the padding will change with it*/
     /*fs-600/2rem/32px/ -> 2em/64px*/
     padding: 0 2em;
-
-    aspect-ratio: 1;
+    /* width / height*/
+    aspect-ratio: 1 / 1;
+    /* remove dash from link*/
+    text-decoration: none;
+    /* Make perfect circle*/
+    border-radius: 50%;
 }
 
+.large-button:hover{
+    padding: 0 3em;
+    transition: 1s ease-out;
+}
+
+/*https://codepen.io/spankiejoe/pen/qdRpaW*/
