@@ -13,6 +13,8 @@
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--    Barlow Condensed and Regular 400 and 700  and Belle-fair Regular -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
     <!--  Title -->
@@ -130,12 +132,22 @@
 
             <!-- Part 1 - Navigation-->
             <div>
-
+                <!-- Navigation is always wrapped in a semantic tag-->
                 <nav>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="primary-navigation underline-indicators flex bg-lightCustom ">
+                        <!--  Use Flow Space Trick -->
+                        <li class="active">
+                            <a href="#" class="ff-sans-cond text-white uppercase letter-spacing-2 "><span>00</span>
+                                Active</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="ff-sans-cond text-white uppercase letter-spacing-2"><span>01</span>Hovered</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="ff-sans-cond text-white uppercase letter-spacing-2"><span>02</span>Idle</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -143,15 +155,25 @@
             <!-- Part 2-->
             <div class="flex">
 
-                <div>
+
+                <!-- First Half-->
+                <div style="flex-basis: 100%">
                     <!--Explore buttons-->
                     <!--Component + Utility Classes-->
-                    <a href="#" class="large-button text-dark bg-white ff-serif fs-600 uppercase">Explore</a>
-                    <a href="#" class="large-button text-dark bg-white ff-serif fs-600 uppercase">Explore</a>
+                    <a href="#" class="large-button text-dark bg-white ff-serif fs-600 uppercase ff-sans-cond">Explore</a>
                 </div>
 
-                <div>
+                <!-- Second Half-->
+                <div style="flex-basis: 100%">
+
                     <!--Tabs -->
+                    <div class="tab-list flex underline-indicators bg-dark">
+                        <button aria-selected="true" class="bg-dark text-light uppercase letter-spacing-2">Mars</button>
+                        <button aria-selected="false" class="bg-dark text-light uppercase letter-spacing-2">Moon</button>
+                        <button aria-selected="false" class="bg-dark text-light uppercase letter-spacing-2">Europa
+                        </button>
+                    </div>
+
                     <!--Dots-->
                     <!--Numbers-->
                 </div>

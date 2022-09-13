@@ -110,12 +110,14 @@ p {
 
 .flex {
     display: flex;
+    /* Custom Property */
     gap: var(--gap);
 
 }
 
 .grid {
     display: grid;
+    /* Custom Property */
     gap: var(--gap);
 }
 
@@ -303,12 +305,96 @@ p {
     text-decoration: none;
     /* Make perfect circle*/
     border-radius: 50%;
+
+    /* Control Child */
+    position: relative;
+    z-index: 1;
 }
 
-.large-button:hover{
-    padding: 0 3em;
-    transition: 1s ease-out;
-    background-color: hsl(var(--clr-light));
+
+.large-button:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: hsla(var(--clr-light), 15%);
+    /* Hide by Default*/
+    opacity: 1;
+
+    /* Transitions can be separated by commas*/
+    transition: opacity 500ms linear, transform 500ms ease-in-out;
 }
 
-/*https://codepen.io/spankiejoe/pen/qdRpaW*/
+/* When Hovering over the element apply effects to its pseudo element*/
+/* When Clicking/Focusing over the element apply effects to its pseudo element*/
+.large-button:hover:after,
+.large-button:focus:after {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+/* Primary Navigation*/
+
+.primary-navigation {
+    /* Custom Property from .flex override*/
+    --gap: 8rem;
+    /* Remove default padding margin from UL*/
+    padding: 0;
+    margin: 0;
+
+    /* Override Custom Property */
+    --underline-gap: 2rem;
+}
+
+.primary-navigation a {
+    /* Remove Underline on links*/
+    text-decoration: none;
+
+
+}
+
+.primary-navigation a > span {
+    /* Add Boldness to Number Span */
+    font-weight: 700;
+
+    /* Space using em relative to parent font size*/
+    margin-right: .5em;
+}
+
+/* Underline Indicators*/
+
+
+/* Select all direct children of UL*/
+.underline-indicators > * {
+    /* Centering Vertically <li> with Padding */
+    /* Declare custom property 1rem default*/
+    padding: var(--underline-gap, 1rem) 0;
+
+    /* Remove Other Borders*/
+    border: 0;
+
+    /* Idle Color by Default*/
+    border-bottom: .2rem solid hsla(var(--clr-white), 0%);
+
+    /* use Hand cursor*/
+    cursor: pointer;
+
+}
+
+/* Hover and Active States*/
+
+.underline-indicators > *:hover {
+    border-color: hsla(var(--clr-white), 50%);
+}
+
+.underline-indicators > .active,
+    /*Attribute Selector */
+.underline-indicators > [aria-selected="true"] {
+    color: hsla(var(--clr-white), 100%) ;
+    border-color: hsla(var(--clr-white), 100%);
+}
+
+.tab-list {
+    --gap: 2rem;
+}
