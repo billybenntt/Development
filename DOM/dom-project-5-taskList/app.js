@@ -60,5 +60,5 @@ addTask.addEventListener("click", () => {
 
 
     // Clear the Text from the input box
-    // inputTask.value = ""
+    inputTask.value = ""
 })
