@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar Styles */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 25px;
+    height: 60px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+nav.dark{
+    background-color: #21222A;
+}
+
+.nav--logo_icon {
+    width: 39px;
+    margin-right: 10px;
+}
+
+.nav--logo_text {
+    color: #61DBFB;
+    /* This pushes the slider to the end*/
+    margin-right: auto;
+}
+
+/* Nav Toggler Styles */
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+
+.toggler p {
+    font-size: 0.725rem;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.toggler--slider {
+    border: 1px solid black;
+    width: 25px;
+    height: 13px;
+    border-radius: 32px;
+    margin: 7px 0;
+    cursor: pointer;
+    background-color: #2B283A;
+    box-sizing: content-box;
+
+    /* Center the Ball*/
+    display: flex;
+    align-items: center;
+
+    /* Ball on the left */
+    justify-content: flex-start;
+}
+
+
+.toggler--light {
+    color: #2B283A;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* Dark Theme Effects */
+
+/* When the class is dark move slider to right*/
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+nav.dark .toggler--slider {
+    border-color: #FFFFFF;
+    background-color: #2B283A;
+}
+
+/* Main Section Styles */
+
+main {
+    padding: 57px 27px;
+    background-image: url("images/react-icon-light.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    flex: 1 1 auto;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px
+}
+
+.main--facts > li {
+    line-height: 19px;
+    padding: 10px 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+/* Select the Bullets */
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DBFB;
+}
