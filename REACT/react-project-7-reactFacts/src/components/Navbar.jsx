@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Navbar() {
+function Navbar(props) {
 
     return (
 
@@ -15,9 +15,14 @@ function Navbar() {
             {/*Toggler */}
             <div className="toggler">
                 <p className="toggler--light">Light</p>
-                <div className="toggler--slider">
+
+                {/* Add closure to receive event listener */}
+
+                <div className="toggler--slider" onClick={()=> props.toggle(props)}>
                     <div className="toggler--slider--circle"></div>
                 </div>
+
+
                 <p className="toggler--dark">Dark</p>
             </div>
 

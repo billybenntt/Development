@@ -4,13 +4,18 @@ import Main from "./components/Main.jsx";
 
 function App() {
 
-    const [initialState , setInitialState] = React.useState(0)
+    const [darkTheme , setDarkTheme] = React.useState(0)
 
+    // Declare the change State function
+    const toggle = (prop) => {
+    }
 
     return (
         <div className="container">
             <Navbar/>
-            <Main/>
+
+            {/* Pass the function */}
+            <Main toggle={toggle}/>
 
         </div>)
 }
