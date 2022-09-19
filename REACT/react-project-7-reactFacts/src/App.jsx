@@ -4,20 +4,25 @@ import Main from "./components/Main.jsx";
 
 function App() {
 
-    const [darkTheme , setDarkTheme] = React.useState(0)
+    // Initialize State
+    const [darkTheme, setDarkTheme] = React.useState(0)
 
-    // Declare the change State function
-    const toggle = (prop) => {
+    // Declare the change State functions for Children
+    const toggle = () => {
+        setDarkTheme(prevState => {
+            return !prevState
+        })
     }
 
-    return (
-        <div className="container">
-            <Navbar/>
+    return (<div className="container">
 
-            {/* Pass the function */}
-            <Main toggle={toggle}/>
+        {/* Pass Function to Change State to child component */}
+        <Navbar darkMode={darkTheme} toggle={toggle}/>
 
-        </div>)
+        {/* Pass Variable with State to Prop */}
+        <Main darkMode={darkTheme}/>
+
+    </div>)
 }
 
 export default App

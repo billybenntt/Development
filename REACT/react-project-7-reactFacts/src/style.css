@@ -31,9 +31,6 @@ nav {
     z-index: 1;
 }
 
-nav.dark{
-    background-color: #21222A;
-}
 
 .nav--logo_icon {
     width: 39px;
@@ -51,6 +48,8 @@ nav.dark{
 .toggler {
     display: flex;
     align-items: center;
+
+
 }
 
 
@@ -58,6 +57,7 @@ nav.dark{
     font-size: 0.725rem;
     font-weight: 600;
     padding: 0 5px;
+
 }
 
 .toggler--slider {
@@ -76,6 +76,8 @@ nav.dark{
 
     /* Ball on the left */
     justify-content: flex-start;
+
+
 }
 
 
@@ -92,25 +94,10 @@ nav.dark{
     width: 13px;
     background-color: #fff;
     border-radius: 50%;
+
+
 }
 
-/* Dark Theme Effects */
-
-/* When the class is dark move slider to right*/
-nav.dark .toggler--slider {
-    justify-content: flex-end;
-}
-nav.dark .toggler--light {
-    color: #918E9B;
-}
-
-nav.dark .toggler-dark {
-    color: #FFFFFF;
-}
-nav.dark .toggler--slider {
-    border-color: #FFFFFF;
-    background-color: #2B283A;
-}
 
 /* Main Section Styles */
 
@@ -144,4 +131,51 @@ main {
 .main--facts > li::marker {
     font-size: 1.4rem;
     color: #61DBFB;
+}
+
+
+/* Dark Theme Effects */
+
+nav.dark {
+    background-color: #21222A;
+}
+
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    background-color: #fff;
+    justify-content: flex-end;
+
+}
+
+
+nav.dark .toggler--slider--circle {
+    background-color: #000;
+    border: 1px solid white;
+}
+
+
+main.dark {
+    background-image: url("./images/react-icon-dark.png");
+    background-color: #282D35;
+    color: white;
 }

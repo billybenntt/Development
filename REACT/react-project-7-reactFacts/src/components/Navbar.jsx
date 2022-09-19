@@ -5,7 +5,7 @@ function Navbar(props) {
 
     return (
 
-        <nav className="dark">
+        <nav className={props.darkMode ? "dark" : ""}>
 
             {/* Logo*/}
             <img className="nav--logo_icon" src="src/images/react-icon-small.png" alt="react-logo"/>
@@ -16,9 +16,9 @@ function Navbar(props) {
             <div className="toggler">
                 <p className="toggler--light">Light</p>
 
-                {/* Add closure to receive event listener */}
 
-                <div className="toggler--slider" onClick={()=> props.toggle(props)}>
+                {/* Use Event Listener from parent component */}
+                <div className="toggler--slider" onClick={props.toggle}>
                     <div className="toggler--slider--circle"></div>
                 </div>
 
