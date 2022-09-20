@@ -290,7 +290,8 @@ p {
 
 .large-button {
     /* To Modify the size of inline element*/
-    display: grid;
+    /* Change to inline-grid so it won't occupy the whole screen*/
+    display: inline-grid;
     /* Similar to Flex Align Justify center*/
     place-items: center;
     /* Padding relative to font size*/
@@ -307,6 +308,9 @@ p {
     /* Control Child */
     position: relative;
     z-index: 1;
+
+
+
 }
 
 

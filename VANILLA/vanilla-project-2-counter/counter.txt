@@ -1,0 +1,5 @@
+- Set the markup
+- Code the buttons and the target span
+- Select the elements in the DOM
+- attach event listener to all the buttons
+- use standard for loop or forEach for loop on the collection
