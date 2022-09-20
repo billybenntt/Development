@@ -30,38 +30,37 @@ export default function App() {
 
     function findCurrentNote() {
         return (notes.find((note) => {
-                return note.id === currentNoteId;
-            }) || notes[0]);
+            return note.id === currentNoteId;
+        }) || notes[0]);
     }
 
     function deleteNote() {
-        console.log("Delete")
+      console.log(currentNoteId)
     }
 
     return (<main>
-            {/*   Conditional Rendering */}
+        {/*   Conditional Rendering */}
+        {notes.length > 0 ? (<Split sizes={[30, 70]} direction="horizontal" className="split">
 
-            {notes.length > 0 ? (<Split sizes={[30, 70]} direction="horizontal" className="split">
+            <Sidebar
+                notes={notes}
+                currentNote={findCurrentNote()}
+                setCurrentNoteId={setCurrentNoteId}
+              // pass Custom Prop
+                newNote={createNewNote}
+                deleteNote={deleteNote}
+            />
 
-                    <Sidebar
-                        notes={notes}
-                        currentNote={findCurrentNote()}
-                        setCurrentNoteId={setCurrentNoteId}
-                        {/* Pass Handler Function to Child Component*/}
-                        newNote={createNewNote}
-                        deleteNote={deleteNote}
+            {currentNoteId && notes.length > 0 && (<Editor currentNote={findCurrentNote()} updateNote={updateNote}/>)}
+        </Split>) : (// Render Basic when Notes are 0
 
-                    />
+            <div className="no-notes">
+                <h1>You have no notes</h1>
+                <button className="first-note" onClick={createNewNote}>
+                    Create one now
+                </button>
 
-                    {currentNoteId && notes.length > 0 && (
-                        <Editor currentNote={findCurrentNote()} updateNote={updateNote}/>)}
-                </Split>) : (// Render Basic when Notes are 0
 
-                <div className="no-notes">
-                    <h1>You have no notes</h1>
-                    <button className="first-note" onClick={createNewNote}>
-                        Create one now
-                    </button>
-                </div>)}
-        </main>);
+            </div>)}
+    </main>);
 }
