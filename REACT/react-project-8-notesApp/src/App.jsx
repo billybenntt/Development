@@ -10,9 +10,10 @@ export default function App() {
 
     //   Initial State of Notes Data
     const [notes, setNotes] = React.useState([...data]);
-
     const [currentNoteId, setCurrentNoteId] = React.useState((notes[0] && notes[0].id) || "");
 
+
+    // Nanoid is an ID Generator
 
     function createNewNote() {
         const newNote = {
@@ -52,7 +53,8 @@ export default function App() {
             />
 
             {currentNoteId && notes.length > 0 && (<Editor currentNote={findCurrentNote()} updateNote={updateNote}/>)}
-        </Split>) : (// Render Basic when Notes are 0
+        </Split>) :
+            (// Render Basic when Notes are 0
 
             <div className="no-notes">
                 <h1>You have no notes</h1>

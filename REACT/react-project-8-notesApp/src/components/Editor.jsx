@@ -7,6 +7,7 @@ export default function Editor({ currentNote, updateNote }) {
 
     const [selectedTab, setSelectedTab] = React.useState("write")
 
+    //
     const converter = new Showdown.Converter({
         tables: true,
         simplifiedAutoLink: true,
@@ -16,6 +17,8 @@ export default function Editor({ currentNote, updateNote }) {
 
     return (
         <section className="pane editor">
+
+            {/* Editor Main Component */}
             <ReactMde
                 value={currentNote.body}
                 onChange={updateNote}
