@@ -42,7 +42,6 @@ const randomBtn = document.querySelector(".random-btn");
 
 
 // Starter Values for the Array
-
 let currentItem = 0;
 
 // DOM Altering Function
@@ -56,7 +55,7 @@ const showPerson = () => {
 }
 
 
-// Fire Event When HTML has completely loaded
+// Fire Event When HTML has completely loaded and Set Person 0
 window.addEventListener("DOMContentLoaded", () => {
     showPerson()
 })
