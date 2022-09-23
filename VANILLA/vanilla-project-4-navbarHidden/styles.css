@@ -232,12 +232,16 @@ nav {
     display: none;
 }
 
+/* Default Style*/
+
 .links {
-    /*height: 0;*/
-    /*overflow: hidden;*/
-    /*transition: var(--transition);*/
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
 }
 
+
+/* Toggle Class */
 .show-links {
     height: 10rem;
 }
@@ -259,10 +263,11 @@ nav {
     }
 
     .nav-toggle {
-        /*display: none;*/
+        display: none;
     }
 
     .links {
+        /* Important to add this otherwise the show-links class will make this look bulky*/
         height: auto;
         display: flex;
     }
