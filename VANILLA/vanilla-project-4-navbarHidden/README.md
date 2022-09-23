@@ -33,7 +33,7 @@ element.classList.add()
 element.classList.toggle()
 ```
 
-### Toggle Funcionality
+### Toggle Functionality
 
 > The code below goes inside the event listener.
 
@@ -47,5 +47,5 @@ element.classList.toggle()
   }
 
  // The same outcome is attained if we do the following
-    links.classList.toggle("show-links")e
+    links.classList.toggle("show-links")
 ```
