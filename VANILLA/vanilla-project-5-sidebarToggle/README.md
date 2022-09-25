@@ -1,29 +1,27 @@
-# Navbar Toggle
+# Sidebar Toggle
 
-This type of navbar has a submenu that is displayed in full when the toggle button is pressed, the same submenu is hidden when the toggle button is pressed again, media queries are also involved as the toggle button must be hidden on bigger screens, the submenu is shown in larger screens.
+A **sidebar toggle** is a button that when pressed will make either a left or a right region of a appear or disappear. This makes it possible to create a sidebar that is hidden by default and can be shown by clicking the button.
 
 ### Basic Steps
 
-> - `HTML` Add the logo and the toggle button 
+> - `HTML`  Createa a toggle button
 > 
-> - `CSS` the toggle button is hidden on bigger screens and shown when media query is mobile size.
+> - `HTML`  Create the <aside> element and include a logo and close button
 > 
-> - `HTML` should have a links container, you need to get the height.
+> - `HTML` Create the links and additional elements inside the <aside>
 > 
-> - `CSS` Use the height to create a toggle class with REM
+> - `CSS` on the sidebar class add the `transform: translate(-100%)` to hide the sidebar to the left
 > 
-> - `CSS`  The links container *MUST* use `height:auto` when applying toggle class on bigger screen.
+> - `CSS` create a class that shows the sidebar again using `transform: translate(0)`
 > 
-> - `CSS` Hide or show elements depending on the media query size and wether you are implemeting mobile first design
+> - `JS` Select Trigger and Target Elements.
 > 
-> - `JS` Select the target and trigger elements
-> 
-> - `JS` Implement the toggle functionality with the description below
+> - `JS` Implement Toggle Funcionality inside event listeners.
 
 ### Functions
 
 ```javascript
-document.getElementById()
+document.querySelector()
 element.addEventListener("click")
 // Long Method
 element.classList.contains()
@@ -39,13 +37,15 @@ element.classList.toggle()
 
 ```js
  // This functionality creates the toggle effect
-  if (links.classList.contains("show-links")){
-      links.classList.remove("show-links")
+  if (sidebar.classList.contains("show-sidebar")){
+      sidebar.classList.remove("show-sidebar")
   }
   else {
-       links.classList.add("show-links")
+       sidebar.classList.add("show-sidebar")
   }
 
  // The same outcome is attained if we do the following
-    links.classList.toggle("show-links")
+  const toggleSidebar = () => {
+    sideBar.classList.toggle("show-sidebar")
+}
 ```

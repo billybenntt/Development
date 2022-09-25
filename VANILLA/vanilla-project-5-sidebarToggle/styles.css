@@ -199,7 +199,7 @@ Sidebar
     color: var(--clr-red-dark);
 }
 .close-btn:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-green-light);
     transform: rotate(360deg);
 }
 .logo {
@@ -235,6 +235,8 @@ Sidebar
     color: var(--clr-primary-1);
 }
 
+/* This makes the sidebar appear on the Left*/
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -243,12 +245,17 @@ Sidebar
     height: 100%;
     background: var(--clr-white);
     display: grid;
-    grid-template-rows: auto 100px auto;
+    grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
     box-shadow: var(--clr-red-dark);
     transition: var(--transition);
-    /* transform: translate(-100%); */
+
+     /* Transform hides the sidebar */
+
+     transform: translate(-100%);
 }
+
+/* This shows  the sidebar*/
 .show-sidebar {
     transform: translate(0);
 }
