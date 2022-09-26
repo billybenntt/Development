@@ -1,0 +1,15 @@
+Sidebar
+
+Functions from Parent
+-------------------
+props.notes
+props.newNote -> Calls createNewNote
+
+
+State from Parent
+------------------
+props.currentNote -> calls findCurrentNote()
+props.setCurrentNoteId
+
+
+Editor

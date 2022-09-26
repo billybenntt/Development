@@ -2,13 +2,16 @@ import React from "react";
 
 export default function Sidebar(props) {
 
-    // Generate List of Notes
+    // Generate List of Notes from array of note objects
     const noteElements = props.notes.map((note, index) => (
 
         <div key={note.id}>
 
+            {/*Select current note and apply style*/}
             <div className={`title ${note.id === props.currentNote.id ? "selected-note" : ""}`}
                 onClick={() => props.setCurrentNoteId(note.id)}>
+
+                {/* Note Summary Part */}
                 <h4 className="text-snippet">Note {index + 1}</h4>
             </div>
 
@@ -24,12 +27,6 @@ export default function Sidebar(props) {
             {/* Define Create Note Listener and Button*/}
             <button className="new-note" onClick={props.newNote}>
                 +
-            </button>
-
-
-            {/* Define Delete Note Listener and Button*/}
-            <button className="delete-note" onClick={props.deleteNote}>
-                -
             </button>
 
 

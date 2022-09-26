@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4be56c33-2354-4fc6-b397-ff746a2de7ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/components/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/images/react-icon-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/images/react-icon-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/images/react-icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/src/images/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REACT/react-project-8-notesApp/steps.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ee5vKIl4ohahCBqtIM9Cfx3vg5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "E:/Development/VANILLA/vanilla-project-7-accordionQuestions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JavaScript"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.scratch.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4be56c33-2354-4fc6-b397-ff746a2de7ee" name="Changes" comment="" />
+      <created>1662943438561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662943438561</updated>
+      <workItem from="1662943439959" duration="7502000" />
+      <workItem from="1663052860968" duration="1959000" />
+      <workItem from="1663122694502" duration="9357000" />
+      <workItem from="1663136185448" duration="33000" />
+      <workItem from="1663136822778" duration="4128000" />
+      <workItem from="1663147669767" duration="252000" />
+      <workItem from="1663147937198" duration="1341000" />
+      <workItem from="1663212451582" duration="53000" />
+      <workItem from="1663808811155" duration="13962000" />
+      <workItem from="1663831132873" duration="15205000" />
+      <workItem from="1664162122142" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

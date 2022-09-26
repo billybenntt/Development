@@ -1,9 +1,0 @@
-- Start an empty React Project
-- Create components folder
-- Define each component
-- Set the markup for each component
-- Style each component
-- Create div.dark variable and apply styles for dark mode
-- Apply class conditional rendering to each component
-- Test the conditional rendering by passing hardcoded state to the child components
-- 

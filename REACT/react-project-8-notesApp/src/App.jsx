@@ -8,22 +8,38 @@ import {nanoid} from "nanoid";
 export default function App() {
 
 
-    //   Initial State of Notes Data
-    const [notes, setNotes] = React.useState([...data]);
+    //   Initial State of Notes Data if empty initialize to empty array
+    const [notes, setNotes] = React.useState( JSON.parse(localStorage.getItem("notes"))||[]);
+
+    // If the first note exists(True) assign the ID else /assign empty string ""
     const [currentNoteId, setCurrentNoteId] = React.useState((notes[0] && notes[0].id) || "");
+
+    // External Action
+    React.useEffect(() => {
+        localStorage.setItem("notes", JSON.stringify(notes))
+    }, [notes])
 
 
     // Nanoid is an ID Generator
 
     function createNewNote() {
+
+        // Starter Object
         const newNote = {
             id: nanoid(), body: "# Type your markdown note's title here",
         };
+
+        // Pass new Object to Notes Array
         setNotes((prevNotes) => [newNote, ...prevNotes]);
+
+
+        //  Grab ID from new Note and  pass it to selected note
         setCurrentNoteId(newNote.id);
     }
 
+
     function updateNote(text) {
+        //  Modify state of notes
         setNotes((oldNotes) => oldNotes.map((oldNote) => {
             return oldNote.id === currentNoteId ? {...oldNote, body: text} : oldNote;
         }));
@@ -35,34 +51,33 @@ export default function App() {
         }) || notes[0]);
     }
 
-    function deleteNote() {
-      console.log(currentNoteId)
-    }
 
-    return (<main>
-        {/*   Conditional Rendering */}
-        {notes.length > 0 ? (<Split sizes={[30, 70]} direction="horizontal" className="split">
+    return (
 
-            <Sidebar
-                notes={notes}
-                currentNote={findCurrentNote()}
-                setCurrentNoteId={setCurrentNoteId}
-              // pass Custom Prop
-                newNote={createNewNote}
-                deleteNote={deleteNote}
-            />
+        <main>
+            {/*   Conditional Rendering */}
+            {notes.length > 0 ? (<Split sizes={[30, 70]} direction="horizontal" className="split">
 
-            {currentNoteId && notes.length > 0 && (<Editor currentNote={findCurrentNote()} updateNote={updateNote}/>)}
-        </Split>) :
-            (// Render Basic when Notes are 0
+                <Sidebar
+                    notes={notes}
+                    currentNote={findCurrentNote()}
+                    setCurrentNoteId={setCurrentNoteId}
+                    newNote={createNewNote}
+                />
 
-            <div className="no-notes">
-                <h1>You have no notes</h1>
-                <button className="first-note" onClick={createNewNote}>
-                    Create one now
-                </button>
+                {currentNoteId && notes.length > 0 && (
+                    <Editor currentNote={findCurrentNote()} updateNote={updateNote}/>)}
+            </Split>) : (// Render Basic when Notes are 0
+
+                <div className="no-notes">
+                    <h1>You have no notes</h1>
+                    <button className="first-note" onClick={createNewNote}>
+                        Create one now
+                    </button>
 
 
-            </div>)}
-    </main>);
+                </div>)}
+        </main>
+
+    );
 }
