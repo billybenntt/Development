@@ -22,6 +22,8 @@ This method uses the Parents isolation Delegation method which uses selectors in
 > - `CSS` The active state of the class should cancel out the effects from the default `display:block` and the plus icon should be hidden with `display: inline`
 > 
 > - `JS` Apply `forEach` Parents Isolation Delegation method on the question container.
+> 
+> - `JS` Implement Close Everything but one card funcionality
 
 ### Functions
 
@@ -52,7 +54,6 @@ The accordion functionality is implemented in two steps the implementation is as
 We use a `forEach` to isolate all the parent elements, each parent element will have a single parameter that will act as its own instance, instead of using `document.querySelector` we using `element.querySelector` to isolate each element child element, on which we can apply the same event listener, which applies the toggle style to the parent element in this case
 
 ```js
-
 // Select all the Parent Elements
 questionCollection.forEach((question)=>{
 
@@ -65,4 +66,17 @@ questionCollection.forEach((question)=>{
     })
 
 })
+```
+
+**Close Everything but one Card**
+
+Inside the event listener we loop trough all the questions and compare the item that is being clicked, the forEach references all the items against the item that is being clicked, if the item that is being clicked doesn't match any of the referenced items, the show class is removed
+
+```js
+      // only the items that are clicked on will have the show-text class
+        questionCollection.forEach((item) => {
+            if (item !== question) {
+               item.classList.remove("show-text")
+            }
+        })
 ```

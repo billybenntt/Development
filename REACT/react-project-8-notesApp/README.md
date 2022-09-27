@@ -38,8 +38,6 @@
 
 - Since it is an external action it we need to implement `UseEffect()` and everytime notes are changed we call useEffect hence the notes dependency. 
 
-
-
 ```js
   const [notes, setNotes] = 
   React.useState(JSON.parse(localStorage.getItem("notes"))||[]);

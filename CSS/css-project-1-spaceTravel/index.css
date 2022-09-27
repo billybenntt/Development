@@ -38,12 +38,23 @@
 /* Box Sizing */
 
 /* Makes Calculating Width and Height Much Easier*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 /* Reset Margin */
-body, h1, h2, h3, h4, h5, h6, p, figure, picture {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
     margin: 0;
 }
 
@@ -62,18 +73,23 @@ body {
 }
 
 /*Make images easier to work with*/
-img, picture {
+img,
+picture {
     max-width: 100%;
     display: block;
 }
 
 /* Make forms easier to work with*/
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
 /* Remove animations for people who've turned off (woke shit)*/
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -84,7 +100,8 @@ input, button, textarea, select {
     }
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
@@ -119,6 +136,7 @@ p {
     gap: var(--gap);
 }
 
+/*Lobotomized Owl*/
 /* Select child elements that have an adjacent sibling*/
 .flow > * + * {
     /*outline: 1px solid red;*/
@@ -137,10 +155,31 @@ p {
     /* Prevent from things touching on the page*/
     padding-inline: 2em;
     /*Limit page width*/
-    max-width: 60rem;
+    max-width: 80rem;
     /*  Center */
     margin-inline: auto;
+    outline: 1px solid purple;
 
+}
+
+.grid-container {
+    display: grid;
+    /* Column Gap*/
+    column-gap: var(--container-gap,2rem);
+    /* 4 Columns*/
+    /* 2em sides/ 80rem center/ 2em sides*/
+    grid-template-columns: minmax(2em, 1fr) repeat(2, minmax(0, 40rem))  minmax(2em, 1fr) ;
+}
+
+/* Reassign Column each Child */
+.grid-container > *:first-child {
+    grid-column: 2;
+    outline: 1px solid red;
+}
+
+.grid-container > *:last-child {
+    grid-column: 3;
+     outline: 1px solid rebeccapurple;
 }
 
 /* Accessibility Class */
@@ -152,7 +191,8 @@ p {
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
+    white-space: nowrap;
+    /* added line */
     border: 0;
 }
 
@@ -248,7 +288,10 @@ p {
     font-size: var(--fs-200);
 }
 
-.fs-900, .fs-800, .fs-700, .fs-600 {
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
     line-height: 1.1;
 }
 
@@ -308,7 +351,6 @@ p {
     /* Control Child */
     position: relative;
     z-index: 1;
-
 
 
 }
@@ -427,14 +469,14 @@ p {
     cursor: pointer;
     border-radius: 50%;
     aspect-ratio: 1;
-    color:  hsla(var(--clr-white));
+    color: hsla(var(--clr-white));
     border: 1px solid hsla(var(--clr-white), 25%);
     background-color: transparent;
 }
 
 .number-indicators > [aria-selected="true"] {
     background-color: hsla(var(--clr-white), 100%);
-    color: hsla(var(--clr-dark)) ;
+    color: hsla(var(--clr-dark));
 }
 
 .number-indicators > *:hover {
