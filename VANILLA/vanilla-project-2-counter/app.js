@@ -8,7 +8,6 @@ const buttons = document.querySelectorAll(".btn");
 
 
 // ForEach to iterate over each element
-// Simple forloopi also does the trick but this guy is a bit edgy
 
 buttons.forEach(function (item) {
 

@@ -5,6 +5,7 @@ import locations from "./data/data"
 
 
 
+//  Grab the Single Card and Map all the items from the array of objects
 const cardStack = locations.map(element => <Card key={element.id}{...element} />)
 
 
