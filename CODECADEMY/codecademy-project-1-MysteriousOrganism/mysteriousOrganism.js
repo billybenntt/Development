@@ -56,10 +56,38 @@ const findInvalidCards = (collection) => {
 }
 
 const getCompanyName = (card) => {
-  const firstDigit = card.reverse().join("")[0]
-  return firstDigit
+  // Get Card First Digit
+  const firstDigit = card[0]
+  // Return String Accordingly
+  switch (firstDigit) {
+    case 3:
+      return 'amex'
+    case 4:
+      return 'visa'
+    case 5:
+      return 'mastercard'
+    case 6:
+      return 'discover'
+    default:
+      return 'invalid'
+  }
 }
 
+// Get list of Invalid Cards
 const invalidCards = findInvalidCards(batch)
 
-console.log(getCompanyName(mystery2))
+const idInvalidCardCompanies = (invalidCards) => {
+  // Get All the Values
+  const fullArray = invalidCards.map(getCompanyName)
+  // Get Unique Values
+  return fullArray.reduce((accumulator, currentItem) => {
+    if (!accumulator.includes(currentItem)) {
+      accumulator.push(currentItem)
+    }
+    return accumulator
+  }, [])
+
+}
+
+// Final Result
+console.log(idInvalidCardCompanies(invalidCards))

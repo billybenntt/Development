@@ -22,7 +22,6 @@ switchBtn.addEventListener('click', () => {
   }
 
 
-
 })
 
 // ------------------------ PRE-LOADER ------------------------ //
@@ -34,6 +33,7 @@ switchBtn.addEventListener('click', () => {
 // })
 
 // WHen HTML has been loaded and parsed + stylesheets, images and videos
+// Therefore  this is better
 window.addEventListener("load", ()=>{
   preloaderContainer.classList.add("hide-preloader")
 })
