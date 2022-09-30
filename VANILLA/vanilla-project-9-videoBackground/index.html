@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vanilla Project 9: Video Background</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <!--Pre-Loader -->
+    <div class="preloader">
+        <img src="assets/preloader.gif" alt="preloader" >
+    </div>
+
+    <!--Header -->
+    <header>
+        <video class="video-container" muted autoplay loop>
+            <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <h1>Video Title</h1>
+
+        <!--Video Switch-->
+        <button class="switch-btn">
+            <span>Play</span>
+            <span>Pause</span>
+            <!--The Item below moves-->
+            <span class="switch"></span>
+        </button>
+    </header>
+
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
