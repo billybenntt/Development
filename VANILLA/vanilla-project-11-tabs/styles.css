@@ -246,6 +246,9 @@ About
   border-bottom-right-radius: var(--radius);
   padding: 2rem 1.5rem;
 }
+
+
+
 /* hide content */
 .content {
   display: none;
