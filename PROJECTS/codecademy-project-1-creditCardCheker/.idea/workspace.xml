@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6916eb1-4e07-4bec-88a1-a3899a323199" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CODECADEMY/codecademy-project-1-creditCardCheker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CODECADEMY/codecademy-project-1-creditCardCheker/creditCardCheker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VANILLA/vanilla-project-9-videoBackground/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../VANILLA/vanilla-project-9-videoBackground/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Boostnote/boostnote.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Boostnote/boostnote.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Boostnote/notes/updLS6P3Xo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Boostnote/notes/updLS6P3Xo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PYTHON/.idea/PYTHON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/.idea/PYTHON.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PYTHON/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PYTHON/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PYTHON/python-basics-7-lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/python-basics-7-lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/cl-settings.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Settings/cl-settings.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +31,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Development/CODECADEMY/codecademy-project-1-creditCardCheker&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Development/VANILLA/vanilla-project-10-scroll",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="creditCardCheker.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/creditCardCheker.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -62,6 +66,7 @@
       <updated>1664526953202</updated>
       <workItem from="1664526954884" duration="1372000" />
       <workItem from="1664528791929" duration="34000" />
+      <workItem from="1664760871056" duration="300000" />
     </task>
     <servers />
   </component>

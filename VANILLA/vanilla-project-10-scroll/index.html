@@ -1,20 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Scroll</title>
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>scroll project</h1>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+
+    <header id="home">
+
+        <!--Navigation-->
+        <nav id="nav">
+            <div class="nav-center">
+
+
+                <div class="nav-header">
+                    <!-- Logo Icon-->
+                    <img src="assets/logo.svg" alt="nav-logo" class="logo">
+
+                    <!-- Toggle Icon-->
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Links-->
+                <!-- Parent Container -->
+                <div class="links-container">
+                    <!-- Child Container -->
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link">tours</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+
+        <!--Banner-->
+
+        <div class="banner">
+            <div class="container">
+                <h1>Scroll Project</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis eaque voluptate?
+                    Assumenda, ducimus excepturi expedita quam saepe vero vitae.</p>
+
+                <a href="#tours" class="scroll-link btn btn-white">Poser Button</a>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!--  Section 1 - About  -->
+
+
+    <section id="about" class="section">
+        <div class="title">
+            <h2>About <span>us</span></h2>
+        </div>
+    </section>
+
+    <!--  Section 2 - Services  -->
+
+    <section id="services" class="section">
+        <div class="title">
+            <h2>Our <span>Services</span></h2>
+        </div>
+    </section>
+
+    <!--  Section 3 - Tours  -->
+
+    <section id="tours" class="section">
+        <div class="title">
+            <h2>Featured <span>Tours</span></h2>
+        </div>
+    </section>
+
+
+    <!--  Footer  -->
+
+    <footer class="section">
+        <p>Copyright &copy; backboards travel tours company <span id="date"></span>
+            All rights reserved
+        </p>
+    </footer>
+
+    <!-- Back to top Button -->
+
+
+    <a href="home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <!-- javascript -->
     <script src="app.js"></script>
-  </body>
+</body>
 </html>

@@ -257,6 +257,13 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
+
+
+
+
+/* Larger than 800px */
+
+
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
@@ -275,6 +282,9 @@ nav {
   .nav-toggle {
     display: none;
   }
+
+  /* Parent container must add class */
+  /* We use important since we are using inline style using javascript*/
   .links-container {
     height: auto !important;
   }
@@ -300,8 +310,10 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpeg) center/cover no-repeat;
+
+  /* Background with Gradient*/
+  background: linear-gradient(rgba(33, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./assets/hero-bcg.jpeg") center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -332,6 +344,9 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
+
+
+/* Give Fixed Height to each section */
 #about,
 #services,
 #tours {
@@ -354,7 +369,11 @@ footer p {
 
 .top-link {
   font-size: 1.25rem;
+  /* Make it fixed to the screen */
   position: fixed;
+
+
+
   bottom: 3rem;
   right: 3rem;
   background: var(--clr-secondary);
@@ -364,8 +383,11 @@ footer p {
   place-items: center;
   border-radius: var(--radius);
   color: var(--clr-white);
+
+  /* Make it breath */
   animation: bounce 2s ease-in-out infinite;
 
+  /* Toggle Function */
   visibility: hidden;
   z-index: -100;
 }
