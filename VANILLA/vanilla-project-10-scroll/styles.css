@@ -194,6 +194,8 @@ Scroll
 ===============
 */
 /* navbar */
+
+
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
@@ -288,6 +290,8 @@ nav {
   .links-container {
     height: auto !important;
   }
+
+
   .links {
     display: flex;
   }
@@ -371,9 +375,6 @@ footer p {
   font-size: 1.25rem;
   /* Make it fixed to the screen */
   position: fixed;
-
-
-
   bottom: 3rem;
   right: 3rem;
   background: var(--clr-secondary);
@@ -383,18 +384,24 @@ footer p {
   place-items: center;
   border-radius: var(--radius);
   color: var(--clr-white);
-
   /* Make it breath */
   animation: bounce 2s ease-in-out infinite;
-
   /* Toggle Function */
   visibility: hidden;
   z-index: -100;
 }
+
+
+
 .show-link {
   visibility: visible;
   z-index: 100;
 }
+
+
+
+
+
 
 @keyframes bounce {
   0% {
