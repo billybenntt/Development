@@ -16,3 +16,5 @@ best_day = round(max(sales) * profit_unit, 2)
 worst_day = round(min(sales) * profit_unit, 2)
 
 print(f'Total Profit is ${total_profit}, Most profitable day: ${best_day} & Least Profitable day: ${worst_day} in sales')
+
+

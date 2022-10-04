@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5e2723-7d8f-4d44-941d-21892575feeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Boostnote/boostnote.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/boostnote.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/ed_UeoOSqB.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/notes/ed_UeoOSqB.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/eeJUdcTlT.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/notes/eeJUdcTlT.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CODECADEMY/opp-blogpost-rw/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CODECADEMY/opp-blogpost-rw/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PYTHON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PYTHON.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-basics-7-lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-7-lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-basics-7-listsExercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-7-listsExercise.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
