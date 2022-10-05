@@ -1,32 +1,58 @@
 # Scroll Project
 
-The toggle method # 2 considers a dynamic size for the links rather than a fixed harcoded size.
+This project implements 4 techniques mostly related to scroll behavior, and dynamic styling, the techniques are explained as follows: 
 
-### Basic Steps
+**Dynamic Date**
 
-> ##### Change Date Dynamically
-> 
-> - `HTML` Hardcode the dae
-> 
-> - `JS` Change the inner text 
-> 
-> ##### Implement Toggle Method # 2
-> 
-> 
+Instead of using a hardcoded date the page will use the date that is generated from the Javascript and will display the current year
 
-- ### Functions
+**Dynamic Menu Items**
+
+The navbar menu items will have a toggle functionality, the given toggle
+container will adapt its size dynamically based on the number of items
+contained in the menu.
+
+**Scroll Styles**
+
+The Navbar menu will alter its styles based on its vertical position in addition a button that sends the user back to the top of the page will be rendered.
+
+**Scroll Responsive**
+
+This technique replaces the conventional technique of jumping to sections using the default click behavior and ensures
+
+<span style="color:yellow">****REWORK THIS PART***</span>
+
+### Functions
 
 ```js
+// Date Change
+Date().getFullYear()
+element.innerText
+// Dynamic Link Menu
 document.querySelector()
-// Get Data when page loads
-element.classlist.contains()
-element.classlist.add()
-element.classlist.remove()
-videoContainer.play()
-videoContainer.pause()
-window.addEventListener("load", hidePreloader)
+element.addEventListener("click")
+element.getBoundingClientRect().height
+element.style.height
+// Scroll Styles
+window.addEventListener("scroll")
+window.scrollY
+element.classList.remove()
+element.classList.add()
+// Scroll Responsive
+element.getAttribute()
+String.slice()
+document.getElementById()
+element.offsetTop
+window.scrollTo({})
+event.preventDefault()
+document.querySelectorAll()
+Elements.forEach()
 ```
 
-#### Simulate Low Connection Speed
+### Glossary
 
-Use the developer options, Regular 2G to simulate slow bandwith, hence delaying the download of resources and visualizing the preloader~~~~
+- `Element.getBoundingClientRect()` method returns the size of an element and its position relative to the viewport. 
+
+- `slice` extracts a section of a string without modifying original string  
+
+- `offsetTop` - A Number, representing the top position of the element, in pixels

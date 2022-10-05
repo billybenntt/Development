@@ -1,4 +1,4 @@
-// Grab elements
+ // Grab elements
 
 const selectElement = (selector) => {
   const element = document.querySelector(selector);
