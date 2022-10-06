@@ -54,10 +54,11 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
-Global Styles
+===============
+GLOBAL STYLES
 ===============
 */
+
 
 *,
 ::after,
@@ -112,30 +113,13 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/*  global classes */
+
+/*
+===============
+UTILITY CLASSES
+===============
+*/
+
 
 .btn {
   text-transform: uppercase;
@@ -165,11 +149,7 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -180,34 +160,7 @@ main {
 About
 ===============
 */
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.title p {
-  width: 80%;
-  margin: 0 auto;
-}
 
-.about-img {
-  margin-bottom: 2rem;
-}
-.about-img img {
-  border-radius: var(--radius);
-  object-fit: cover;
-  height: 20rem;
-}
-@media screen and (min-width: 992px) {
-  .about-img {
-    margin-bottom: 0;
-  }
-
-  .about-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-}
 .about {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -248,14 +201,88 @@ About
 }
 
 
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title p {
+  width: 80%;
+  margin: 0 auto;
+}
 
-/* hide content */
+.about-img {
+  margin-bottom: 2rem;
+}
+.about-img img {
+  border-radius: var(--radius);
+  object-fit: cover;
+  height: 20rem;
+}
+
+
+/*
+===============
+HIDE CONTENT
+===============
+*/
+
 .content {
   display: none;
 }
+.content.active {
+  display: block;
+}
+
 .tab-btn.active {
   background: var(--clr-white);
 }
-.content.active {
-  display: block;
+
+
+
+/*
+===============
+MEDIA QUERIES
+===============
+*/
+
+
+@media screen and (min-width: 992px) {
+  .about-img {
+    margin-bottom: 0;
+  }
+
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+    .section-center {
+    width: 95vw;
+  }
+}
+
+
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
 }

@@ -5,8 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5e2723-7d8f-4d44-941d-21892575feeb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Boostnote/boostnote.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/boostnote.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/-3vh855Z0c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/21llSsgV-y.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/AOww2qNTlJ.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/F2hpepcQd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/HFPFpqF7v.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/K0VR-3ZgX.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/LHFfSeH1t.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/Mx8EFvfV44.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/TLTiXz0PPL.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/VAWXzPwim.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/dMSIBBK2Cw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/eU7MHXXclO.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/eeJUdcTlT.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/mIDmd_R3Ht.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/mvCxeiw7p.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/or9drIbD5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/thNnq8YrB.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/uN1DaQpi3.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python-basics-7-listsExercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-7-listsExercise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/assets/hero-bcg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-10-scroll/utils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VANILLA/vanilla-project-11-tabs/utils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/assets/preloader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/assets/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VANILLA/vanilla-project-9-videoBackground/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
