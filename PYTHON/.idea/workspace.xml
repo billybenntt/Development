@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5e2723-7d8f-4d44-941d-21892575feeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Boostnote/boostnote.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/boostnote.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/PfyY46gfDG.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/notes/PfyY46gfDG.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Boostnote/notes/wiudfMbPPS.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Boostnote/notes/wiudfMbPPS.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PYTHON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PYTHON.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-basics-7-lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-7-Lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-basics-7-listsExercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-7-ListsExercise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-basics-11-Dictionaries.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-11-Dictionaries.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +27,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Development/PYTHON&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Development/PYTHON",
+    "settings.editor.selected.configurable": "IntelliLang.Configuration"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Development\PYTHON" />
       <recent name="D:\Development\PYTHON" />
+      <recent name="E:\Development\PYTHON" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python-basics-10-SetsExercises">
+  <component name="RunManager" selected="Python.python-basics-12-FunctionsExercise">
     <configuration name="python-basics-10-Sets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python-basics-8-Split&amp;JoinExercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="python-basics-12-Functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,7 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-basics-8-Split&amp;JoinExercise.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-basics-12-Functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python-basics-9-Tupples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="python-basics-12-FunctionsExercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +140,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-basics-9-Tupples.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-basics-12-FunctionsExercise.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python-basics-12-FunctionsExercise" />
+        <item itemvalue="Python.python-basics-12-Functions" />
+        <item itemvalue="Python.python-basics-11-Dictionaries" />
         <item itemvalue="Python.python-basics-10-SetsExercises" />
         <item itemvalue="Python.python-basics-10-Sets" />
-        <item itemvalue="Python.python-basics-11-Dictionaries" />
-        <item itemvalue="Python.python-basics-9-Tupples" />
-        <item itemvalue="Python.python-basics-8-Split&amp;JoinExercise" />
       </list>
     </recent_temporary>
   </component>
