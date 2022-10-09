@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5e2723-7d8f-4d44-941d-21892575feeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PYTHON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PYTHON.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-basics-11-Dictionaries.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-11-Dictionaries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-basics-12-Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-basics-12-Functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
       <recent name="E:\Development\PYTHON" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python-basics-12-FunctionsExercise">
+  <component name="RunManager" selected="Python.python-basics-12-Functions">
     <configuration name="python-basics-10-Sets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.python-basics-12-FunctionsExercise" />
         <item itemvalue="Python.python-basics-12-Functions" />
+        <item itemvalue="Python.python-basics-12-FunctionsExercise" />
         <item itemvalue="Python.python-basics-11-Dictionaries" />
         <item itemvalue="Python.python-basics-10-SetsExercises" />
         <item itemvalue="Python.python-basics-10-Sets" />
