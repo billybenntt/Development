@@ -41,7 +41,6 @@ print("Is d and f not the same in memory?", d is not f)
 
 # ------------------------- TRUTHY/FALSY VALUES -------------------------
 
-
 print(int(False))
 print(int(True))
 print(bool("truthy"))
