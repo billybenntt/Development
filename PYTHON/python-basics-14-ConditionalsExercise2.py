@@ -3,9 +3,9 @@
 
 def num_days(month):
     days = 0
-    if month in ['jan', 'mar', 'may', 'jul', 'aug', 'oct', 'dec']:
+    if month in {'jan', 'mar', 'may', 'jul', 'aug', 'oct', 'dec'}:
         days = 31
-    elif month in ['apr', 'jun', 'sep', 'nov']:
+    elif month in {'apr', 'jun', 'sep', 'nov'}:
         days = 30
     elif month == 'feb':
         days = 28
