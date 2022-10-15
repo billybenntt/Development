@@ -10,13 +10,30 @@ print('Guessing game')
 # so If you want to see prints during while loop, print to the input box (This is specific to this platform)
 
 
-iterator = 3
-while iterator:
-    secret_number = 23
-    guess = int(input("Enter number: "))
-    if guess == secret_number:
-        print("You win")
-        iterator = 0
+# Global Variables
+num = 12
+guess = 0
+guess_limit = 5
+guess_number = 0
+
+# Inside the loop
+while guess_number < guess_limit:
+    guess = int(input(f"guess a number 1-20: Guess # {guess_number + 1} : last guess was {guess}: ->"))
+    # Modded Logic
+    if guess != num:
+        guess_number += 1
+        if guess > num:
+            guess = int(input(f"{guess} too high!- Guess again! "))
+        else:
+            guess = int(input(f"{guess} too low!- Guess again! "))
+    # Basic Logic
+    if guess == num:
+        print(f'You Win! You guessed it {num}')
+        break
     else:
-        iterator -= 1
-        print("Try again")
+        print(f'No, Not {guess}!')
+        guess_number += 1
+
+# Outside the Loop
+if guess != num:
+    print(f'Sorry you lose! it was {num}')
