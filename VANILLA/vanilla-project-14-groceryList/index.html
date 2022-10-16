@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vanilla Project 14: Grocery Bud</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+
+    <section class="section-center">
+        <!-- Form -->
+        <form class="grocery-form">
+            <p class="alert"></p>
+            <h3>Grocery Bud</h3>
+
+            <!-- Input Capture-->
+            <div class="form-control">
+                <input type="text" id="grocery" placeholder="e.g.egg"/>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+
+        <!-- List -->
+        <div class="grocery-container">
+            <!-- Items-->
+            <div class="grocery-list">
+                <!-- Single Item-->
+                <article class="grocery-item">
+                    <p class="title">Item</p>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="delete-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!--CLear Items-->
+            <button type="button" class="clear-btn">Clear Items</button>
+        </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
