@@ -31,11 +31,20 @@ const addItem = (event) => {
 
 
     } else {
-        alertElement.textContent = "Empty Value"
-        alertElement.classList.add("alert-danger")
+        displayAlert("Please enter value", "danger")
     }
 
 
+}
+
+const displayAlert = (text, action) => {
+    alertElement.textContent = text;
+    alertElement.classList.add(`alert-${action}`)
+
+    setTimeout(() => {
+        alertElement.textContent = "";
+        alertElement.classList.add(`alert-${action}`)
+    }, 1000)
 }
 
 // --------------- EVENT LISTENERS---------------
