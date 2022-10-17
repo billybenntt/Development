@@ -53,7 +53,7 @@ const addItem = (event) => {
     groceryContainer.classList.add('show-container')
     // Add to Local Storage
     addToLocalStorage(id, value)
-    // Set Back to Default
+    // Set Back to Default (Restore the List)
     setBackToDefault(id, value)
 
   } else if (value && editFlag) {
@@ -82,7 +82,10 @@ form.addEventListener('submit', addItem)
 // --------------- SET BACK TO DEFAULT  --------------
 
 const setBackToDefault = (id, value) => {
-  console.log('Set Back to Default')
+  groceryAdd.value = ''
+  editFlag = false
+  editID = ''
+  submitBtn.innerText = 'Submit';
 }
 // --------------- LOCAL STORAGE --------------
 
