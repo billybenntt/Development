@@ -16,6 +16,33 @@ let editFlag = false
 let editID = ''
 
 // --------------- FUNCTIONS FOR EVENT LISTENER ---------------
+
+/* CLEAR ITEMS */
+const clearItems = () => {
+  // Capture list
+  const items = document.querySelectorAll('.grocery-item')
+
+  // Check that there are items
+  if (items.length > 0) {
+    // Access each child parent container and remove it from there
+    items.forEach(item => {
+      groceryList.removeChild(item)
+    })
+
+  }
+  // Hide the grocery container
+  groceryContainer.classList.remove('show-container')
+
+  // Display alert
+  displayAlert('Empty List', 'danger')
+
+//   Set back to default
+//   setBackToDefault()
+//   Clear Entire Local Storage
+//   localStorage.removeItem("list")
+}
+
+/* ADD ITEM S*/
 const addItem = (event) => {
   //Prevent Refresh
   event.preventDefault()
@@ -65,6 +92,7 @@ const addItem = (event) => {
 
 }
 
+/* DISPLAY ALERTS */
 const displayAlert = (text, action) => {
   alertElement.textContent = text
   alertElement.classList.add(`alert-${action}`)
@@ -78,6 +106,10 @@ const displayAlert = (text, action) => {
 // --------------- EVENT LISTENERS---------------
 
 form.addEventListener('submit', addItem)
+clearBtn.addEventListener('click', clearItems)
+
+
+
 
 // --------------- SET BACK TO DEFAULT  --------------
 
@@ -85,7 +117,8 @@ const setBackToDefault = (id, value) => {
   groceryAdd.value = ''
   editFlag = false
   editID = ''
-  submitBtn.innerText = 'Submit';
+  submitBtn.innerText = 'Submit'
+  console.log('Set back to default')
 }
 // --------------- LOCAL STORAGE --------------
 
