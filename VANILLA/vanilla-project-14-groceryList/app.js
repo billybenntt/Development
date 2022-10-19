@@ -1,4 +1,4 @@
-// --------------- SELECT ITEMS ---------------
+// --------------- SELECT ITEMS ---------------------------------------------
 const alertElement = document.querySelector('.alert')
 /* Form Container*/
 const form = document.querySelector('.grocery-form')
@@ -10,29 +10,26 @@ const groceryContainer = document.querySelector('.grocery-container')
 const groceryList = document.querySelector('.grocery-list')
 const clearBtn = document.querySelector('.clear-btn')
 
-// --------------- EDIT OPTIONS---------------
-let editElement
+// --------------- EDIT OPTIONS ---------------------------------------------
+let editElement = ''
 let editFlag = false
 let editID = ''
 
-// --------------- FUNCTIONS FOR EVENT LISTENER ---------------
+// --------------- FUNCTIONS FOR EVENT LISTENER -------------------------------
 
-/* CLEAR ITEMS */
+/* CLEAR ALL ITEMS */
 const clearItems = () => {
   // Capture list
   const items = document.querySelectorAll('.grocery-item')
-
   // Check that there are items
   if (items.length > 0) {
     // Access each child parent container and remove it from there
     items.forEach(item => {
       groceryList.removeChild(item)
     })
-
   }
   // Hide the grocery container
   groceryContainer.classList.remove('show-container')
-
   // Display alert
   displayAlert('Empty List', 'danger')
 
@@ -42,15 +39,35 @@ const clearItems = () => {
 //   localStorage.removeItem("list")
 }
 
-const deleteItem = () => {
-  console.log('Delete Item')
+/* DELETE ITEMS */
+const deleteItem = (event) => {
+  // Capture Element
+  const currentElement = event.currentTarget.parentElement.parentElement
+  // Get Element ID
+  const id = currentElement.dataset.id
+  // Delete Element via the parent
+  groceryList.removeChild(currentElement)
+  // If No Items remove the class
+  if (groceryList.children.length === 0) {
+    groceryContainer.classList.remove('show-container')
+  }
+  // Display alert
+  displayAlert('Item removed', 'danger')
+  // Set back to default
+  setBackToDefault()
+  // Remove ID from Local Storage
+  removeFromLocalStorage(id)
+
 }
 
-const editItem = () => {
-  console.log('Edit Item')
+
+/* EDIT ITEMS */
+const editItem = (event) => {
+  const currentElement = event.currentTarget.parentElement.parentElement
+  console.log(currentElement)
 }
 
-/* ADD ITEM S*/
+/* ADD ITEMS*/
 const addItem = (event) => {
   //Prevent Refresh
   event.preventDefault()
@@ -92,8 +109,7 @@ const addItem = (event) => {
     // Set Back to Default (Restore the List)
     setBackToDefault(id, value)
 
-
-     // Buttons exist now 
+    // Buttons exist now
     const deleteBtn = document.querySelector('.delete-btn')
     const editBtn = document.querySelector('.edit-btn')
 
@@ -118,16 +134,15 @@ const displayAlert = (text, action) => {
   setTimeout(() => {
     alertElement.textContent = ''
     alertElement.classList.remove(`alert-${action}`)
-  }, 2000)
+  }, 1000)
 }
 
-// --------------- EVENT LISTENERS---------------
+// --------------- EVENT LISTENERS ---------------------------------------------
 
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
 
-
-// --------------- SET BACK TO DEFAULT  --------------
+// --------------- SET BACK TO DEFAULT  ------------------------------------------
 
 const setBackToDefault = (id, value) => {
   groceryAdd.value = ''
@@ -136,10 +151,12 @@ const setBackToDefault = (id, value) => {
   submitBtn.innerText = 'Submit'
   console.log('Set back to default')
 }
-// --------------- LOCAL STORAGE --------------
+// --------------- LOCAL STORAGE -----------------------------------------------------
 
 const addToLocalStorage = (id, value) => {
   console.log('Added to local storage')
 }
 
-// --------------- SETUP ITEMS ---------------
+const removeFromLocalStorage = (id) => {
+  console.log(`${id} removed from local storage`)
+}
