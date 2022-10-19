@@ -42,6 +42,14 @@ const clearItems = () => {
 //   localStorage.removeItem("list")
 }
 
+const deleteItem = () => {
+  console.log('Delete Item')
+}
+
+const editItem = () => {
+  console.log('Edit Item')
+}
+
 /* ADD ITEM S*/
 const addItem = (event) => {
   //Prevent Refresh
@@ -72,6 +80,7 @@ const addItem = (event) => {
                             <i class="fas fa-trash"></i>
                         </button>
                      </div>`
+
     // Append Child
     groceryList.appendChild(element)
     //  Display alert
@@ -82,6 +91,15 @@ const addItem = (event) => {
     addToLocalStorage(id, value)
     // Set Back to Default (Restore the List)
     setBackToDefault(id, value)
+
+
+     // Buttons exist now 
+    const deleteBtn = document.querySelector('.delete-btn')
+    const editBtn = document.querySelector('.edit-btn')
+
+    // Attach Event Listeners
+    deleteBtn.addEventListener('click', deleteItem)
+    editBtn.addEventListener('click', editItem)
 
   } else if (value && editFlag) {
     console.log('Editing')
@@ -107,8 +125,6 @@ const displayAlert = (text, action) => {
 
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
-
-
 
 
 // --------------- SET BACK TO DEFAULT  --------------
