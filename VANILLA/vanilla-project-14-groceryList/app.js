@@ -28,13 +28,12 @@ const clearItems = () => {
       groceryList.removeChild(item)
     })
   }
-  // Hide the grocery container
+  // Hide the Grocery container
   groceryContainer.classList.remove('show-container')
   // Display alert
   displayAlert('Empty List', 'danger')
-
-//   Set back to default
-//   setBackToDefault()
+  // Set back to default
+  setBackToDefault()
 //   Clear Entire Local Storage
 //   localStorage.removeItem("list")
 }
@@ -60,29 +59,38 @@ const deleteItem = (event) => {
 
 }
 
-
 /* EDIT ITEMS */
 const editItem = (event) => {
+  // Select Clicked Element
   const currentElement = event.currentTarget.parentElement.parentElement
-  console.log(currentElement)
+  const id = currentElement.dataset.id
+  // Select Edit Value Paragraph Item
+  editElement = event.currentTarget.parentElement.previousElementSibling
+  // Set form Value
+  groceryAdd.value = editElement.innerHTML
+  // Update Global Edit Flags (To Use Second Option)
+  editFlag = true
+  editID = currentElement.dataset.id
+  // Change Button Text
+  submitBtn.textContent = 'Edit'
 }
 
 /* ADD ITEMS*/
 const addItem = (event) => {
   //Prevent Refresh
   event.preventDefault()
-
   // Capture Form Input
   const value = groceryAdd.value
+  // Generate Unique Value
   const id = new Date().getTime().toString()
 
   // Adding New Item
   if (value && !editFlag) {
-    // Create new element
+    // Create new <article> element
     const element = document.createElement('article')
-    //  Add Class
+    //  Add class to it
     element.classList.add('grocery-item')
-    // Add ID Attribute
+    // Add data-id Attribute
     const attr = document.createAttribute('data-id')
     // Assign Unique value
     attr.value = id
@@ -107,9 +115,9 @@ const addItem = (event) => {
     // Add to Local Storage
     addToLocalStorage(id, value)
     // Set Back to Default (Restore the List)
-    setBackToDefault(id, value)
+    setBackToDefault()
 
-    // Buttons exist now
+    // Select Dynamically Created Elements (Buttons exist after this point)
     const deleteBtn = document.querySelector('.delete-btn')
     const editBtn = document.querySelector('.edit-btn')
 
@@ -117,9 +125,18 @@ const addItem = (event) => {
     deleteBtn.addEventListener('click', deleteItem)
     editBtn.addEventListener('click', editItem)
 
-  } else if (value && editFlag) {
-    console.log('Editing')
+  } // Edit Item
+  else if (value && editFlag) {
 
+    editElement.innerHTML = value
+    // Display Alert
+    displayAlert('value changed', 'success')
+
+    // Edit Item Data on Local Storage
+    editLocalStorage(editID, value)
+
+    // Set Back to Default (Restore the List)
+    setBackToDefault()
   } else {
     displayAlert('Please enter value', 'danger')
   }
@@ -142,21 +159,25 @@ const displayAlert = (text, action) => {
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
 
+
+
+
 // --------------- SET BACK TO DEFAULT  ------------------------------------------
 
-const setBackToDefault = (id, value) => {
+const setBackToDefault = () => {
   groceryAdd.value = ''
   editFlag = false
   editID = ''
   submitBtn.innerText = 'Submit'
-  console.log('Set back to default')
 }
 // --------------- LOCAL STORAGE -----------------------------------------------------
 
+const editLocalStorage = (editId, newValue) => {}
+
 const addToLocalStorage = (id, value) => {
-  console.log('Added to local storage')
+
+  localStorage.setItem(id, JSON.stringify(value))
+
 }
 
-const removeFromLocalStorage = (id) => {
-  console.log(`${id} removed from local storage`)
-}
+const removeFromLocalStorage = (id) => {}
