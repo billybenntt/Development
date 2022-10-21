@@ -34,8 +34,8 @@ const clearItems = () => {
   displayAlert('Empty List', 'danger')
   // Set back to default
   setBackToDefault()
-//   Clear Entire Local Storage
-//   localStorage.removeItem("list")
+  // Clear Entire Local Storage
+  localStorage.removeItem('list')
 }
 
 /* DELETE ITEMS */
@@ -46,7 +46,7 @@ const deleteItem = (event) => {
   const id = currentElement.dataset.id
   // Delete Element via the parent
   groceryList.removeChild(currentElement)
-  // If No Items remove the class
+  // If No Items remove the class11
   if (groceryList.children.length === 0) {
     groceryContainer.classList.remove('show-container')
   }
@@ -159,11 +159,7 @@ const displayAlert = (text, action) => {
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
 
-
-
-
 // --------------- SET BACK TO DEFAULT  ------------------------------------------
-
 const setBackToDefault = () => {
   groceryAdd.value = ''
   editFlag = false
@@ -172,12 +168,46 @@ const setBackToDefault = () => {
 }
 // --------------- LOCAL STORAGE -----------------------------------------------------
 
-const editLocalStorage = (editId, newValue) => {}
-
+/* Add New Item to Local Storage */
 const addToLocalStorage = (id, value) => {
+  // Create Generic Object - Match Destructuring Notation {id:id, value:value}
+  const grocery = { id, value }
+  // Get Local Storage
+  let items = getLocalStorage()
+  // Add the newly created values to the temporary array,
+  items.push(grocery)
+  // Replace updated values into Local Storage / convert items into string
+  localStorage.setItem('list', JSON.stringify(items))
+}
 
-  localStorage.setItem(id, JSON.stringify(value))
+/* Delete Given Item from Local Storage */
+const removeFromLocalStorage = (id) => {
+  // Get Local Storage
+  let items = getLocalStorage()
+  // Filter and return the items that are not the given id
+  items = items.filter(item => {
+    // Criteria -> Only Items that do not match id
+    if (item.id !== id) {
+      return item
+    }
+  })
+  // Replace updated values into Local Storage / convert items into string
+  localStorage.setItem('list', JSON.stringify(items))
 
 }
 
-const removeFromLocalStorage = (id) => {}
+const editLocalStorage = (editId, newValue) => {
+  // Get Local Storage
+  let items = getLocalStorage()
+
+  
+
+}
+
+/* FETCH LOCAL STORAGE HELPER */
+const getLocalStorage = () => {
+  // Check that Storage is empty or not
+  let checkStorage = localStorage.getItem('list')
+  // Return all values from local storage, else assign empty array (first time)
+  return checkStorage ? JSON.parse(checkStorage) : []
+} 
