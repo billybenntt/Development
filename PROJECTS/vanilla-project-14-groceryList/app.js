@@ -18,9 +18,9 @@ let editID = ''
 // --------------- FUNCTIONS FOR EVENT LISTENER -------------------------------
 
 /* CLEAR ALL ITEMS */
-const clearItems = () => {
+function clearItems () {
   // Capture list
-  const items = document.querySelectorAll('.grocery-item')
+  let items = document.querySelectorAll('.grocery-item')
   // Check that there are items
   if (items.length > 0) {
     // Access each child parent container and remove it from there
@@ -39,14 +39,14 @@ const clearItems = () => {
 }
 
 /* DELETE ITEMS */
-const deleteItem = (event) => {
+function deleteItem (event) {
   // Capture Element
   const currentElement = event.currentTarget.parentElement.parentElement
   // Get Element ID
   const id = currentElement.dataset.id
   // Delete Element via the parent
   groceryList.removeChild(currentElement)
-  // If No Items remove the class11
+  // If No Items remove the class
   if (groceryList.children.length === 0) {
     groceryContainer.classList.remove('show-container')
   }
@@ -60,10 +60,9 @@ const deleteItem = (event) => {
 }
 
 /* EDIT ITEMS */
-const editItem = (event) => {
+function editItem (event) {
   // Select Clicked Element
   const currentElement = event.currentTarget.parentElement.parentElement
-  const id = currentElement.dataset.id
   // Select Edit Value Paragraph Item
   editElement = event.currentTarget.parentElement.previousElementSibling
   // Set form Value
@@ -76,7 +75,7 @@ const editItem = (event) => {
 }
 
 /* ADD ITEMS*/
-const addItem = (event) => {
+function addItem (event) {
   //Prevent Refresh
   event.preventDefault()
   // Capture Form Input
@@ -85,29 +84,10 @@ const addItem = (event) => {
   const id = new Date().getTime().toString()
 
   // Adding New Item
-  if (value && !editFlag) {
-    // Create new <article> element
-    const element = document.createElement('article')
-    //  Add class to it
-    element.classList.add('grocery-item')
-    // Add data-id Attribute
-    const attr = document.createAttribute('data-id')
-    // Assign Unique value
-    attr.value = id
-    element.setAttributeNode(attr)
-    // Fill the Element generic content
-    element.innerHTML = `<p class="title">${value}</p>
-                    <div class="btn-container">
-                        <button type="button" class="edit-btn">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button type="button" class="delete-btn">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                     </div>`
+  if (value !== '' && !editFlag) {
 
-    // Append Child
-    groceryList.appendChild(element)
+    createListItem(id, value)
+
     //  Display alert
     displayAlert('Item Added to the list', 'success')
     //  Show Container
@@ -117,24 +97,13 @@ const addItem = (event) => {
     // Set Back to Default (Restore the List)
     setBackToDefault()
 
-    // Select Dynamically Created Elements (Buttons exist after this point)
-    const deleteBtn = document.querySelector('.delete-btn')
-    const editBtn = document.querySelector('.edit-btn')
-
-    // Attach Event Listeners
-    deleteBtn.addEventListener('click', deleteItem)
-    editBtn.addEventListener('click', editItem)
-
   } // Edit Item
-  else if (value && editFlag) {
-
+  else if (value !== '' && editFlag) {
     editElement.innerHTML = value
     // Display Alert
     displayAlert('value changed', 'success')
-
     // Edit Item Data on Local Storage
     editLocalStorage(editID, value)
-
     // Set Back to Default (Restore the List)
     setBackToDefault()
   } else {
@@ -144,7 +113,7 @@ const addItem = (event) => {
 }
 
 /* DISPLAY ALERTS */
-const displayAlert = (text, action) => {
+function displayAlert (text, action) {
   alertElement.textContent = text
   alertElement.classList.add(`alert-${action}`)
   // Remove Alert after 2 Seconds
@@ -158,18 +127,20 @@ const displayAlert = (text, action) => {
 
 form.addEventListener('submit', addItem)
 clearBtn.addEventListener('click', clearItems)
+window.addEventListener('DOMContentLoaded', setupItems)
 
 // --------------- SET BACK TO DEFAULT  ------------------------------------------
-const setBackToDefault = () => {
+function setBackToDefault () {
   groceryAdd.value = ''
   editFlag = false
   editID = ''
   submitBtn.innerText = 'Submit'
 }
+
 // --------------- LOCAL STORAGE -----------------------------------------------------
 
 /* Add New Item to Local Storage */
-const addToLocalStorage = (id, value) => {
+function addToLocalStorage (id, value) {
   // Create Generic Object - Match Destructuring Notation {id:id, value:value}
   const grocery = { id, value }
   // Get Local Storage
@@ -181,7 +152,7 @@ const addToLocalStorage = (id, value) => {
 }
 
 /* Delete Given Item from Local Storage */
-const removeFromLocalStorage = (id) => {
+function removeFromLocalStorage (id) {
   // Get Local Storage
   let items = getLocalStorage()
   // Filter and return the items that are not the given id
@@ -196,18 +167,75 @@ const removeFromLocalStorage = (id) => {
 
 }
 
-const editLocalStorage = (editId, newValue) => {
+function editLocalStorage (editId, newValue) {
   // Get Local Storage
   let items = getLocalStorage()
-
-  
-
+  // Return a copy of the array
+  items = items.map(item => {
+    // Criteria -> If Item Matches replace it, either case return item per iteration
+    if (item.id === editId) {
+      item.value = newValue
+    }
+    return item
+  })
+  // Replace updated values into Local Storage / convert items into string
+  localStorage.setItem('list', JSON.stringify(items))
 }
 
 /* FETCH LOCAL STORAGE HELPER */
-const getLocalStorage = () => {
+function getLocalStorage () {
   // Check that Storage is empty or not
   let checkStorage = localStorage.getItem('list')
   // Return all values from local storage, else assign empty array (first time)
   return checkStorage ? JSON.parse(checkStorage) : []
-} 
+}
+
+// --------------- SETUP ITEMS -----------------------------------------------------
+
+function setupItems () {
+  let items = getLocalStorage()
+  if (items.length > 0) {
+    items.forEach((item) => {
+      createListItem(item.id, item.value)
+    })
+  }
+  groceryContainer.classList.add('show-container')
+}
+
+function createListItem (id, value) {
+  // Create new <article> element
+  const element = document.createElement('article')
+  //  Add class to it
+  element.classList.add('grocery-item')
+  // Add data-id Attribute
+  const attr = document.createAttribute('data-id')
+  // Assign Unique value
+  attr.value = id
+  element.setAttributeNode(attr)
+  // Fill the Element generic content
+  element.innerHTML = `<p class="title">${value}</p>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="delete-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                     </div>`
+
+  // Append Child
+  groceryList.appendChild(element)
+
+  // Select Dynamically Created Elements (Buttons exist after this point)
+  const collectionDelete = document.querySelectorAll('.delete-btn')
+  const collectionEdit = document.querySelectorAll('.edit-btn')
+
+  // Attach Event Listeners to each item in the list
+  collectionDelete.forEach(deleteBtn => {
+    deleteBtn.addEventListener('click', deleteItem)
+  })
+  collectionEdit.forEach(editBtn => {
+    editBtn.addEventListener('click', editItem)
+  })
+
+}
