@@ -1,4 +1,4 @@
-# --------------------------------- SPLIT -> Split into List ---------------------------------
+# --------------------------------- SPLIT -> Split String into List ---------------------------------
 
 msg = 'Welcome to Python 101: Split and Join'
 csv = 'Eric,John,Michael,Terry,Graham'
@@ -16,7 +16,7 @@ print(msg_split)
 csv_split = csv.split(",")
 print(csv_split)
 
-# --------------------------------- JOIN -> Join into List ---------------------------------
+# --------------------------------- JOIN -> Join List into String ---------------------------------
 
 # Convert to string, including brackets
 friends_string = str(friends_list)
