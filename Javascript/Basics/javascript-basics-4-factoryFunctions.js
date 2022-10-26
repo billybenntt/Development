@@ -1,4 +1,5 @@
-// ------  FACTORY OBJECT FUNCTIONS -------------
+// ------  FACTORY FUNCTIONS -------------
+// Return Keyword needed
 
 function personFactory (firstName, lastName) {
 

@@ -1,4 +1,4 @@
-// ------  CONSTRUCTOR FUNCTIONS OBJECTS -------------
+// ------  CONSTRUCTOR FUNCTIONS  -------------
 // No return keyword needed
 // New creates new object, points to it, omit return
 
