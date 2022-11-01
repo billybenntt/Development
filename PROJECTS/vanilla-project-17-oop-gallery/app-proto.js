@@ -4,6 +4,8 @@ function Gallery (element) {
 
   /*Change NodeList to Array using SpreadOp (Map) */
   this.list = [...element.querySelectorAll('.img')]
+  /*Select the Whole Container */
+  this.container = element
   /* Select Modal Elements */
   this.modal = getElement('.modal')
   this.modalImg = getElement('.main-img')
@@ -12,23 +14,20 @@ function Gallery (element) {
   this.closeBtn = getElement('.close-btn')
   this.prevBtn = getElement('.prev-btn')
   this.nextBtn = getElement('.next-btn')
-  /*Select the Whole Container */
-  this.container = element
 
   /*Bind Function with Event to current Object */
+
   this.eventModal = function (e) {
     if (e.target.classList.contains('img')) {
       this.openModal(e.target, this.list)
     }
   }.bind(this)
-
   this.closeModal = this.closeModal.bind(this)
   this.nextImage = this.nextImage.bind(this)
   this.prevImage = this.prevImage.bind(this)
 
-  /* Open modal */
+  /* Event Listeners  */
   this.container.addEventListener('click', this.eventModal)
-  /* Close modal */
   this.closeBtn.addEventListener('click', this.closeModal)
   this.nextBtn.addEventListener('click', this.nextImage)
   this.prevBtn.addEventListener('click', this.prevImage)
@@ -61,6 +60,7 @@ Gallery.prototype.closeModal = function () {
 }
 
 Gallery.prototype.nextImage = function () {
+
 }
 
 Gallery.prototype.prevImage = function () {
@@ -76,6 +76,7 @@ Gallery.prototype.setMainImage = function (selectedImage) {
 
 function getElement (selection) {
   const element = document.querySelector(selection)
+
   if (element) {
     return element
   }
