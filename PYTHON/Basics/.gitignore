@@ -1,8 +1,9 @@
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
+.idea/PYTHON.iml
+.idea/misc.xml
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 .idea/*
-
