@@ -16,21 +16,16 @@ function Gallery (element) {
   this.nextBtn = getElement('.next-btn')
 
   /*Bind Function with Event to current Object */
-
-  this.eventModal = function (e) {
+  this.container.addEventListener('click', function (e) {
     if (e.target.classList.contains('img')) {
       this.openModal(e.target, this.list)
     }
-  }.bind(this)
+  }.bind(this))
+
   this.closeModal = this.closeModal.bind(this)
   this.nextImage = this.nextImage.bind(this)
   this.prevImage = this.prevImage.bind(this)
-
-  /* Event Listeners  */
-  this.container.addEventListener('click', this.eventModal)
-  this.closeBtn.addEventListener('click', this.closeModal)
-  this.nextBtn.addEventListener('click', this.nextImage)
-  this.prevBtn.addEventListener('click', this.prevImage)
+  this.chooseImage = this.chooseImage.bind(this)
 
 }
 
@@ -39,31 +34,66 @@ function Gallery (element) {
 Gallery.prototype.openModal = function (selectedImage, list) {
   /* Set Main Image */
   this.setMainImage(selectedImage)
-  /* Inject Small Images */
+  /* Inject Small Images and match the small image */
   this.modalImages.innerHTML = list.map(function (item) {
     return `<img src="${item.src}" title="${item.title}" data-id="${item.dataset.id}" 
      alt="${item.alt}" 
     class="${selectedImage.dataset.id === item.dataset.id ? 'modal-img selected' : 'modal-img'}">`
   }).join('')
+
   /* Add Modal Open Class*/
   this.modal.classList.add('open')
+  /* Attach Event Listeners after Class has been applied */
+  this.closeBtn.addEventListener('click', this.closeModal)
+  this.nextBtn.addEventListener('click', this.nextImage)
+  this.prevBtn.addEventListener('click', this.prevImage)
+  this.modalImages.addEventListener('click', this.chooseImage)
+
 }
 
 Gallery.prototype.closeModal = function () {
-  /* Add Modal Open Class*/
+  /* Remove Modal Open Class*/
   this.modal.classList.remove('open')
-
-  /*IMPORTANT - Remove Listeners so they do not pile up*/
+  /* Remove Event Listeners after Class has been removed */
   this.closeBtn.removeEventListener('click', this.closeModal)
   this.nextBtn.removeEventListener('click', this.nextImage)
   this.prevBtn.removeEventListener('click', this.prevImage)
+  this.modalImages.removeEventListener('click', this.chooseImage)
+
 }
 
 Gallery.prototype.nextImage = function () {
-
+  /* Grab Image with "Selected" Class */
+  const selectedImage = this.modalImages.querySelector('.selected')
+  /* LOOP EFFECT - If no Right Sibling / Go back to the First Element*/
+  const nextImage = selectedImage.nextElementSibling || this.modalImages.firstElementChild
+  selectedImage.classList.remove('selected')
+  nextImage.classList.add('selected')
+  this.setMainImage(nextImage)
 }
 
 Gallery.prototype.prevImage = function () {
+  /* Grab Image with "Selected" Class */
+  const selected = this.modalImages.querySelector('.selected')
+  /* LOOP EFFECT - If no Left Sibling / Go back to the Last Element*/
+  const prev = selected.previousElementSibling || this.modalImages.lastElementChild
+  selected.classList.remove('selected')
+  prev.classList.add('selected')
+  this.setMainImage(prev)
+
+}
+
+Gallery.prototype.chooseImage = function (e) {
+  if (e.target.classList.contains('modal-img')) {
+    /*Grab the image with the selected class*/
+    const selected = this.modalImages.querySelector('.selected')
+    /*Remove Selected Class*/
+    selected.classList.remove('selected')
+    /*Apply Class to selected Image*/
+    this.setMainImage(e.target)
+    e.target.classList.add('selected')
+  }
+
 }
 
 // Helper Function
