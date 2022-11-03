@@ -36,4 +36,3 @@ item_stock = 500
 is_available = True
 
 print(item_name, item_price, item_stock, is_available)
-python-basics-2-datatypesTypecasting.py
