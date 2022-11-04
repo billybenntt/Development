@@ -19,7 +19,7 @@ console.log(result)
 // ----------------  ARROW CONCISE - PARENTHESES RETURN ----------------
 
 /*Return an object one line (no double curly braces) */
-const computeNumbers = (num1, num2) => ({ result_a: num1 * num2, result_b: num1 + num2 })
+const computeNumbers = (num1, num2) => ({ result_product: num1 * num2, result_sum: num1 + num2 })
 
 let finalGrade = computeNumbers(20, 20)
 console.log(finalGrade)
