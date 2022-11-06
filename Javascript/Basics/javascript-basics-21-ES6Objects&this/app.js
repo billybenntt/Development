@@ -3,7 +3,7 @@
 // Normal Function - Refers Parent, Left of Dot
 // Arrow Function - Refers to its current surrounding Scope
 
-const btn = document.getElementById('btn')
+let btn = document.getElementById('btn')
 const bot = document.getElementById('bot')
 
 

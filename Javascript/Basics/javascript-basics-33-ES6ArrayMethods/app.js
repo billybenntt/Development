@@ -1,4 +1,4 @@
-// --------- ES6: NODE LIST  ---------
+// --------- ES6: ARRAY FROM ---------
 
 const paragraphs = document.querySelectorAll('p')
 const result = document.getElementById('result')

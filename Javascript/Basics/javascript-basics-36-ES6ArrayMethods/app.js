@@ -27,7 +27,7 @@ console.log(resultAllAnna)
 const resultOneAnna = people.find((item) => item.name === 'Anna') || 0
 console.log(resultOneAnna)
 
-/* Filter and Return 1 Object with "Anna" */
+/*Return true if one item with "Bill" */
 const isThereBill = people.some((item) => item.name === 'Bill')
 console.log("Bill", isThereBill)
 
