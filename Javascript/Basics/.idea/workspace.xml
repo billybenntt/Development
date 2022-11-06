@@ -5,76 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ae56d3-8abe-4264-b4af-bbed0d4b9684" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallAppyBind/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallAppyBind/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallAppyBind/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallAppyBind/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallAppyBind/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-thisCall/javascript-basics-10-thisCall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-11-thisApply/javascript-basics-11-thisApply.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-12-thisBind/javascript-basics-12-thisBind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-13-functionIIFE/javascript-basics-13-functionIIFE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-14-functionHoisting/javascript-basics-14-functionHoisting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-15-functionClosure-1/javascript-basics-15-functionClosure-1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-15-functionClosure-2/javascript-basics-15-functionClosure-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-15-functionClosure-3/javascript-basics-15-functionClosure-3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-16-ES6Variables/javascript-basics-16-ES6Variables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-17-ES6VariablesScope/javascript-basics-17-ES6VariablesScope.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-18-ES6Template/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-18-ES6Template/.idea/javascript-basics-18-ES6Template.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-18-ES6Template/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-18-ES6Template/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-19-ES6TemplateFunction/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-19-ES6TemplateFunction/.idea/javascript-basics-18-ES6Template.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-19-ES6TemplateFunction/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-19-ES6TemplateFunction/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-20-ES6ArrowFunctions-1/javascript-basics-20-ES6ArrowFunctions-1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/javascript-basics-18-ES6Template.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-22-ES6ArrowFunctionSelect/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-22-ES6ArrowFunctionSelect/.idea/javascript-basics-18-ES6Template.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-22-ES6ArrowFunctionSelect/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-22-ES6ArrowFunctionSelect/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-3-thisKeyword/javascript-basics-3-thisKeywordArrow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-7-prototypeProperty/javascript-basics-7-prototypeProperty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-8-propertyLookup/javascript-basics-8-propertyLookup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-9-classSyntax/javascript-basics-9-classSyntax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/organize.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-1-outputData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-10-Sets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-10-SetsExercises.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-11-Dictionaries.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-12-Functions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-12-FunctionsExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-13-Comparisons&amp;Booleans.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-14-Conditionals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-14-ConditionalsExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-14-ConditionalsExercise2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-15-whileLoops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-15-whileLoopsExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsNested.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-17-enumerateLoops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-18-Sort&amp;Sorted-2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-18-Sort&amp;Sorted.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-2-datatypesTypecasting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-3-arithmeticOperations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-4-stringOperations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-5-stringFormatting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-6-userInput.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-6-userInputExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-7-Lists.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-7-ListsExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-8-Split&amp;Join.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-8-Split&amp;JoinExercise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-9-Tupples.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript-basics-32-ES6Spread&amp;Rest/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-30-ES6SpreadOperatorObjects/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-30-ES6SpreadOperatorObjects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-29-ES6SpreadOperatorDOMSelection/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-29-ES6SpreadOperatorDOMSelection/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-30-ES6SpreadOperatorFunctionArgs/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-30-ES6SpreadOperatorFunctionArgs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,14 +52,20 @@
       <recent name="D:\Development\Javascript\Basics" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js (3)">
-    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-26-ES6newStringMethods/app.js" working-dir="$PROJECT_DIR$/javascript-basics-26-ES6newStringMethods">
+  <component name="RunManager" selected="Node.js.app.js (1)">
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-39-ES6ObjectEntriesMap/app.js" working-dir="$PROJECT_DIR$/javascript-basics-39-ES6ObjectEntriesMap">
       <method v="2" />
     </configuration>
-    <configuration name="app.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-27-ES6For-Of-Loop/app.js" working-dir="$PROJECT_DIR$/javascript-basics-27-ES6For-Of-Loop">
+    <configuration name="app.js (3)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-32-ES6Spread&amp;Rest/app.js" working-dir="$PROJECT_DIR$/javascript-basics-32-ES6Spread&amp;Rest">
       <method v="2" />
     </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-25-ES6FunctionParametersDestructuring/app.js" working-dir="$PROJECT_DIR$/javascript-basics-25-ES6FunctionParametersDestructuring">
+    <configuration name="app.js (4)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-36-ES6ArrayMethods/app.js" working-dir="$PROJECT_DIR$/javascript-basics-36-ES6ArrayMethods">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js (5)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-37-ES6For-IN-Loop/app.js" working-dir="$PROJECT_DIR$/javascript-basics-37-ES6For-IN-Loop">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-38-ES6ObjectMethods/app.js" working-dir="$PROJECT_DIR$/javascript-basics-38-ES6ObjectMethods">
       <method v="2" />
     </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays/app.js" working-dir="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays">
@@ -130,13 +74,19 @@
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/app.js" working-dir="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects">
       <method v="2" />
     </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs/app.js" working-dir="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-34-ES6ArrayOF/app.js" working-dir="$PROJECT_DIR$/javascript-basics-34-ES6ArrayOF">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.app.js (3)" />
-        <item itemvalue="Node.js.app.js (3)" />
-        <item itemvalue="Node.js.app.js (2)" />
         <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.app.js (5)" />
+        <item itemvalue="Node.js.app.js (4)" />
+        <item itemvalue="Node.js.app.js (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667618354819</updated>
-      <workItem from="1667618361078" duration="16403000" />
+      <workItem from="1667618361078" duration="38267000" />
     </task>
     <servers />
   </component>
