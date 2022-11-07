@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4ae56d3-8abe-4264-b4af-bbed0d4b9684" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallApplyBind/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-10-CallApplyBind/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-10-CallApplyBind/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-33-ES6ArrayMethods/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-33-ES6ArrayMethods/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-36-ES6ArrayMethods/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-36-ES6ArrayMethods/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Development/Javascript/Basics",
+    "last_opened_file_path": "E:/Development/PROJECTS/vanilla-project-18-numbers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,11 +43,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Development\JAVASCRIPT\Basics" />
       <recent name="D:\Development\Javascript\Basics" />
       <recent name="D:\Development\Javascript\Basics\javascript-basics-40-ES6SetObject" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app_e.js">
+  <component name="RunManager" selected="Node.js.app.js (4)">
     <configuration name="app_e.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/app_e.js" working-dir="$PROJECT_DIR$/javascript-basics-40-ES6SetObject">
       <method v="2" />
     </configuration>
@@ -61,10 +58,10 @@
     <configuration name="app.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/app.js" working-dir="$PROJECT_DIR$/javascript-basics-40-ES6SetObject">
       <method v="2" />
     </configuration>
-    <configuration name="app.js (5)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-37-ES6For-IN-Loop/app.js" working-dir="$PROJECT_DIR$/javascript-basics-37-ES6For-IN-Loop">
+    <configuration name="app.js (3)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" working-dir="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes">
       <method v="2" />
     </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-38-ES6ObjectMethods/app.js" working-dir="$PROJECT_DIR$/javascript-basics-38-ES6ObjectMethods">
+    <configuration name="app.js (4)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-42-ES6ArrayIncludes/app.js" working-dir="$PROJECT_DIR$/javascript-basics-42-ES6ArrayIncludes">
       <method v="2" />
     </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays/app.js" working-dir="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays">
@@ -81,11 +78,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.app.js (4)" />
+        <item itemvalue="Node.js.app.js (3)" />
         <item itemvalue="Node.js.app_e.js" />
         <item itemvalue="Node.js.app.js (2)" />
         <item itemvalue="Node.js.app.js (1)" />
-        <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.app.js (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -98,6 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667618354819</updated>
       <workItem from="1667618361078" duration="41912000" />
+      <workItem from="1667782881066" duration="4123000" />
+      <workItem from="1667803581912" duration="346000" />
     </task>
     <servers />
   </component>
