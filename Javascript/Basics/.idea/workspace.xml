@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ae56d3-8abe-4264-b4af-bbed0d4b9684" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-19-darkmode/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-8-menuFilter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-8-menuFilter/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Settings/cl-settings.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Settings/cl-settings.zip" afterDir="false" />
+    <list default="true" id="31f0fa00-cb7a-4c2a-bde5-5c3ffb7a6973" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Basics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-18-ES6Template/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-19-ES6TemplateFunction/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/javascript-basics-21-ES6Objects&amp;this.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-21-ES6Objects&amp;this/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-22-ES6ArrowFunctionSelect/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/.idea/javascript-basics-40-ES6SetObject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-basics-44-ES6Modules-2-DefaultExports/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2H6vSnVDmZdNsVMBSsMCN9o3pgi" />
+  <component name="ProjectId" id="2HKHBuvvVK7vyzwyKTLMuh8Mzu6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,73 +40,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Development/JAVASCRIPT/Basics/javascript-basics-44-ES6Modules-2-DefaultExports",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "last_opened_file_path": "D:/Development/Javascript/Basics/javascript-basics-45-ES6Modules-3-getElement",
     "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Development\JAVASCRIPT\Basics" />
-      <recent name="D:\Development\Javascript\Basics" />
-      <recent name="D:\Development\Javascript\Basics\javascript-basics-40-ES6SetObject" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Node.js.app.js (4)">
-    <configuration name="app_e.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/app_e.js" working-dir="$PROJECT_DIR$/javascript-basics-40-ES6SetObject">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-39-ES6ObjectEntriesMap/app.js" working-dir="$PROJECT_DIR$/javascript-basics-39-ES6ObjectEntriesMap">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-40-ES6SetObject/app.js" working-dir="$PROJECT_DIR$/javascript-basics-40-ES6SetObject">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js (3)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" working-dir="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js (4)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-42-ES6ArrayIncludes/app.js" working-dir="$PROJECT_DIR$/javascript-basics-42-ES6ArrayIncludes">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays/app.js" working-dir="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorArrays">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects/app.js" working-dir="$PROJECT_DIR$/javascript-basics-28-ES6SpreadOperatorObjects">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs/app.js" working-dir="$PROJECT_DIR$/javascript-basics-31-ES6SpreadOperatorFunctionArgs">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/javascript-basics-34-ES6ArrayOF/app.js" working-dir="$PROJECT_DIR$/javascript-basics-34-ES6ArrayOF">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.app.js (4)" />
-        <item itemvalue="Node.js.app.js (3)" />
-        <item itemvalue="Node.js.app_e.js" />
-        <item itemvalue="Node.js.app.js (2)" />
-        <item itemvalue="Node.js.app.js (1)" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4ae56d3-8abe-4264-b4af-bbed0d4b9684" name="Changes" comment="" />
-      <created>1667618354819</created>
+      <changelist id="31f0fa00-cb7a-4c2a-bde5-5c3ffb7a6973" name="Changes" comment="" />
+      <created>1668026727443</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667618354819</updated>
-      <workItem from="1667618361078" duration="41912000" />
-      <workItem from="1667782881066" duration="4123000" />
-      <workItem from="1667803581912" duration="346000" />
-      <workItem from="1667975990549" duration="5815000" />
+      <updated>1668026727443</updated>
+      <workItem from="1668026731979" duration="11000" />
     </task>
     <servers />
   </component>
