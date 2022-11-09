@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ae56d3-8abe-4264-b4af-bbed0d4b9684" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript-basics-41-ES6StringIncludes/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-19-darkmode/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-8-menuFilter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PROJECTS/vanilla-project-8-menuFilter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/cl-settings.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Settings/cl-settings.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Development/PROJECTS/vanilla-project-18-numbers",
+    "last_opened_file_path": "E:/Development/JAVASCRIPT/Basics/javascript-basics-44-ES6Modules-2-DefaultExports",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,6 +99,7 @@
       <workItem from="1667618361078" duration="41912000" />
       <workItem from="1667782881066" duration="4123000" />
       <workItem from="1667803581912" duration="346000" />
+      <workItem from="1667975990549" duration="5815000" />
     </task>
     <servers />
   </component>

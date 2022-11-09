@@ -16,3 +16,4 @@ for index in range(len(friends)):
     if friends[index] == 'Michael':
         break
     print(friends[index])
+
