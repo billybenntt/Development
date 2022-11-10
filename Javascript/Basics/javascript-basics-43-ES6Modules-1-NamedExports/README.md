@@ -24,5 +24,3 @@ The script needs to notify that accepts imports
 ```html
 <script src="app.js" type="module" ></script>
 ```
-
-

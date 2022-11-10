@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31f0fa00-cb7a-4c2a-bde5-5c3ffb7a6973" name="Changes" comment="" />
+    <list default="true" id="0ee6df4f-9bff-4912-a1ed-e78cbe3f05f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-19-darkmode/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-8-menuFilter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-8-menuFilter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Settings/cl-settings.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Settings/cl-settings.zip" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="2HKHBuvvVK7vyzwyKTLMuh8Mzu6" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HIAORGpygneeSoq7v1UrLXIurX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Development/JAVASCRIPT/Basics/javascript-basics-43-ES6Modules-1-NamedExports",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "last_opened_file_path": "E:/Development/JAVASCRIPT/Basics/javascript-basics-40-ES6SetObject",
     "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   }
@@ -37,13 +37,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="31f0fa00-cb7a-4c2a-bde5-5c3ffb7a6973" name="Changes" comment="" />
-      <created>1668026727443</created>
+      <changelist id="0ee6df4f-9bff-4912-a1ed-e78cbe3f05f1" name="Changes" comment="" />
+      <created>1667962192015</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668026727443</updated>
-      <workItem from="1668026731979" duration="11000" />
-      <workItem from="1668043326709" duration="543000" />
+      <updated>1667962192015</updated>
+      <workItem from="1667962193193" duration="145000" />
     </task>
     <servers />
   </component>
