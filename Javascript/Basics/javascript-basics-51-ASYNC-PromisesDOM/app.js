@@ -11,8 +11,16 @@ const btn = document.querySelector('.btn')
 
 btn.addEventListener('click', () => {
 
+  /*Check Promise Status */
+  console.log(loadImage(url))
+
+  /* Handle Promise Values */
   loadImage(url).then((value) => {
-    console.log(value)
+
+    if (imageContainer.childElementCount < 1) {
+      imageContainer.appendChild(value)
+    }
+
   }).catch((value) => {
     console.log(value)
   })
@@ -23,9 +31,21 @@ btn.addEventListener('click', () => {
 
 function loadImage (url) {
 
-  const promise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
+
+    /* Value to be returned */
+    let img = new Image()
+    img.src = url
+
+    /* Resolve is the image loads */
+    img.addEventListener('load', () => {
+      resolve(img)
+    })
+
+    /* Reject is the image does not load and there is an error */
+    img.addEventListener('error', () => {
+      reject(new Error(`Failed to load image ${url}`))
+    })
 
   })
-  console.log(promise)
-  return promise
 }

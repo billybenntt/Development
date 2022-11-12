@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0ee6df4f-9bff-4912-a1ed-e78cbe3f05f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-19-darkmode/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-8-menuFilter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PROJECTS/vanilla-project-8-menuFilter/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PYTHON/Basics/python-basics-16-forLoopsBreak&amp;Continue/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Settings/cl-settings.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Settings/cl-settings.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javascript-basics-51-ASYNC-PromisesDOM/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../javascript-basics-51-ASYNC-PromisesDOM/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javascript-basics-51-ASYNC-PromisesDOM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javascript-basics-51-ASYNC-PromisesDOM/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Development/JAVASCRIPT/Basics/javascript-basics-40-ES6SetObject",
+    "last_opened_file_path": "D:/Development/JAVASCRIPT/Basics/javascript-basics-53-ASYNC-PromisesAsyncAwait",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667962192015</updated>
       <workItem from="1667962193193" duration="145000" />
+      <workItem from="1668234677819" duration="736000" />
     </task>
     <servers />
   </component>
