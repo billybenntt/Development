@@ -1,0 +1,15 @@
+body {
+    font-family: Calibri, serif;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
