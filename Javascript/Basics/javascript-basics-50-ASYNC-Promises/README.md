@@ -57,5 +57,3 @@ Promises with rejected state need to be handled using `catch`, this is chained a
     console.log(value)
   })
 ```
-
-
