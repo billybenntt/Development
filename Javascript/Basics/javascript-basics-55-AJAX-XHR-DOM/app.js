@@ -1,45 +1,40 @@
-// ------------- DATA -------------
+// ------------- SELECT ITEMS AND DATA -------------
 const url = './api/sample.txt'
 const targetContainer = document.querySelector('.container')
+const button = document.querySelector('.btn')
 
-// ------------- STAGE 1 - INITIATE OBJECT  -------------
-const xhr = new XMLHttpRequest()
+// ------------- HELPER FUNCTION -------------
 
-// ------------- STAGE 2 - REQUEST DATA   -------------
-xhr.open('GET', url)
+const getData = () => {
+  /* Stage 1 */
+  const xhr = new XMLHttpRequest()
+  /* Stage 2 */
+  xhr.open('GET', url)
+  /* Stage 3 */
+  xhr.onreadystatechange = () => {
 
-// ------------- STAGE 3 - PROCESS DATA   -------------
-
-/*State Changes 0, 1 and 4 */
-xhr.onload = function () { }
-/* State Changes 0, 1 , 2, 3 and 4 */
-xhr.onreadystatechange = function () {
-
-  /*Check everything OK before Action */
-  if (xhr.readyState === 4 && xhr.status === 200) {
-
-
-    /* Use the Data on the DOM*/
-    targetContainer.innerHTML = `<p>${xhr.responseText}</p>`
-
-  } else {
-    /*This will still show up if readyState 3 or 2*/
-    console.log({
+    /* Get Connection Data */
+    let connection = {
       status: xhr.status,
-      text: xhr.statusText,
-      readyState: xhr.readyState
-    })
+      statusText: xhr.statusText,
+      state: xhr.readyState,
+      responseText: xhr.responseText
+    }
+
+    if (connection.status === 200 && connection.state === 4) {
+      targetContainer.innerHTML = `<p>${connection.responseText}</p>`
+    } else {
+      console.log(connection)
+    }
+
   }
+  /* Stage 4 */
+  xhr.send()
 }
 
-/*  Used for Loaders  */
-xhr.onprogress = function () {
-}
-/* Used for Errors */
-xhr.onerror = function () { }
+// ------------- EVENT LISTENERS -------------
 
-// ------------- STAGE 4 - SEND DATA   -------------
 
-xhr.send()
-
-console.log('Asynchronous Data will show up later')
+button.addEventListener('click', () => {
+  getData()
+})
