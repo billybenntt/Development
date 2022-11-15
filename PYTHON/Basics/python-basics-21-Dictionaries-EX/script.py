@@ -6,6 +6,7 @@ freelancers = {'name': 'freelancing Shop', 'brian': 70, 'black knight': 20, 'bic
 antiques = {'name': 'Antique Shop', 'french castle': 400, 'wooden grail': 3, 'scythe': 150, 'catapult': 75,
             'german joke': 5}
 pet_shop = {'name': 'Pet Shop', 'blue parrot': 10, 'white rabbit': 5, 'newt': 2}
+shopping_cart = {'name': 'cart'}
 
 
 # ------- HELPER FUNCTIONS  -------
@@ -16,16 +17,29 @@ def buy_item(cart, shop, item):
         cart.update({item: shop.pop(item)})
 
 
-# Function that shows stores and items
-def show_stores(stores):
-    for store in stores:
-        print(store['name'])
+# Function that shows the store with its current items
+def show_store(store):
+    shop_name = store["name"]
+    shop_items = ", ".join(list(store.keys())[1:])
+    print(f'Welcome to [{shop_name}] What do you want to buy? -> {shop_items}')
+
+
+# Function to show the user's shopping cart items after purchases
+def show_cart(cart):
+    cart_items = ",".join(list(cart.keys())[1:])
+    print(f'You Purchased [{cart_items}] Today it is all free. Have a nice day of mayhem!')
+
+
+# Function to Start Shopping
+def shopping(shop_list):
+    for store in shop_list:
+        show_store(store)
+        purchase = input()
+        buy_item(shopping_cart, store, purchase)
 
 
 # ------- PROJECT RUN  -------
 
-show_stores([freelancers, antiques, pet_shop])
 
-shopping_cart = {'name': 'cart'}
-buy_item(shopping_cart, pet_shop, "newt")
-buy_item(shopping_cart, antiques, "german joke")
+shopping([freelancers, antiques, pet_shop])
+show_cart(shopping_cart)
