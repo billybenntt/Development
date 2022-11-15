@@ -15,12 +15,15 @@
 [What is an API?](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)
 
 - https://course-api.com/javascript-store-products
+
 - get store products
 
 - https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog
+
 - get single store product
 
 - https://randomuser.me/api/
+
 - random user
 
 #### Docs
@@ -31,9 +34,10 @@
 
 #### Dad Jokes Docs
 
-- [Dad Jokes](https://icanhazdadjoke.com/api)
+- https://icanhazdadjoke.com/api
 
 - random joke
+
 - https://icanhazdadjoke.com/
 
 #### Select Elements

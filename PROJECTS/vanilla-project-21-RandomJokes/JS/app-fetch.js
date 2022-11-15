@@ -8,22 +8,15 @@ const url = 'https://api.chucknorris.io/jokes/random?category=dev'
 // ---------- HELPER FUNCTIONS ----------
 
 /* Get Data using FETCH and passes Data to DisplayData*/
-async function getData (url) {
-  try {
-    /* Get Response Promise*/
-    const response = await fetch(url)
-    /* Get Data Promise */
-    const data = await response.json()
-    /*Pass data Object to DOM Function*/
+function getData (url) {
+  fetch(url).then(response => response.json()).then((data) => {
     displayData(data)
-  } catch (error) {
+  }).catch((error) => {
     console.log(error)
-  }
-  return 'OK'
+  })
 }
 
 /* Function to Display data in the DOM*/
-
 /* Takes Object and Destructures the value and assigns to joke */
 function displayData ({ value: joke }) {
   content.innerText = joke
@@ -41,6 +34,6 @@ function shakeChuck () {
 
 // ---------- EVENT LISTENERS ----------
 btn.addEventListener('click', () => {
-  getData(url).then()
+  getData(url)
 })
 

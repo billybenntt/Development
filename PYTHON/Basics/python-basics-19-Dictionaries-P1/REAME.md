@@ -71,5 +71,4 @@ for key in movie:
 # Iterate Key+Value  - For 2 values
 for key, value in movie.items():
     print(key, '1', value)
-
 ```
