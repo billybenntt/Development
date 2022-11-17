@@ -1,3 +1,6 @@
+
+/*Function to Fetch Data from API and return Object */
+
 const getData = async (url) => {
   try {
     const response = await fetch(url)

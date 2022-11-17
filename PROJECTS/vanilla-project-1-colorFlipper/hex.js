@@ -7,7 +7,7 @@ const btn = document.getElementById("btn");
 const color = document.getElementsByClassName("color")[0];
 
 
- const getRandomColor = () => {
+ let getRandomColor = () => {
     // Get A Randomly generated color
     const randomColor =`#${Math.floor(Math.random() * 16777215).toString(16)}`
 
