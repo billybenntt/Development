@@ -1,12 +1,9 @@
 import getElement from './getElement.js'
 
-/*this function transforms the data into a long string*/
 
 async function displayDrinks ({ drinks: data }) {
-
   const title = getElement('.title')
   const section = getElement('.section-center')
-
   if (data.length === 0) {
     // No Data we display title
     title.innerText = 'Sorry No Drinks'
@@ -14,15 +11,12 @@ async function displayDrinks ({ drinks: data }) {
     section.innerHTML = null
   }
 
-
-
   const newDrinks = data.map((item) => {
     const {
       strDrink: drinkName,
       strDrinkThumb: drinkImg,
       idDrink: drinkID
     } = item
-
     return `<a href="drink.html" target="_blank">
                 <article class="cocktail" data-id="${drinkID}">
                     <img src="${drinkImg}" alt="${drinkName}">
@@ -32,9 +26,7 @@ async function displayDrinks ({ drinks: data }) {
   })
 
   section.innerHTML = newDrinks.join('')
-
   // Hide Loading
-
   return section
 }
 
