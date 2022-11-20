@@ -184,7 +184,12 @@ p {
   height: 100%;
   background: var(--clr-grey-10);
   padding-top: 5rem;
+  margin-top: 1rem;
   z-index: 999;
+}
+.loading img{
+  width: 20%;
+  margin: 0 auto;
 }
 
 .hide-loading {
