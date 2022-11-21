@@ -18,7 +18,7 @@ The following documents are required when extending the ARC for work related pur
 
 - [x] Certificate of Employment
 
-- [x] Housing Contract (New Address)
+- [ ] Housing Contract (New Address)
 
 - [x] Filled ARC Form
 
@@ -26,8 +26,8 @@ The following documents are required when extending the ARC for work related pur
 
 The ARC can be send to one's address without having to go to the inmigration office again, prepare the following items:
 
-* [ ] Envelope with one's address written in chinese
+* [x] Envelope with one's address written in chinese
 
-* [ ] 28ntd post office stamp
+* [x] 28ntd post office stamp
 
-* [ ] Phone number must be specified in envelope
+* [x] Phone number must be specified in envelope
