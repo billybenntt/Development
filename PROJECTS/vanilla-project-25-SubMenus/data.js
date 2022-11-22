@@ -1,4 +1,4 @@
-const sublinks = [
+const subLinks = [
   {
     page: 'products',
     links: [
@@ -12,7 +12,7 @@ const sublinks = [
     links: [
       { label: 'plugins', icon: 'fas fa-book', url: 'products.html' },
       { label: 'libraries', icon: 'fas fa-book', url: 'products.html' },
-      { label: 'plugins', icon: 'fas fa-book', url: 'products.html' },
+      { label: 'api', icon: 'fas fa-book', url: 'products.html' },
       { label: 'billing', icon: 'fas fa-book', url: 'products.html' },
     ],
   },
@@ -23,6 +23,6 @@ const sublinks = [
       { label: 'customers', icon: 'fas fa-briefcase', url: 'products.html' },
     ],
   },
-];
+]
 
-export default sublinks;
+export default subLinks

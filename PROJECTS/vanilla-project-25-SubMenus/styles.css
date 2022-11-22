@@ -38,6 +38,7 @@ Variables
   --clr-black: #222;
 
   --transition: all 0.3s linear;
+  --transition-2: all 0.3s ease-in-out;
   --spacing: 0.1rem;
   --radius: 0.75rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -303,10 +304,11 @@ Stripe Styles
   place-items: center;
   visibility: hidden;
   z-index: -999;
-  transition: var(--transition);
+  transition: var(--transition-2);
   transform: scale(0);
   background: rgba(0, 0, 0, 0.5);
 }
+
 .sidebar-wrapper.show {
   visibility: visible;
   z-index: 2;
@@ -363,7 +365,7 @@ Stripe Styles
   position: absolute;
   top: 4rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-350%);
   z-index: 3;
   display: none;
   padding: 2rem;

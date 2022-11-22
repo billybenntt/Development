@@ -7,5 +7,4 @@ list1 = my_file.read().splitlines()
 # Close File
 my_file.close()
 
-
 print(list1)
