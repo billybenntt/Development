@@ -47,14 +47,20 @@ const displaySubMenu = (subLinks) => {
   linkBtns.forEach((item) => {
 
     item.addEventListener('mouseover', (event) => {
-      console.log(event.currentTarget)
-      subMenu.classList.add("show")
+      const text = event.currentTarget.textContent
+      /* Get Current Item Location */
+      const itemLocation = event.currentTarget.getBoundingClientRect()
+      const bottom = itemLocation.bottom - 3
+      const center = (itemLocation.right + itemLocation.left) / 2
+      /* Show Class and move absolute item with location data*/
+      subMenu.classList.add('show')
+      subMenu.style.left = `${center}px`
+      subMenu.style.top = `${bottom}px`
 
     })
 
-
-
     item.addEventListener('mouseleave', (event) => {
+      subMenu.classList.remove('show')
     })
 
   })
@@ -67,3 +73,4 @@ displaySubMenu()
 
 closeBtn.addEventListener('click', closeSidebar)
 toggleBtn.addEventListener('click', showSidebar)
+
