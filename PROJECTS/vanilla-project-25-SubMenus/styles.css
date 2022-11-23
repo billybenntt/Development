@@ -365,7 +365,7 @@ Stripe Styles
   position: absolute;
   top: 4rem;
   left: 50%;
-  transform: translateX(-350%);
+  transform: translateX(-50%);
   z-index: 3;
   display: none;
   padding: 2rem;

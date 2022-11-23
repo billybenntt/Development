@@ -47,6 +47,9 @@ const displaySubMenu = (subLinks) => {
   linkBtns.forEach((item) => {
 
     item.addEventListener('mouseover', (event) => {
+      console.log(event.currentTarget)
+      subMenu.classList.add("show")
+
     })
 
 
