@@ -43,7 +43,7 @@ const displaySidebar = (subLinks) => {
   }).join('')
 }
 /* Function to Display Items to the Sidebar*/
-const displaySubMenu = (subLinks) => {
+const displaySubMenu = () => {
   linkBtns.forEach((item) => {
 
     item.addEventListener('mouseover', (event) => {
@@ -52,10 +52,21 @@ const displaySubMenu = (subLinks) => {
       const itemLocation = event.currentTarget.getBoundingClientRect()
       const bottom = itemLocation.bottom - 3
       const center = (itemLocation.right + itemLocation.left) / 2
-      /* Show Class and move absolute item with location data*/
-      subMenu.classList.add('show')
-      subMenu.style.left = `${center}px`
-      subMenu.style.top = `${bottom}px`
+
+
+      /*Get Page Section from Text Content*/
+      const tempPage = subLinks.find(({ page }) => page === text)
+
+      if (tempPage) {
+        
+        /* Show Class and move absolute item with location data*/
+        subMenu.classList.add('show')
+        subMenu.style.left = `${center}px`
+        subMenu.style.top = `${bottom}px`
+
+      }
+
+      console.log(tempPage)
 
     })
 
