@@ -8,12 +8,15 @@ const second = document.getElementById('second')
 
 // --------- ES6: NODE LIST CONVERSION LONG WAY  ---------
 
+
+/* Convert items FROM node List to Array */
 let newText = Array.from(paragraphs)
 
+
+/* Map Each Array Item into a span*/
 newText = newText.map((item) => {
   return `<span>${item.textContent}</span>`
 }).join('')
-
 
 result.innerHTML = newText
 
