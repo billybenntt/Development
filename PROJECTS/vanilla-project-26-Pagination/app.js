@@ -6,15 +6,26 @@ import displayButtons from './src/displayButtons.js'
 // ---------- SELECT ELEMENTS ----------
 
 const title = document.querySelector('.section-title h1')
+const btnContainer = document.querySelector(".btn-container")
+
+
+let index = 2
+let pages = []
 
 // ---------- HELPER FUNCTIONS ----------
 
-async function init () {
+function setupUI () {
+  displayFollowers(pages[index])
+  displayButtons()
 
+}
+
+async function init () {
   const data = await fetchData()
   title.innerText = 'Pagination'
 
-  displayFollowers(data)
+  pages = paginate(data)
+  setupUI()
 
 }
 
