@@ -17,6 +17,7 @@ let pages = []
 function setupUI () {
   displayFollowers(pages[index])
   displayButtons()
+  displayButtons()
 
 }
 
