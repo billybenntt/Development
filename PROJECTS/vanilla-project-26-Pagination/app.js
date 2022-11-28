@@ -18,6 +18,7 @@ function setupUI () {
   displayFollowers(pages[index])
   displayButtons()
   displayButtons()
+  displayButtons()
 
 }
 
