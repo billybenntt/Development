@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "1e15957b-6da9-4058-bccc-2769897b128d",
+		"name": "Comfy Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22013123"
+	},
+	"item": [
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://course-api.com/javascript-store-products",
+					"protocol": "https",
+					"host": [
+						"course-api",
+						"com"
+					],
+					"path": [
+						"javascript-store-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog",
+					"protocol": "https",
+					"host": [
+						"course-api",
+						"com"
+					],
+					"path": [
+						"javascript-store-single-product"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "rec43w3ipXvP28vog"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get not found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://course-api.com/javascript-store-single-product",
+					"protocol": "https",
+					"host": [
+						"course-api",
+						"com"
+					],
+					"path": [
+						"javascript-store-single-product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
