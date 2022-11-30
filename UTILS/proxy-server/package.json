@@ -1,0 +1,17 @@
+{
+  "name": "proxyserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node proxy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "koa": "^2.13.4",
+    "koa-proxies": "^0.12.2"
+  }
+}
