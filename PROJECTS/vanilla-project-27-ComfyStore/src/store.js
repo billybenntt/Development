@@ -7,7 +7,7 @@ const setupStore = (data) => {
     /* Destructure Data */
     const {id,fields: { featured, name, price, company, colors, image: img }
     } = item
-    /* Extract Item*/
+    /* Extract Item */
     const image = img[0]['thumbnails']['large']['url']
     /* Return formed Object */
     return { id, featured, name, price, company, colors, image }
