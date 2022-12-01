@@ -106,6 +106,7 @@ p {
     width: 90vw;
     max-width: var(--max-width);
     margin: 0 auto;
+
 }
 
 .section {
@@ -621,6 +622,7 @@ p {
     place-items: center;
     background: var(--clr-grey-10);
     color: var(--clr-grey-5);
+
 }
 
 .page-hero-title {

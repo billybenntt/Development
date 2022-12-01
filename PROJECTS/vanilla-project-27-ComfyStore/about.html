@@ -1,17 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-        <!-- Styles CSS -->
-        <link rel="stylesheet" href="styles.css" />
-        <title>Vanilla Project 27: About</title>
-    </head>
-    <body>
-        <h2>About page</h2>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Vanilla Project 27: About </title>
+</head>
+<body>
 
-        <script type="module" src="./src/pages/about.js"></script>
-    </body>
+    <!-- NAVBAR SECTION  -->
+    <nav class="navbar page">
+        <div class="nav-center">
+            <!-- Links -->
+            <div>
+                <button class="toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">home</a></li>
+                    <li><a href="products.html" class="nav-link">products</a></li>
+                    <li><a href="about.html" class="nav-link">about</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <img src="images/logo-black.svg" alt="black" class="nav-logo"/>
+            <!-- Cart Icon -->
+            <div class="toggle-container">
+                <button class="toggle-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION  -->
+    <section class="page-hero">
+        <div class="section-center">
+            <h3 class="page-hero-title">Home / About </h3>
+        </div>
+    </section>
+
+    <!-- SIDEBAR TOGGLE  -->
+    <div class="sidebar-overlay">
+        <aside class="sidebar">
+            <!-- Close Button -->
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- Sidebar Links -->
+            <ul class="sidebar-links">
+                <li>
+                    <a href="index.html" class="sidebar-link">
+                        <i class="fas fa-home fa-fw"></i>
+                        home
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html" class="sidebar-link">
+                        <i class="fas fa-couch fa-fw"></i>
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="sidebar-link">
+                        <i class="fas fa-book fa-fw"></i>
+                        about
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+
+    <!-- CART TOGGLE  -->
+    <div class="cart-overlay">
+        <aside class="cart">
+            <!-- Cart Close Button -->
+            <button class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- Cart Text Header -->
+            <header>
+                <h3 class="text-slanted">your bag</h3>
+            </header>
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <!-- Single Item [DYNAMIC] -->
+                <article class="cart-item" data-id="1">
+                    <img src="images/main-bcg.jpeg" class="cart-item-img"
+                            alt="temp image">
+                    <div>
+                        <h4 class="cart-item-name">high back benched</h4>
+                        <p class="cart-item-price">$1222.99</p>
+                        <button class="cart-item-remove-btn">
+                            remove
+                        </button>
+                    </div>
+                    <div>
+                        <button class="cart-item-increase-btn">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <p class="cart-item-amount">1</p>
+                        <button class="cart-item-decrease-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <!-- Cart Footer -->
+            <footer>
+                <h3 class="cart-total text-slanted">
+                    total: $12.99
+                </h3>
+            </footer>
+        </aside>
+    </div>
+
+
+    <!-- ABOUT SECTION  -->
+    <section class="section section-center about-page">
+        <div class="title">
+            <h2><span>/</span>about us</h2>
+        </div>
+        <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem excepturi ipsum magni obcaecati
+            odio perferendis quibusdam repellat. Accusantium aperiam, aspernatur consectetur cum distinctio dolores
+            fugiat ipsam neque similique sint sunt, ut? A, alias amet consequatur, ea eaque earum eius numquam quaerat
+            quas quod tenetur vitae! Asperiores at dolorem eius incidunt ipsa iste laudantium, magnam nulla optio quas
+            quidem quos vero? Accusantium aliquid atque dignissimos dolores excepturi exercitationem incidunt iure,
+            magni nobis nostrum odit quae quam repellendus reprehenderit tempora! Nobis!
+        </p>
+    </section>
+
+
+
+
+
+
+    <script type="module" src="src/pages/about.js"></script>
+</body>
 </html>

@@ -6,6 +6,13 @@ const cartOpenBtn = getElement('.toggle-cart')
 const cartCloseBtn = getElement('.cart-close')
 const cartOverlay = getElement('.cart-overlay')
 
+// ---------- REUSABLE FUNCTION  ----------
+
+export const openCart = () => {
+  cartOverlay.classList.add('show')
+}
+
+
 // ---------- EVENT LISTENERS ----------
 
 /* Show Cart */
@@ -19,8 +26,3 @@ cartCloseBtn.addEventListener('click', () => {
 })
 
 
-// ---------- REUSABLE FUNCTION  ----------
-
-export const openCart = () => {
-  cartOverlay.classList.add('show')
-}

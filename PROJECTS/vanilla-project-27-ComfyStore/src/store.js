@@ -1,5 +1,18 @@
-import { getStorageItem, setStorageItem } from './utils.js';
-let store = [];
-const setupStore = () => {};
-const findProduct = () => {};
-export { store, setupStore, findProduct };
+import { getStorageItem, setStorageItem } from './utils.js'
+
+let store = []
+
+const setupStore = (data) => {
+  store = data.map((item) => {
+    /* Destructure Data */
+    const {id,fields: { featured, name, price, company, colors, image: img }
+    } = item
+    /* Extract Item*/
+    const image = img[0]['thumbnails']['large']['url']
+    /* Return formed Object */
+    return { id, featured, name, price, company, colors, image }
+  })
+}
+const findProduct = () => {}
+
+export { store, setupStore, findProduct }
