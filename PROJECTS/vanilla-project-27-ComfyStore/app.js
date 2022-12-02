@@ -18,7 +18,12 @@ const init = async () => {
   if (data) {
     /*Add products to the store*/
     setupStore(data)
-    console.log(store)
+
+    /* Get featured Items */
+    const featured = store.filter((item) => item.featured)
+
+    /*Display to DOM*/
+    display(featured, getElement('.featured-center'))
   }
 
 }
