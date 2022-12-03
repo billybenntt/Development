@@ -14,7 +14,6 @@ import { getElement } from './src/utils.js'
 const init = async () => {
 
   const data = await fetchProducts()
-
   if (data) {
     /*Add products to the store*/
     setupStore(data)

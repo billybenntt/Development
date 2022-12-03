@@ -29,6 +29,16 @@ const display = (data, container) => {
             </article>`
   })
   container.innerHTML = products.join('')
+
+
+  container.addEventListener("click", (event)=>{
+
+    let id = event.target.parentElement.dataset.id
+
+    console.log(id)
+  })
+
+
 }
 
 // ---------- EXPORTS  ----------
