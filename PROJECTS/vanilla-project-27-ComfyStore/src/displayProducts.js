@@ -33,9 +33,15 @@ const display = (data, container) => {
 
   container.addEventListener("click", (event)=>{
 
-    let id = event.target.parentElement.dataset.id
+    let parent = event.target.parentElement
 
-    console.log(id)
+
+    if (parent.classList.contains("product-cart-btn")){
+      addToCart(parent.dataset.id)
+
+    }
+
+
   })
 
 

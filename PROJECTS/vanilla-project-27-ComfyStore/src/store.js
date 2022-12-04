@@ -1,6 +1,6 @@
 import { getStorageItem, setStorageItem } from './utils.js'
 
-let store = getStorageItem('store') || []
+let store = getStorageItem('store')
 
 // ---------- UTILITY FUNCTIONS  ----------
 

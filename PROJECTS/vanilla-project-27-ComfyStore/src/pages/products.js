@@ -9,6 +9,25 @@ import setupCompanies from '../filters/companies.js';
 import setupPrice from '../filters/price.js';
 
 // specific imports
-import { store } from '../store.js';
 import display from '../displayProducts.js';
+import { store } from '../store.js';
 import { getElement } from '../utils.js';
+
+
+// ---------- SELECT ELEMENTS  ----------
+
+const productsContainer = getElement(".products-container")
+const loadingContainer = getElement(".page-loading")
+
+// ---------- HELPER FUNCTIONS  ----------
+
+
+
+display(store,productsContainer )
+setupSearch(store)
+
+
+
+loadingContainer.style.display = "none"
+
+
