@@ -6,7 +6,8 @@ import '../cart/setupCart.js';
 import { addToCart } from '../cart/setupCart.js';
 import { singleProductUrl, getElement, formatPrice } from '../utils.js';
 
-// selections
+// ---------- SELECT ELEMENTS  ----------
+
 // const loading = getElement('.page-loading');
 // const centerDOM = getElement('.single-product-center');
 // const pageTitleDOM = getElement('.page-hero-title');

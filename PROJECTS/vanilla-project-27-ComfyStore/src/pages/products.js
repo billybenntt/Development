@@ -19,12 +19,14 @@ import { getElement } from '../utils.js';
 const productsContainer = getElement(".products-container")
 const loadingContainer = getElement(".page-loading")
 
-// ---------- HELPER FUNCTIONS  ----------
+// ---------- HELPER FUNCTIONS ----------
 
 
 
 display(store,productsContainer )
 setupSearch(store)
+setupCompanies(store)
+setupPrice(store)
 
 
 

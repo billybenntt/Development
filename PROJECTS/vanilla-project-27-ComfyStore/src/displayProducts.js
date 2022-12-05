@@ -30,20 +30,15 @@ const display = (data, container) => {
   })
   container.innerHTML = products.join('')
 
-
-  container.addEventListener("click", (event)=>{
+  container.addEventListener('click', (event) => {
 
     let parent = event.target.parentElement
 
-
-    if (parent.classList.contains("product-cart-btn")){
+    if (parent.classList.contains('product-cart-btn')) {
       addToCart(parent.dataset.id)
-
     }
 
-
   })
-
 
 }
 

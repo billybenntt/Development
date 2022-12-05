@@ -11,18 +11,21 @@ import { getElement } from './src/utils.js'
 
 // ---------- HELPER FUNCTION  ----------
 
+const featuredContainer = getElement('.featured-center')
+
+
+// ---------- HELPER FUNCTION  ----------
+
 const init = async () => {
 
   const data = await fetchProducts()
   if (data) {
     /*Add products to the store*/
     setupStore(data)
-
     /* Get featured Items */
     const featured = store.filter((item) => item.featured)
-
     /*Display to DOM*/
-    display(featured, getElement('.featured-center'))
+    display(featured, featuredContainer)
   }
 
 }
