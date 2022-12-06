@@ -19,6 +19,7 @@ const featuredContainer = getElement('.featured-center')
 const init = async () => {
 
   const data = await fetchProducts()
+
   if (data) {
     /*Add products to the store*/
     setupStore(data)
