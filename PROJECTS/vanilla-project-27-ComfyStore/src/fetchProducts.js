@@ -3,7 +3,9 @@ import { allProductsUrl } from './utils.js'
 const fetchProducts = async () => {
   try {
     const response = await fetch(allProductsUrl)
-    if (response.status === 200) {
+
+     console.log(response.status)
+    if (response.ok) {
       const data = await response.json()
       console.log(response.status)
       return data

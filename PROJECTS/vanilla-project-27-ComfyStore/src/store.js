@@ -4,6 +4,7 @@ let store = getStorageItem('store')
 
 // ---------- UTILITY FUNCTIONS  ----------
 
+
 const setupStore = (data) => {
   store = data.map((item) => {
     /* Destructure Data */
@@ -15,12 +16,13 @@ const setupStore = (data) => {
     /* Return formed Object */
     return { id, featured, name, price, company, colors, image }
   })
-
   setStorageItem('store', store)
-
 }
 
-const findProduct = () => {}
+/* Function that finds a product and returns it */
+const findProduct = (id) => {
+  return store.find((product) => product.id === id)
+}
 
 // ---------- EXPORTS  ----------
 
