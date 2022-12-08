@@ -21,6 +21,8 @@ let cart = getStorageItem('cart')
 
 // ---------- HELPER FUNCTION  ----------
 
+
+/* Show Item Count */
 const displayCartItemCount = () => {
   const amount = cart.reduce((total, currentItem) => {
     return total += currentItem.amount
@@ -29,12 +31,31 @@ const displayCartItemCount = () => {
   cartItemCountDOM.innerText = amount
 }
 
+/* Show Items Total Count  */
 const displayCartTotal = () => {
   let total = cart.reduce((total, currentItem) => {
     return total += currentItem.price * currentItem.amount
   }, 0)
   cartTotalDOM.innerText = `Total: ${formatPrice(total)}`
 }
+
+
+const setupCartFunctionality = () => {
+
+}
+
+const displayCartItemsDOM = () => {
+
+  cart.forEach((item) =>{
+
+    addToCartDOM(item)
+
+  })
+
+}
+
+
+
 
 export const addToCart = (id) => {
   /* Check if Item not in the cart */
@@ -56,6 +77,9 @@ export const addToCart = (id) => {
   /* Display Cart Totals */
   displayCartTotal()
   /* Set Cart in Local Storage */
+
+  displayCartItemsDOM()
+  
 
   setStorageItem('cart', cart)
   openCart()
