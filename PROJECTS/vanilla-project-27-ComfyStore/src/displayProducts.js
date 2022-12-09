@@ -1,7 +1,6 @@
 import { formatPrice } from './utils.js'
 import { addToCart } from './cart/setupCart.js'
 
-// ---------- SELECT ELEMENTS  ----------
 
 // ---------- HELPER FUNCTIONS  ----------
 
@@ -32,7 +31,6 @@ const display = (data, container) => {
   container.addEventListener('click', (event) => {
     let parent = event.target.parentElement
     if (parent.classList.contains('product-cart-btn')) {
-      console.log('Added to Cart, Products')
       addToCart(parent.dataset.id)
     }
 
