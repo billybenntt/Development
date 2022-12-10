@@ -1,10 +1,9 @@
 import { formatPrice } from './utils.js'
 import { addToCart } from './cart/setupCart.js'
 
-
 // ---------- HELPER FUNCTIONS  ----------
 
-const display = (data, container) => {
+const display = (data, container, filters) => {
   let products = data.map((item) => {
     const { name, price, image, id } = item
     return `<article class="product">
@@ -26,6 +25,8 @@ const display = (data, container) => {
             </article>`
   })
   container.innerHTML = products.join('')
+
+  if (filters) return
 
   /* Add Event Listener for Cart Button and ID */
   container.addEventListener('click', (event) => {

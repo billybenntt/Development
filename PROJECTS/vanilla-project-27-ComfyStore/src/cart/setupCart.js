@@ -1,10 +1,5 @@
 // import
-import {
-  getStorageItem,
-  setStorageItem,
-  formatPrice,
-  getElement,
-} from '../utils.js'
+import { formatPrice, getElement, getStorageItem, setStorageItem, } from '../utils.js'
 
 import { openCart } from './toggleCart.js'
 import { findProduct } from '../store.js'
@@ -38,11 +33,10 @@ const displayCartTotal = () => {
   cartTotalDOM.innerText = `Total: ${formatPrice(total)}`
 }
 
+/* Remove Item from LocalStorage */
 function removeItem (id) {
   /* Return Items that do not match id */
   cart = cart.filter((item) => item.id !== id)
-
-  
 }
 
 /* Add event Listeners to Cart Items buttons */
@@ -56,29 +50,37 @@ const setupCartFunctionality = () => {
     const parent = event.target.parentElement
     const parentID = event.target.parentElement.dataset.id
 
+    console.log(parent,parentID)
+
+
     /* Remove Item*/
     if (element.classList.contains('cart-item-remove-btn')) {
-      console.log('remove', elementID)
+      /*Remove from DOM*/
+      element.parentElement.parentElement.remove()
+      /*Remove from LocalStorage*/
       removeItem(elementID)
-
     }
 
     if (parent.classList.contains('cart-item-increase-btn')) {
       console.log('increase', parentID)
+      parent.nextElementSibling.textContent = increaseAmount(parentID)
     }
 
     if (parent.classList.contains('cart-item-decrease-btn')) {
-      console.log('decrease', parentID)
-    }
+      const newAmount = decreaseAmount(parentID)
 
-    /* Increase Count */
-    /* Decrease Count */
+      if (newAmount === 0) {
+        removeItem(parentID)
+        parent.parentElement.parentElement.remove()
+      } else {
+        parent.previousElementSibling.textContent = newAmount
+      }
+    }
 
     /* Sync and Update Values */
     displayCartItemCount()
     displayCartTotal()
     setStorageItem('cart', cart)
-
   })
 
 }
@@ -88,6 +90,21 @@ const increaseAmount = (id) => {
   /* Edit Object */
   cart = cart.map((cartItem) => {
     newAmount = cartItem.amount + 1
+    /* IF ID matches modify object amount */
+    if (cartItem.id === id) {
+      cartItem = { ...cartItem, amount: newAmount }
+    }
+    /* Return as It is */
+    return cartItem
+  })
+  return newAmount
+}
+
+const decreaseAmount = (id) => {
+  let newAmount
+  /* Edit Object */
+  cart = cart.map((cartItem) => {
+    newAmount = cartItem.amount - 1
     /* IF ID matches modify object amount */
     if (cartItem.id === id) {
       cartItem = { ...cartItem, amount: newAmount }

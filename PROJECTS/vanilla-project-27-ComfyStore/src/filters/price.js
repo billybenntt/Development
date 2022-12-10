@@ -29,7 +29,7 @@ const setupPrice = (store) => {
     const rangeValue = parseInt(`${priceInput.value}`)
     priceValue.innerText = `Value $${rangeValue}`
     let filterStore = store.filter((item) => item.price / 100 <= rangeValue)
-    display(filterStore, productsContainer)
+    display(filterStore, productsContainer, true)
     if (filterStore.length < 1) {
       productsContainer.innerHTML = `<h3 class="filter-error">${noItems}</h3>`
     }

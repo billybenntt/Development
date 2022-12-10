@@ -22,14 +22,14 @@ const setupSearch = (store) => {
         const { name } = item
         return name.includes(searchValue)
       })
-      display(filterStore, productsContainer)
+      display(filterStore, productsContainer, true)
 
       if (filterStore.length < 1) {
         productsContainer.innerHTML = `<h3 class="filter-error">${noItems}</h3>`
       }
 
     } else {
-      display(store, productsContainer)
+      display(store, productsContainer, true)
     }
 
   })

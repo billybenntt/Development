@@ -23,7 +23,7 @@ const setupCompanies = (store) => {
     if (element.classList.contains('company-btn')) {
       let inputValue = element.innerText === 'All' ? '' : element.innerText.toLowerCase()
       let filteredProducts = store.filter((item) => item.company.includes(inputValue))
-      display(filteredProducts, productsContainer)
+      display(filteredProducts, productsContainer, true)
     }
   })
 
