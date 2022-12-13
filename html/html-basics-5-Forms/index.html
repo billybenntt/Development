@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="author" content="Bill Bennett">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>HTMl Basics 5: Forms</title>
+</head>
+<body>
+
+    <h2>Forms</h2>
+    <form action="index.html">
+
+        <!--  Text Input -->
+        <h3>Text Input</h3>
+        <label for="firstName"> First Name </label>
+        <input type="text" placeholder="Enter First Name.." name="firstName" id="firstName"/>
+
+        <!-- Email Input -->
+        <h3>Email Input</h3>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="email@email.com"/>
+
+        <!-- Password Input -->
+        <h3>Password Input</h3>
+        <label for="password">Password </label>
+        <input type="password" name="password" id="password"/>
+
+        <!-- Text Area Input -->
+        <h3>Text Area</h3>
+        <label for="description"></label>
+        <textarea name="description" id="description" cols="20" rows="2"></textarea>
+
+        <!-- Radio Button Input -->
+        <h3>Radio Buttons</h3>
+        <p>Please Select your favorite coding language</p>
+        <label for="option-1">Javascript</label>
+        <input type="radio" id="option-1" name="coding" value="javascript"/>
+        <label for="option-2">Python</label>
+        <input type="radio" id="option-2" name="coding" value="python" checked/>
+        <label for="option-3">Kotlin</label>
+        <input type="radio" id="option-3" name="coding" value="kotlin"/>
+
+        <!-- Checkbox Input -->
+        <h3>Checkbox Inputs</h3>
+        <p>Select your favorite frameworks</p>
+        <label for="check-1">React</label>
+        <input type="checkbox" name="coding" id="check-1" value="react" checked/>
+        <label for="check-2">Vue</label>
+        <input type="checkbox" name="coding" id="check-2" value="vue" checked/>
+        <label for="check-3">Angular</label>
+        <input type="checkbox" name="coding" id="check-3" value="angular"/>
+
+
+        <!-- Select Inputs -->
+        <h3>Select Inputs</h3>
+        <p>Select your Team</p>
+        <label for="selection"></label>
+        <select name="team" id="selection">
+            <option value="france">France</option>
+            <option value="morocco">Morocco</option>
+            <option value="england">England</option>
+        </select>
+
+        <!--  Old Submit Button-->
+        <h3>Submit Input</h3>
+        <input type="submit" value="Submit*"/>
+
+        <!-- Submit Form Button -->
+        <h3>Submit Button</h3>
+        <button type="submit">Submit+</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
