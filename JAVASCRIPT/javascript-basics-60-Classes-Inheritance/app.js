@@ -1,38 +1,35 @@
-// ------------- CLASS DECLARATION  -------------
+// PARENT CLASS - DECLARATION
 
-class Car {
-  constructor (name, year) {
+class Person {
+  constructor (name) {
     this.name = name
-    this.year = year
+  }
+  walk () {
+    console.log(`${this.name} starts walking`)
   }
 
-  /* Methods */
-  displayName () {
-    return this.name
-  }
-
-  displayManufacturingYear () {
-    return this.year
+  talk () {
+    console.log(`${this.name} starts talking`)
   }
 }
 
-// ------------- OBJECT INSTANCE  -------------
+// CHILD CLASS - INHERITANCE
 
-toyotaCar = new Car('Toyota', 2022)
-
-// ------------- METHOD CALLING  -------------
-
-const displayBtn = document.querySelector('.btn')
-
-displayBtn.addEventListener('click', () => {
-
-  const container = document.querySelector('.container')
-  const nameElement = document.createElement('p')
-  nameElement.innerText = toyotaCar.displayName()
-  const yearElement = document.createElement('p')
-  yearElement.innerText = toyotaCar.displayManufacturingYear()
-  container.appendChild(nameElement)
-  container.appendChild(yearElement)
-})
+class Doctor extends Person {
+  heal () {
+    console.log(`${this.name} heals you by 10 points`)
+  }
+}
 
 
+// OBJECT - DECLARATION
+
+const character1 = new Person('Bob')
+character1.walk()
+character1.talk()
+
+
+const doctor1 = new Doctor('Kane')
+doctor1.walk()
+doctor1.talk()
+doctor1.heal()
