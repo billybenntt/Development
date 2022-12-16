@@ -1,4 +1,8 @@
+import random
+
+
 # PARENT CLASS DECLARATION
+
 
 class Person:
     def __init__(self, name):
@@ -51,3 +55,5 @@ wizard_1.move()
 wizard_1.cast_spell()
 wizard_1.heal()
 wizard_1.fight()
+
+print(random.randint(2, 3))
