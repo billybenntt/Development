@@ -1,0 +1,20 @@
+body {
+  font-family: Consolas, serif;
+}
+
+.icon {
+  color: red;
+  font-size: 40px;
+}
+
+#title-1 {
+  color: blue;
+}
+
+#title-2 {
+  color: darkgreen;
+}
+
+.container p {
+  color: dimgray;
+}
