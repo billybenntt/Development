@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+
+/* GENERAL STYLES  */
+
+span {
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+h1 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+
+/* NAVBAR SECTION */
+
+#navbar {
+    height: 5rem;
+}
+
+#navbar .logo {
+    font-size: 1.5rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+      color: #fff;
+    background-color: #000;
+    min-height: calc(100vh - 5rem);
+}
+
+.hero span {
+    font-size: 1.5rem;
+}
+
+.hero .hero-btn {
+    background-color: red;
+    color: #ffffff;
+    border: none;
+}
+

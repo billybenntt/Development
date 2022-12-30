@@ -34,4 +34,4 @@ Relative units, and depend on the root element `html`
 
 ### Viewport Units
 
-Absolute Units, `vh` and `vw` and follow the screen size
+Relative Units, `vh` and `vw` and follow the screen size, not relative to elements or parent elements , they are relative to the screen.
