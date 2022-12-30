@@ -1,0 +1,22 @@
+body {
+    background-color: #f1f5f9;
+    font-family: Consolas, serif;
+}
+
+
+.container {
+    background-color: #fff;
+}
+
+
+div h3 {
+    color: #645cff;
+}
+
+p {
+  color: #64748b
+}
+
+.special-container {
+    background-color: rgba(0, 0, 0, 0.9);
+}
