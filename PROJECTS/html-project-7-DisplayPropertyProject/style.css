@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.block-type {
+    background-color: dodgerblue;
+    color: white;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+body {
+    text-align: center;
+}
+
+.inline-type {
+    background-color: crimson;
+    color: white;
+
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Code+Pro&display=swap');
+
+
+body {
+    font-family: 'Source Code Pro', monospace;
+
+
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    }
+
+p {
+    line-height: 2;
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+}
+
+
+body {
+    background-color: #ecf3f6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+.card {
+    max-width: 200px;
+    background-color: #fff;
+    margin: 3rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card .circle {
+    width: 1.5rem;
+    height: 1.5rem;;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.card-title {
+    font-weight: 900;
+}
+
+.card-text {
+    font-size: 0.7rem;
+    color: gray;
+    padding: 10px;
+
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.6rem;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.btn-blue {
+    background-color: rgb(89, 151, 254, 0.2);
+    color: #0e5ede;
+}
+
+.btn-blue:hover {
+    background-color: rgb(89, 151, 254, 0.9);
+    color: #fff;
+}
+
+.btn-pink {
+    background-color: rgb(252, 94, 153, 0.1);
+    color: #fc5e99;
+}
+
+.btn-pink:hover {
+    background-color: rgb(252, 94, 153, 0.9);
+    color: #fff;
+}
+
+.card-1 {
+    border: 1px solid #fc5e99;
+}
+
+.card-1 .circle {
+    border: 1px solid #d90e56;
+    background-color: #fc5e99;
+}
+
+.card-2 {
+    border: 1px solid #5997fe;
+}
+
+.card-2 .circle {
+    border: 1px solid #0e5ede;
+    background-color: #5997fe;
+}
