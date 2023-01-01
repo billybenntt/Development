@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
 * {
     margin: 0;
-}
-
-.block-type {
-    background-color: dodgerblue;
-    color: white;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
+    background-color: #ecf3f6;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+
+section {
+    background-color: white;
+    padding: 5rem;
     text-align: center;
 }
 
-.inline-type {
-    background-color: crimson;
-    color: white;
-
+section.special {
+    background-color: #ecf3f6;
 }
+
+
+.section-title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-title .underline {
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #4770c8;
+    margin: 0 auto 2rem auto;
+}
+
+.section-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+

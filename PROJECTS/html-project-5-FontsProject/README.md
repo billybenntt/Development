@@ -1,9 +1,5 @@
 # CSS Typography
 
-
-
-
-
 ### Generic Font Family
 
 serif
