@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    min-height: 50vh;
+    color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-img {
+    background-image: url("images/big.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 2rem;
+    background-attachment: scroll;
+}
+
+.small-img {
+    background-image: linear-gradient(180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.9)),
+    url("./images/big.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 2rem;
+    background-attachment: fixed;
+
+}
+
+.folder-img {
+
+    background:
+            linear-gradient(
+            to bottom,
+            rgba(0, 0, 255, 0.2),
+            rgba(217, 14, 86, 0.5)), url("images/folder-img.jpeg") no-repeat center / cover;
+}
