@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 300vh;
+}
+
+.nav {
+    padding: 1rem;
+    background-color: crimson;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.section-1 {
+    height: 20rem;
+    padding: 3rem;
+    background-color: dodgerblue;
+    position: relative;
+    top: 50px;
+}
+
+.advertisement{
+    position: sticky;
+    width: 100%;
+    top: 50px;
+    background-color: blueviolet;
+
+}
+
+.section-1 .special {
+    position: absolute;
+    background-color: greenyellow;
+    bottom: 0;
+    right: 0;
+}

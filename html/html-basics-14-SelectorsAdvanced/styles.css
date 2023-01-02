@@ -1,0 +1,71 @@
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: Consolas , serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.section-center {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.section-1 .title-text:first-letter {
+    color: red;
+    font-size: 5rem;
+}
+
+.section-1 .title-description-1:first-line {
+    color: gold;
+    background-color: black;
+    font-weight: bold;
+}
+
+.section-2 .title-description-1:hover {
+    color: yellow;
+    background-color: black;
+}
+
+
+.section-3 p + p {
+    color: yellowgreen;
+    background-color: black;
+}
+
+
+/* LINK SELECTOR */
+
+/* Order Matters */
+.section-4 a {
+    display: block;
+}
+
+.section-4 a:link {
+   color: green;
+}
+
+.section-4 a:visited {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.section-4 a:hover {
+    color: yellow;
+    background-color: blue;
+}
+.section-4 a:active {
+    color: red;
+    background-color: black;
+}
+
+
+
+
+
+
+

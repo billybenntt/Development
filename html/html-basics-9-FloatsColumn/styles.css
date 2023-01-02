@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.row > div {
+    height: 200px;
+    width: calc(100% / 4);
+    float: right;
+    padding: 10px;
+    color: white;
+}
+
+.one {
+    background-color: crimson;
+}
+
+.two {
+    background-color: mediumseagreen;
+}
+
+.three {
+    background-color: dodgerblue;
+}
+
+.four {
+    background-color: orangered;
+}
+
+.five {
+    background-color: blueviolet;
+}
+
+.six {
+    background-color: lightseagreen;
+}
+
+.seven {
+    background-color: saddlebrown;
+}
+
+.eight {
+    background-color: firebrick;
+}
+
+.nine {
+    background-color: cyan;
+    clear: both;
+}

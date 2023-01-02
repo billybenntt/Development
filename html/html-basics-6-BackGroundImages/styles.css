@@ -35,10 +35,5 @@ div {
 }
 
 .folder-img {
-
-    background:
-            linear-gradient(
-            to bottom,
-            rgba(0, 0, 255, 0.2),
-            rgba(217, 14, 86, 0.5)), url("images/folder-img.jpeg") no-repeat center / cover;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.1) 0%, rgba(148, 187, 233, 1)), url("images/folder-img.jpeg") no-repeat fixed center / cover;
 }
