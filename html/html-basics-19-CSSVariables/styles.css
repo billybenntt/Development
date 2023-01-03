@@ -1,0 +1,55 @@
+:root {
+    --bg-color-1: #dc143c;
+    --bg-color-2: #1e90ff;
+    --bg-color-0: #fff;
+    --bg-color-4: #000;
+    --bg-color-5: #3cb371;
+    --border-style-1: 1px dotted var(--bg-color-4);
+    --box-size-1: 150px;
+    --box-size-2: 200px;
+    --letter-spacing-1: 1.5;
+    --border-cicle: 50%;
+}
+div {
+     --bg-color-special: #b3a33c;
+}
+
+
+body {
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box {
+    height: var(--box-size-1);
+    width: var(--box-size-1);
+    border: var(--border-style-1);
+}
+
+
+.box-1 {
+    background-color: var(--bg-color-2);
+}
+
+
+.box-2 {
+
+    background-color: var(--bg-color-special);
+}
+
+.box-3 {
+    background-color: var(--bg-color-1);
+    border-radius: var(--border-cicle);
+}
+
+.box-4 {
+    background-color: var(--bg-color-5);
+    border-radius: var(--border-cicle);
+}

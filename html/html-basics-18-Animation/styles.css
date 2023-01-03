@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Consolas, serif;
+}
+
+
+.box {
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* TRANSITION EXAMPLE */
+
+.box-transition {
+    background-color: crimson;
+    transition: all 2s linear;
+}
+
+.box-transition:hover {
+    background-color: deeppink;
+    transform: translateX(200px);
+}
+
+/* ANIMATION  EXAMPLE */
+.box-animation {
+    background-color: dodgerblue;
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: deeppink;
+    }
+    75% {
+        transform: translateX(300px);
+        background-color: coral;
+    }
+    100% {
+        transform: translateX(0px);
+        background-color: dodgerblue;
+
+    }
+}
+
+/* ANIMATION FILL MODE  EXAMPLE */
+.box-animation-fill {
+    background-color: mediumseagreen;
+    animation: appear 5s 2;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}

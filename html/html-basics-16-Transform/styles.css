@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Consolas, serif;
+}
+
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/*TRANSFORM TRANSLATE */
+
+.box-1 {
+    background-color: crimson;
+    /* Move right 75px*/
+    transform: translateX(50%);
+}
+
+.box-2 {
+    background-color: dodgerblue;
+    /* Move down 75px*/
+    transform: translateY(50%);
+}
+
+.box-3 {
+    background-color: lightseagreen;
+    /*Move right 30px and Move down 75px*/
+    transform: translate(20%, 50%);
+}
+
+/*TRANSFORM SCALE */
+
+.box-4 {
+    /* Scale Half in the X Direction */
+    background-color: crimson;
+    transform: scaleX(0.5);
+}
+
+.box-5 {
+    /* Scale Half in the Y Direction */
+    background-color: dodgerblue;
+    transform: scaleY(0.5);
+}
+
+.box-6 {
+    margin: 100px;
+    /* Make Element twice as big */
+    transform: scale(2);
+    background-color: lightseagreen;
+}
+
+/*TRANSFORM ROTATE */
+
+
+.box-7 {
+    margin: 100px;
+    background-color: crimson;
+    transform: rotate(45deg);
+}
+
+.box-8 {
+    margin: 100px;
+    background-color: dodgerblue;
+     transform: rotateX(180deg);
+}
+
+.box-9 {
+    transform: rotate(82deg);
+    background-color: lightseagreen;
+}
+
+.box-9:hover {
+    transform: rotateY(20deg);
+    background-color: lightseagreen;
+}
+
+/*TRANSFORM SKEW */
+.box-10 {
+    background-color: crimson;
+    margin: 100px;
+    transform: skewX(10deg);
+}
+
+.box-11 {
+    background-color: dodgerblue;
+    margin: 100px;
+    transform: skewY(10deg);
+}
+
+.box-12 {
+    background-color: lightseagreen;
+    margin: 100px;
+    transform: skew(120deg);
+}

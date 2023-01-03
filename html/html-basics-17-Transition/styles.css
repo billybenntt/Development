@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Calibri, serif;
+    color: white;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s linear;
+    border-radius: 50%;
+}
+
+.box:hover {
+    background-color: crimson;
+    transform: translateX(200px);
+}
+
+.box-1 {
+    transition-timing-function: ease;
+}
+
+.box-2 {
+    transition-timing-function: linear;
+}
+
+.box-3 {
+    transition-timing-function: ease-in;
+}
+
+.box-4 {
+    transition-timing-function: ease-out;
+}
+
+.box-5 {
+    transition-timing-function: ease-in-out;
+}
+

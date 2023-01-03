@@ -1,0 +1,33 @@
+body {
+    font-family: Consolas, serif;
+}
+
+.house {
+    color: dodgerblue;
+    font-size: 2rem;
+    display: block;
+}
+
+.house:hover {
+    color: crimson;
+}
+
+.bell {
+    color: mediumseagreen;
+    font-size: 3rem;
+    display: block;
+}
+
+.bell:hover {
+    color: crimson;
+}
+
+
+.github {
+    color: darkslateblue;
+    display: block;
+}
+
+.github:hover {
+    color: crimson;
+}
