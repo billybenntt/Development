@@ -102,8 +102,4 @@ english_b, spanish_b = zip(*en_es_dictionary_new.items())
 # english_b, spanish_b
 ('this', 'parrot', 'is', 'deceased')
 ('este', 'perico', 'esta', 'muerto')
-
-
 ```
-
-

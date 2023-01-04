@@ -113,11 +113,19 @@ p {
 }
 
 .section-title {
+    margin-bottom: 2rem;
+}
 
+.section-title h3 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary);
 }
 
 .section-center {
-
+    max-width: 1170px;
+    width: 85vw;
+    padding: 4rem 0;
+    margin: 0 auto;
 }
 
 
@@ -224,9 +232,7 @@ p {
 }
 
 
-
 /* ABOUT  SECTION  */
-
 
 
 /* MEDIA QUERIES */

@@ -7,6 +7,29 @@ body {
 }
 
 h1 {
-    text-shadow: 2px 2px 2px #CE5937
-
+    margin: 100px;
+    font-size: 3rem;
 }
+
+div {
+    margin: 100px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+/* X Offset 10Px , Y Offset 20x, Blur 5px, Orange Color*/
+.text {
+    text-shadow: 10px 20px 5px #CE5937
+}
+
+.box-1 {
+    /* X Offset 10Px , Y Offset 20x, Blur 15px, Pink Color*/
+    box-shadow: 10px 20px 15px #d90e56
+}
+
+.box-2 {
+    /* I copied pasted this lol */
+    box-shadow: #d90e56 0 30px 90px;
+}
+
