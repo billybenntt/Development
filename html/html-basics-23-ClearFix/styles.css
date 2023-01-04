@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Consolas, serif;
+
+}
+
+h2 {
+    clear: right;
+    margin: 10px;
+}
+
+
+p{
+    margin: 10px;
+}
+
+.img1 {
+    float: right;
+}
+
+.container {
+    max-width: 900px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+.clearfix {
+    overflow: auto;
+}

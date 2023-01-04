@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Consolas, serif;
+}
+
+img {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.images-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 2.5%;
+    width: 45%;
+    float: left;
+}
+
+/* Prevent Image Distortion */
+.box-2 img {
+    object-fit: cover;
+}
+
+

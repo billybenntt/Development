@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Basics 23: Clear Fix </title>
+</head>
+<body>
+
+
+    <h2>Without Clearfix</h2>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+    <div class="container ">
+        <img class="img1" src="./images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+    <h2>With Clearfix</h2>
+
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+    <div class="container clearfix">
+        <img class="img1" src="./images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+
+
+</body>
+</html>
