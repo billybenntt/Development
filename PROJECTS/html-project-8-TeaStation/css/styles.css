@@ -67,7 +67,6 @@ h1, h2, h3, h4 {
     text-transform: capitalize;
     line-height: 1.25;
     margin-bottom: 0.75rem;
-
 }
 
 h1 {
@@ -96,13 +95,14 @@ p {
     text-transform: uppercase;
     background-color: var(--clr-primary);
     color: var(--clr-white);
-    padding: 0.5rem 1rem;
+    padding: 0.375rem 0.75rem;
     letter-spacing: var(--spacing);
     display: inline-block;
     font-weight: 700;
     transition: var(--transition);
-    font-size: 1rem;
+    font-size: 0.875rem;
     border: none;
+    border-radius: var(--radius);
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -234,6 +234,64 @@ p {
 
 /* ABOUT  SECTION  */
 
+.about-img, .about-info {
+    padding: 2rem 0;
+}
+
+.about-picture-container {
+    background-color: var(--clr-primary-light);
+    border: 0.5rem solid var(--clr-primary);
+    max-width: 30rem;
+    overflow: hidden;
+}
+
+.about-picture {
+    transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+
+.about-text {
+    max-width: 26rem;
+    color: var(--clr-grey-5);
+}
+
+
+/* PRODUCTS SECTION */
+
+.products {
+    background-color: var(--clr-grey-10);
+}
+
+/* General Padding- */
+.products article {
+    padding: 2rem 0;
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+.product-text {
+    max-width: 26rem;
+    color: var(--clr-grey-5);
+}
+
+.product-img {
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    height: 17rem;
+    object-fit: cover;
+}
+
+.product-price {
+    color: var(--clr-primary);
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
@@ -242,10 +300,24 @@ p {
         /* 2 Column Layout */
         width: 50%;
         float: left;
-
     }
 
 }
+
+
+@media screen and (min-width: 768px) {
+
+
+    .product {
+        width: 50%;
+        float: left;
+        /* Distance with Padding */
+        padding-right: 2rem;
+    }
+
+
+}
+
 
 @media screen and (min-width: 800px) {
 
@@ -275,10 +347,51 @@ p {
 }
 
 
+@media screen and (min-width: 992px) {
+    .section-center {
+        padding: 4rem 1rem;
+        width: 95vw;
+    }
+
+    .about-img, .about-info {
+        width: 50%;
+        float: left;
+    }
+
+    .about-info {
+        padding: 2rem;
+    }
+
+    .product {
+        /*3 Column Layout*/
+        width: calc(100% / 3);
+    }
+
+}
+
+
 @media screen and (min-width: 1200px) {
+
+    .product {
+        /* Remove Small Screen Margin*/
+        margin-bottom: 0;
+        padding: 0 1rem;
+    }
+
+    .products-info {
+        width: 30%;
+        float: left;
+
+    }
+
+    .products-inventory {
+        width: 70%;
+        float: left;
+    }
 
     .skill {
         width: 25%;
     }
+
 
 }
