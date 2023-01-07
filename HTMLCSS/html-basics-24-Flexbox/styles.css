@@ -1,7 +1,62 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Consolas, serif;
+}
+
+.container {
+    border: 1px solid #000;
+    height: 30rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box {
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.box-1 {
+    background-color: mediumseagreen;
+}
+
+.box-2 {
+    background-color: rebeccapurple;
+}
+
+.box-3 {
+
+    background-color: dodgerblue;
+}
+
+.box-4 {
+    background-color: deeppink;
+}
+
+.box-5 {
+    background-color: sandybrown;
+}
+
+.generic {
+    background-color: gray;
+}
+
+/* BANNER STYLES */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(194, 53, 53, 0.3), rgba(62, 63, 164, 0.3)), url("images/hero-bcg.jpeg") no-repeat fixed center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
 }
