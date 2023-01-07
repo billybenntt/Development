@@ -12,7 +12,31 @@
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
+    <!-- NAVBAR BUTTON -->
+
+    <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+    </span>
+
     <!-- NAVBAR SECTION -->
+
+    <nav class="navbar" id="navbar">
+
+        <div class="navbar-header">
+            <span class="nav-close" id="nav-close">
+             <i class="fas fa-times"></i>
+            </span>
+        </div>
+
+        <ul class="nav-items">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="pages/skills.html" class="nav-link">Skills</a></li>
+            <li><a href="pages/about.html" class="nav-link">About</a></li>
+            <li><a href="pages/products.html" class="nav-link">Products</a></li>
+        </ul>
+
+    </nav>
+
 
     <!-- HEADER SECTION -->
     <header class="header">
@@ -94,7 +118,7 @@
                 </div>
                 <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorem
                     doloremque fugiat labore nesciunt quod?</p>
-                <a href="about.html" class="btn">learn more</a>
+                <a href="pages/about.html" class="btn">learn more</a>
             </article>
         </div>
     </section>
@@ -116,7 +140,7 @@
                         reprehenderit.
                     </p>
                 </div>
-                <a href="products.html" class="btn">Inventory</a>
+                <a href="pages/products.html" class="btn">Inventory</a>
             </article>
             <!-- Products Inventory -->
             <article class="products-inventory clearfix-2">
@@ -166,7 +190,7 @@
                     <h4>custom recipes</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis eum, odio
                         reiciendis velit voluptas.</p>
-                    <a href="products.html" class="btn service-btn">read more</a>
+                    <a href="pages/products.html" class="btn service-btn">read more</a>
                 </div>
             </article>
             <!-- Single Card 2-->
@@ -182,7 +206,7 @@
                     <h4>home delivery</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis eum, odio
                         reiciendis velit voluptas.</p>
-                    <a href="products.html" class="btn service-btn">read more</a>
+                    <a href="pages/products.html" class="btn service-btn">read more</a>
                 </div>
             </article>
             <!-- Single Card 3-->
@@ -198,7 +222,7 @@
                     <h4>tea aging</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis eum, odio
                         reiciendis velit voluptas.</p>
-                    <a href="products.html" class="btn service-btn">read more</a>
+                    <a href="pages/products.html" class="btn service-btn">read more</a>
                 </div>
             </article>
         </div>
@@ -255,7 +279,7 @@
             <!--Contact Form -->
             <article class="contact-form">
                 <h3>Contact us</h3>
-                <form>
+                <form  action="https://formspree.io/f/mdovolrw"  method="POST">
                     <div class="form-group">
                         <label>
                             <input type="text"
