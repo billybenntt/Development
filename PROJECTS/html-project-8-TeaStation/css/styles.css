@@ -189,6 +189,13 @@ p {
 }
 
 
+.logo-btn{
+    background: yellow;
+    border-radius: 50%;
+    width: 50px;
+    z-index: 9;
+}
+
 /* NAVBAR BUTTON */
 
 .nav-btn {
